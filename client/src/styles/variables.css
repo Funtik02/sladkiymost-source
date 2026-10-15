@@ -1,0 +1,72 @@
+:root {
+    --color-blue: #2E6DA4;
+    --color-blue-light: #E6F3FC;
+    --color-red: #C23B3B;
+    --color-red-light: #FCEBEA;
+    --color-bg: #FDF8F1;
+    --color-text: #2B1D14;
+    --color-muted: #7A6A5E;
+    --color-border: #E4DAD0;
+    --color-success: #2E7D4F;
+
+    --color-white: #FFFFFF;
+    --color-blue-dark: #235683;
+    --color-blue-mid: #4F8FC8;
+    --color-red-dark: #9E2E2E;
+    --color-success-light: #E5F2EA;
+    --color-success-dark: #1F5E39;
+    --color-warning-light: #FFF4DE;
+    --color-warning-border: #E9C98A;
+    --color-warning-text: #6B4A0E;
+    --color-surface: #FFFFFF;
+    --color-surface-alt: #F8EEE2;
+    --color-cream: #F8E9D7;
+    --color-ice: #9FD3F3;
+    --color-turquoise: #00A7B5;
+    --color-gold: #F6C85F;
+    --color-gold-dark: #E0AE3C;
+    --color-gold-light: #FDF1D3;
+    --color-gold-text: #7A5300;
+    --color-caramel: #F28E8E;
+    --color-ink: #1B1F2A;
+    --gradient-brand: linear-gradient(90deg, #2E6DA4 0%, #9FD3F3 28%, #F8E9D7 50%, #F28E8E 72%, #C23B3B 100%);
+    --color-overlay: rgba(43, 29, 20, 0.55);
+    --color-white-soft: rgba(255, 255, 255, 0.82);
+    --color-white-faint: rgba(255, 255, 255, 0.16);
+    --color-white-line: rgba(255, 255, 255, 0.35);
+    --color-shadow: rgba(43, 29, 20, 0.08);
+    --color-shadow-strong: rgba(43, 29, 20, 0.16);
+    --color-stripe: rgba(255, 255, 255, 0.45);
+
+    --accent: var(--color-blue);
+    --accent-dark: var(--color-blue-dark);
+    --accent-light: var(--color-blue-light);
+
+    --font: 'Manrope', 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+    --font-size-sm: 0.875rem;
+    --font-size-xs: 0.78rem;
+
+    --radius: 12px;
+    --radius-sm: 8px;
+    --radius-pill: 999px;
+    --shadow-sm: 0 1px 3px var(--color-shadow);
+    --shadow-md: 0 6px 20px var(--color-shadow);
+    --shadow-lg: 0 16px 40px var(--color-shadow-strong);
+    --transition: 0.2s ease;
+
+    --container: 1200px;
+    --gutter: 16px;
+    --header-height: 68px;
+}
+
+.theme-yakutia {
+    --accent: var(--color-blue);
+    --accent-dark: var(--color-blue-dark);
+    --accent-light: var(--color-blue-light);
+}
+
+.theme-donbass {
+    --accent: var(--color-blue);
+    --accent-dark: var(--color-blue-dark);
+    --accent-light: var(--color-blue-light);
+}

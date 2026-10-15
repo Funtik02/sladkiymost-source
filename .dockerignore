@@ -1,0 +1,10 @@
+**/node_modules
+**/dist
+**/.env
+**/*.log
+**/*.tmp
+.git
+.claude
+server/data/users.json
+server/data/sessions.json
+server/data/carts.json

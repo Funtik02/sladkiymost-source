@@ -1,0 +1,178 @@
+[
+  {
+    "id": "YKT_DNR-2026-10-24",
+    "direction": "YKT_DNR",
+    "departureDate": "2026-10-24",
+    "cutoffDate": "2026-10-21",
+    "currentWeightKg": 172.61,
+    "maxWeightKg": 300,
+    "minWeightKg": 50,
+    "status": "open",
+    "postponedFrom": [],
+    "mergedInto": null,
+    "createdAt": "2026-10-13T00:00:00.000Z",
+    "history": [
+      {
+        "at": "2026-10-13T00:00:00.000Z",
+        "note": "Волна создана автоматически по расписанию"
+      }
+    ]
+  },
+  {
+    "id": "YKT_DNR-2026-11-07",
+    "direction": "YKT_DNR",
+    "departureDate": "2026-11-07",
+    "cutoffDate": "2026-11-04",
+    "currentWeightKg": 45.2,
+    "maxWeightKg": 300,
+    "minWeightKg": 50,
+    "status": "open",
+    "postponedFrom": [],
+    "mergedInto": null,
+    "createdAt": "2026-10-13T00:00:00.000Z",
+    "history": [
+      {
+        "at": "2026-10-13T00:00:00.000Z",
+        "note": "Волна создана автоматически по расписанию"
+      }
+    ]
+  },
+  {
+    "id": "YKT_DNR-2026-11-21",
+    "direction": "YKT_DNR",
+    "departureDate": "2026-11-21",
+    "cutoffDate": "2026-11-18",
+    "currentWeightKg": 12.55,
+    "maxWeightKg": 300,
+    "minWeightKg": 50,
+    "status": "open",
+    "postponedFrom": [],
+    "mergedInto": null,
+    "createdAt": "2026-10-13T00:00:00.000Z",
+    "history": [
+      {
+        "at": "2026-10-13T00:00:00.000Z",
+        "note": "Волна создана автоматически по расписанию"
+      }
+    ]
+  },
+  {
+    "id": "YKT_DNR-2026-12-05",
+    "direction": "YKT_DNR",
+    "departureDate": "2026-12-05",
+    "cutoffDate": "2026-12-02",
+    "currentWeightKg": 0,
+    "maxWeightKg": 300,
+    "minWeightKg": 50,
+    "status": "open",
+    "postponedFrom": [],
+    "mergedInto": null,
+    "createdAt": "2026-10-13T00:00:00.000Z",
+    "history": [
+      {
+        "at": "2026-10-13T00:00:00.000Z",
+        "note": "Волна создана автоматически по расписанию"
+      }
+    ]
+  },
+  {
+    "id": "DNR_YKT-2026-10-17",
+    "direction": "DNR_YKT",
+    "departureDate": "2026-10-17",
+    "cutoffDate": "2026-10-14",
+    "currentWeightKg": 96.1,
+    "maxWeightKg": 300,
+    "minWeightKg": 50,
+    "status": "closed",
+    "postponedFrom": [],
+    "mergedInto": null,
+    "createdAt": "2026-10-13T00:00:00.000Z",
+    "history": [
+      {
+        "at": "2026-10-13T00:00:00.000Z",
+        "note": "Волна создана автоматически по расписанию"
+      },
+      {
+        "at": "2026-10-14T03:40:00.000Z",
+        "note": "Приём закрыт администратором"
+      }
+    ],
+    "closedAt": "2026-10-14T03:40:00.000Z"
+  },
+  {
+    "id": "DNR_YKT-2026-10-31",
+    "direction": "DNR_YKT",
+    "departureDate": "2026-10-31",
+    "cutoffDate": "2026-10-28",
+    "currentWeightKg": 229.52,
+    "maxWeightKg": 300,
+    "minWeightKg": 50,
+    "status": "open",
+    "postponedFrom": [],
+    "mergedInto": null,
+    "createdAt": "2026-10-13T00:00:00.000Z",
+    "history": [
+      {
+        "at": "2026-10-13T00:00:00.000Z",
+        "note": "Волна создана автоматически по расписанию"
+      }
+    ]
+  },
+  {
+    "id": "DNR_YKT-2026-11-14",
+    "direction": "DNR_YKT",
+    "departureDate": "2026-11-14",
+    "cutoffDate": "2026-11-11",
+    "currentWeightKg": 62.5,
+    "maxWeightKg": 300,
+    "minWeightKg": 50,
+    "status": "open",
+    "postponedFrom": [],
+    "mergedInto": null,
+    "createdAt": "2026-10-13T00:00:00.000Z",
+    "history": [
+      {
+        "at": "2026-10-13T00:00:00.000Z",
+        "note": "Волна создана автоматически по расписанию"
+      }
+    ]
+  },
+  {
+    "id": "DNR_YKT-2026-11-28",
+    "direction": "DNR_YKT",
+    "departureDate": "2026-11-28",
+    "cutoffDate": "2026-11-25",
+    "currentWeightKg": 0,
+    "maxWeightKg": 300,
+    "minWeightKg": 50,
+    "status": "open",
+    "postponedFrom": [],
+    "mergedInto": null,
+    "createdAt": "2026-10-13T00:00:00.000Z",
+    "history": [
+      {
+        "at": "2026-10-13T00:00:00.000Z",
+        "note": "Волна создана автоматически по расписанию"
+      }
+    ]
+  },
+  {
+    "id": "DNR_YKT-2026-12-12",
+    "direction": "DNR_YKT",
+    "departureDate": "2026-12-12",
+    "cutoffDate": "2026-12-09",
+    "currentWeightKg": 0,
+    "maxWeightKg": 300,
+    "minWeightKg": 50,
+    "status": "open",
+    "postponedFrom": [],
+    "mergedInto": null,
+    "createdAt": "2026-10-13T00:00:00.000Z",
+    "history": [
+      {
+        "at": "2026-10-13T00:00:00.000Z",
+        "note": "Волна создана автоматически по расписанию"
+      }
+    ]
+  }
+]

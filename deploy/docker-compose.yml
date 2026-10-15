@@ -1,0 +1,25 @@
+name: sladkiymost
+
+services:
+  app:
+    build: ..
+    container_name: sladkiymost-app
+    restart: unless-stopped
+    env_file: ../.env
+    environment:
+      NODE_ENV: production
+      PORT: "3001"
+      DATA_DIR: /data
+      TRUST_PROXY: "1"
+    volumes:
+      - data:/data
+    networks:
+      - proxy
+
+volumes:
+  data:
+
+networks:
+  proxy:
+    name: mkomplekt_default
+    external: true

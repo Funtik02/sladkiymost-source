@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300" role="img" aria-label="Печенье «Подсолнух» с семечками">
+  <rect width="400" height="300" fill="#EAF4FC"/>
+  <g transform="translate(200 104) scale(1.15) translate(-200 -104)">
+    <ellipse cx="200" cy="174" rx="74" ry="8" fill="#2E6DA4" opacity="0.1"/>
+    <g transform="translate(200 100)">
+      <circle r="58" fill="#E2AE6C"/>
+      <circle r="58" fill="none" stroke="#C98B4E" stroke-width="4" opacity="0.5"/>
+      <circle cx="-22" cy="-20" r="7" fill="#3D3530"/><circle cx="14" cy="-8" r="6" fill="#3D3530"/><circle cx="-8" cy="22" r="7" fill="#3D3530"/><circle cx="26" cy="26" r="5" fill="#3D3530"/><circle cx="-36" cy="8" r="5" fill="#3D3530"/><circle cx="2" cy="-36" r="5" fill="#3D3530"/><circle cx="-26" cy="36" r="4" fill="#3D3530"/>
+      <circle cx="50" cy="-42" r="20" fill="#EAF4FC"/>
+      <circle cx="62" cy="-20" r="14" fill="#EAF4FC"/>
+      <circle cx="74" cy="-50" r="4" fill="#E2AE6C"/>
+      <circle cx="84" cy="-34" r="3" fill="#E2AE6C"/>
+    </g>
+  </g>
+  <g font-family="Manrope, 'Segoe UI', Arial, sans-serif" font-size="18" font-weight="700" fill="#2B1D14"><text x="200" y="214" text-anchor="middle">Печенье «Подсолнух» с</text><text x="200" y="236" text-anchor="middle">семечками</text></g>
+</svg>

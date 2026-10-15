@@ -1,0 +1,20 @@
+{
+  "name": "sweet-bridge-server",
+  "version": "1.0.0",
+  "description": "API маркетплейса «Сладкий мост: Якутия ⇄ Донбасс» — данные в JSON-файлах",
+  "main": "server.js",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "seed": "node scripts/seed.js",
+    "images": "node scripts/generate-images.js",
+    "telegram": "node scripts/telegram-check.js",
+    "mail": "node scripts/mail-check.js"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}

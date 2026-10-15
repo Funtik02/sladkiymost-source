@@ -1,0 +1,10 @@
+node_modules
+dist
+*.log
+*.tmp
+.DS_Store
+.env
+
+server/data/users.json
+server/data/sessions.json
+server/data/carts.json

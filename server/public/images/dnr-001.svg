@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300" role="img" aria-label="Конфеты «Донецкие розы» ассорти">
+  <rect width="400" height="300" fill="#EAF4FC"/>
+  <g transform="translate(200 104) scale(1.15) translate(-200 -104)">
+    <ellipse cx="200" cy="174" rx="74" ry="8" fill="#2E6DA4" opacity="0.1"/>
+    <g transform="translate(200 100)">
+      <path d="M-30 0 L-80 -28 Q-70 0 -80 28 Z" fill="#E06C86" stroke="#E06C86" stroke-width="6" stroke-linejoin="round"/>
+      <path d="M30 0 L80 -28 Q70 0 80 28 Z" fill="#E06C86" stroke="#E06C86" stroke-width="6" stroke-linejoin="round"/>
+      <ellipse rx="46" ry="36" fill="#2E6DA4"/>
+      <path d="M-16 -33 Q-30 0 -16 33" fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" opacity="0.35"/>
+      <path d="M12 -35 Q-2 0 12 35" fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" opacity="0.35"/>
+      <ellipse cx="-18" cy="-16" rx="10" ry="6" fill="#FFFFFF" opacity="0.4" transform="rotate(-25 -18 -16)"/>
+    </g>
+  </g>
+  <g font-family="Manrope, 'Segoe UI', Arial, sans-serif" font-size="18" font-weight="700" fill="#2B1D14"><text x="200" y="214" text-anchor="middle">Конфеты «Донецкие розы»</text><text x="200" y="236" text-anchor="middle">ассорти</text></g>
+</svg>

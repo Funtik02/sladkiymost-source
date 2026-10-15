@@ -1,0 +1,22 @@
+{
+  "name": "sweet-bridge",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Сладкий мост: Якутия ⇄ Донбасс — маркетплейс кондитерских изделий с доставкой сборными волнами",
+  "scripts": {
+    "dev": "node scripts/dev.js",
+    "dev:phone": "node scripts/dev.js --lan",
+    "share": "node scripts/share.js",
+    "seed": "npm --prefix server run seed",
+    "images": "npm --prefix server run images",
+    "telegram": "npm --prefix server run telegram",
+    "mail": "npm --prefix server run mail --",
+    "build": "npm --prefix client run build",
+    "start": "npm --prefix server start",
+    "lint": "npm --prefix client run lint",
+    "test": "node scripts/check-logic.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

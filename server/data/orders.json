@@ -1,0 +1,6499 @@
+[
+  {
+    "id": "573642",
+    "createdAt": "2026-10-13T01:15:47.400Z",
+    "direction": "YKT_DNR",
+    "waveId": "YKT_DNR-2026-10-24",
+    "scenario": "self",
+    "customer": {
+      "name": "Магазин «Северный гостинец»",
+      "phone": "+79286881489",
+      "email": "magazinsever90@example.com"
+    },
+    "recipient": null,
+    "gift": null,
+    "pickupPoint": {
+      "id": "DON-2",
+      "city": "Донецк",
+      "name": "ПВЗ «Калининский»",
+      "address": "пр. Ильича, 40",
+      "hours": "пн–сб 10:00–19:00"
+    },
+    "payment": {
+      "method": "card",
+      "label": "Картой онлайн (имитация)",
+      "status": "paid"
+    },
+    "items": [
+      {
+        "type": "product",
+        "productId": "YKT-001",
+        "name": "Конфеты «Северное сияние» в коробке",
+        "region": "Якутия",
+        "manufacturer": "ЯХК",
+        "weight_g": 250,
+        "price_rub": 450,
+        "temp_sensitive": true,
+        "shelf_life_days": 180,
+        "qty": 29,
+        "lineTotal": 13050
+      },
+      {
+        "type": "product",
+        "productId": "YKT-002",
+        "name": "Конфеты «Якутяночка» ассорти",
+        "region": "Якутия",
+        "manufacturer": "ЯХК",
+        "weight_g": 300,
+        "price_rub": 520,
+        "temp_sensitive": true,
+        "shelf_life_days": 150,
+        "qty": 33,
+        "lineTotal": 17160
+      }
+    ],
+    "thermoChosen": false,
+    "totals": {
+      "goods": 30210,
+      "weightKg": 17.15,
+      "delivery": {
+        "tariffPerKg": 500,
+        "baseCost": 8575,
+        "waveWeightAfterKg": 17.15,
+        "fillPercent": 6,
+        "discount": 0,
+        "discountAmount": 0,
+        "thermoRequired": false,
+        "thermoApplied": false,
+        "thermoCost": 0,
+        "total": 8575
+      },
+      "total": 38785
+    },
+    "status": "accepted",
+    "statusHistory": [
+      {
+        "status": "accepted",
+        "at": "2026-10-13T01:15:47.400Z"
+      }
+    ],
+    "postponements": []
+  },
+  {
+    "id": "818823",
+    "createdAt": "2026-10-13T01:59:34.348Z",
+    "direction": "DNR_YKT",
+    "waveId": "DNR_YKT-2026-10-17",
+    "scenario": "self",
+    "customer": {
+      "name": "Кафе «Олонхо»",
+      "phone": "+79485610418",
+      "email": "kafeolonho72@example.com"
+    },
+    "recipient": null,
+    "gift": null,
+    "pickupPoint": {
+      "id": "YKS-2",
+      "city": "Якутск",
+      "name": "ПВЗ «Автовокзал»",
+      "address": "ул. Октябрьская, 24",
+      "hours": "пн–сб 9:00–19:00"
+    },
+    "payment": {
+      "method": "card",
+      "label": "Картой онлайн (имитация)",
+      "status": "paid"
+    },
+    "items": [
+      {
+        "type": "product",
+        "productId": "DNR-006",
+        "name": "Печенье «Подсолнух» с семечками",
+        "region": "ДНР",
+        "manufacturer": "Степная пчела",
+        "weight_g": 300,
+        "price_rub": 180,
+        "temp_sensitive": false,
+        "shelf_life_days": 120,
+        "qty": 16,
+        "lineTotal": 2880
+      },
+      {
+        "type": "product",
+        "productId": "DNR-010",
+        "name": "Мармелад желейный «Вишнёвый сад»",
+        "region": "ДНР",
+        "manufacturer": "Терриконы",
+        "weight_g": 250,
+        "price_rub": 200,
+        "temp_sensitive": true,
+        "shelf_life_days": 60,
+        "qty": 26,
+        "lineTotal": 5200
+      },
+      {
+        "type": "product",
+        "productId": "DNR-002",
+        "name": "Конфеты «Шахтёрская ночь» с черносливом",
+        "region": "ДНР",
+        "manufacturer": "Кальмиус-Конд",
+        "weight_g": 250,
+        "price_rub": 430,
+        "temp_sensitive": true,
+        "shelf_life_days": 150,
+        "qty": 25,
+        "lineTotal": 10750
+      }
+    ],
+    "thermoChosen": false,
+    "totals": {
+      "goods": 18830,
+      "weightKg": 17.55,
+      "delivery": {
+        "tariffPerKg": 500,
+        "baseCost": 8775,
+        "waveWeightAfterKg": 17.55,
+        "fillPercent": 6,
+        "discount": 0,
+        "discountAmount": 0,
+        "thermoRequired": false,
+        "thermoApplied": false,
+        "thermoCost": 0,
+        "total": 8775
+      },
+      "total": 27605
+    },
+    "status": "assembling",
+    "statusHistory": [
+      {
+        "status": "accepted",
+        "at": "2026-10-13T01:59:34.348Z"
+      },
+      {
+        "status": "assembling",
+        "at": "2026-10-14T03:40:00.000Z",
+        "note": "Приём в волну закрыт, заказ собирается"
+      }
+    ],
+    "postponements": []
+  },
+  {
+    "id": "305522",
+    "createdAt": "2026-10-13T02:05:00.000Z",
+    "direction": "DNR_YKT",
+    "waveId": "DNR_YKT-2026-10-17",
+    "scenario": "self",
+    "customer": {
+      "name": "Айаал Николаев",
+      "phone": "+79297145739",
+      "email": "ayaalnikolae80@example.com"
+    },
+    "recipient": null,
+    "gift": null,
+    "pickupPoint": {
+      "id": "YKS-1",
+      "city": "Якутск",
+      "name": "ПВЗ «Центральный»",
+      "address": "пр. Ленина, 12",
+      "hours": "ежедневно 10:00–20:00"
+    },
+    "payment": {
+      "method": "card",
+      "label": "Картой онлайн (имитация)",
+      "status": "paid"
+    },
+    "items": [
+      {
+        "type": "product",
+        "productId": "DNR-001",
+        "name": "Конфеты «Донецкие розы» ассорти",
+        "region": "ДНР",
+        "manufacturer": "Кальмиус-Конд",
+        "weight_g": 300,
+        "price_rub": 490,
+        "temp_sensitive": true,
+        "shelf_life_days": 120,
+        "qty": 2,
+        "lineTotal": 980
+      },
+      {
+        "type": "product",
+        "productId": "DNR-009",
+        "name": "Мармелад «Абрикосовый»",
+        "region": "ДНР",
+        "manufacturer": "Терриконы",
+        "weight_g": 300,
+        "price_rub": 220,
+        "temp_sensitive": false,
+        "shelf_life_days": 90,
+        "qty": 3,
+        "lineTotal": 660
+      }
+    ],
+    "thermoChosen": false,
+    "totals": {
+      "goods": 1640,
+      "weightKg": 1.5,
+      "delivery": {
+        "tariffPerKg": 500,
+        "baseCost": 750,
+        "waveWeightAfterKg": 19.05,
+        "fillPercent": 6,
+        "discount": 0,
+        "discountAmount": 0,
+        "thermoRequired": false,
+        "thermoApplied": false,
+        "thermoCost": 0,
+        "total": 750
+      },
+      "total": 2390
+    },
+    "status": "assembling",
+    "statusHistory": [
+      {
+        "status": "accepted",
+        "at": "2026-10-13T02:05:00.000Z"
+      },
+      {
+        "status": "assembling",
+        "at": "2026-10-14T03:40:00.000Z",
+        "note": "Приём в волну закрыт, заказ собирается"
+      }
+    ],
+    "postponements": []
+  },
+  {
+    "id": "683840",
+    "createdAt": "2026-10-13T02:51:01.361Z",
+    "direction": "DNR_YKT",
+    "waveId": "DNR_YKT-2026-10-31",
+    "scenario": "self",
+    "customer": {
+      "name": "Супермаркет «Туймаада»",
+      "phone": "+79443296694",
+      "email": "supermarkett21@example.com"
+    },
+    "recipient": null,
+    "gift": null,
+    "pickupPoint": {
+      "id": "YKS-3",
+      "city": "Якутск",
+      "name": "ПВЗ «202-й микрорайон»",
+      "address": "202-й мкр, корп. 7",
+      "hours": "ежедневно 11:00–21:00"
+    },
+    "payment": {
+      "method": "card",
+      "label": "Картой онлайн (имитация)",
+      "status": "paid"
+    },
+    "items": [
+      {
+        "type": "product",
+        "productId": "DNR-004",
+        "name": "Вафли «Лимонные»",
+        "region": "ДНР",
+        "manufacturer": "Степная пчела",
+        "weight_g": 200,
+        "price_rub": 140,
+        "temp_sensitive": false,
+        "shelf_life_days": 180,
+        "qty": 34,
+        "lineTotal": 4760
+      },
+      {
+        "type": "product",
+        "productId": "DNR-001",
+        "name": "Конфеты «Донецкие розы» ассорти",
+        "region": "ДНР",
+        "manufacturer": "Кальмиус-Конд",
+        "weight_g": 300,
+        "price_rub": 490,
+        "temp_sensitive": true,
+        "shelf_life_days": 120,
+        "qty": 14,
+        "lineTotal": 6860
+      }
+    ],
+    "thermoChosen": false,
+    "totals": {
+      "goods": 11620,
+      "weightKg": 11,
+      "delivery": {
+        "tariffPerKg": 500,
+        "baseCost": 5500,
+        "waveWeightAfterKg": 11,
+        "fillPercent": 4,
+        "discount": 0,
+        "discountAmount": 0,
+        "thermoRequired": false,
+        "thermoApplied": false,
+        "thermoCost": 0,
+        "total": 5500
+      },
+      "total": 17120
+    },
+    "status": "accepted",
+    "statusHistory": [
+      {
+        "status": "accepted",
+        "at": "2026-10-13T02:51:01.361Z"
+      }
+    ],
+    "postponements": []
+  },
+  {
+    "id": "105280",
+    "createdAt": "2026-10-13T03:37:11.137Z",
+    "direction": "DNR_YKT",
+    "waveId": "DNR_YKT-2026-10-17",
+    "scenario": "self",
+    "customer": {
+      "name": "Туйаара Попова",
+      "phone": "+79824616241",
+      "email": "tuyaarapopov39@example.com"
+    },
+    "recipient": null,
+    "gift": null,
+    "pickupPoint": {
+      "id": "YKS-3",
+      "city": "Якутск",
+      "name": "ПВЗ «202-й микрорайон»",
+      "address": "202-й мкр, корп. 7",
+      "hours": "ежедневно 11:00–21:00"
+    },
+    "payment": {
+      "method": "card",
+      "label": "Картой онлайн (имитация)",
+      "status": "paid"
+    },
+    "items": [
+      {
+        "type": "product",
+        "productId": "DNR-001",
+        "name": "Конфеты «Донецкие розы» ассорти",
+        "region": "ДНР",
+        "manufacturer": "Кальмиус-Конд",
+        "weight_g": 300,
+        "price_rub": 490,
+        "temp_sensitive": true,
+        "shelf_life_days": 120,
+        "qty": 2,
+        "lineTotal": 980
+      }
+    ],
+    "thermoChosen": false,
+    "totals": {
+      "goods": 980,
+      "weightKg": 0.6,
+      "delivery": {
+        "tariffPerKg": 500,
+        "baseCost": 300,
+        "waveWeightAfterKg": 19.65,
+        "fillPercent": 7,
+        "discount": 0,
+        "discountAmount": 0,
+        "thermoRequired": false,
+        "thermoApplied": false,
+        "thermoCost": 0,
+        "total": 300
+      },
+      "total": 1280
+    },
+    "status": "assembling",
+    "statusHistory": [
+      {
+        "status": "accepted",
+        "at": "2026-10-13T03:37:11.137Z"
+      },
+      {
+        "status": "assembling",
+        "at": "2026-10-14T03:40:00.000Z",
+        "note": "Приём в волну закрыт, заказ собирается"
+      }
+    ],
+    "postponements": []
+  },
+  {
+    "id": "563561",
+    "createdAt": "2026-10-13T03:40:03.654Z",
+    "direction": "DNR_YKT",
+    "waveId": "DNR_YKT-2026-10-17",
+    "scenario": "self",
+    "customer": {
+      "name": "Кюннэй Васильева",
+      "phone": "+79231930699",
+      "email": "kyunneyvasil30@example.com"
+    },
+    "recipient": null,
+    "gift": null,
+    "pickupPoint": {
+      "id": "YKS-1",
+      "city": "Якутск",
+      "name": "ПВЗ «Центральный»",
+      "address": "пр. Ленина, 12",
+      "hours": "ежедневно 10:00–20:00"
+    },
+    "payment": {
+      "method": "card",
+      "label": "Картой онлайн (имитация)",
+      "status": "paid"
+    },
+    "items": [
+      {
+        "type": "product",
+        "productId": "DNR-004",
+        "name": "Вафли «Лимонные»",
+        "region": "ДНР",
+        "manufacturer": "Степная пчела",
+        "weight_g": 200,
+        "price_rub": 140,
+        "temp_sensitive": false,
+        "shelf_life_days": 180,
+        "qty": 3,
+        "lineTotal": 420
+      }
+    ],
+    "thermoChosen": false,
+    "totals": {
+      "goods": 420,
+      "weightKg": 0.6,
+      "delivery": {
+        "tariffPerKg": 500,
+        "baseCost": 300,
+        "waveWeightAfterKg": 20.25,
+        "fillPercent": 7,
+        "discount": 0,
+        "discountAmount": 0,
+        "thermoRequired": false,
+        "thermoApplied": false,
+        "thermoCost": 0,
+        "total": 300
+      },
+      "total": 720
+    },
+    "status": "assembling",
+    "statusHistory": [
+      {
+        "status": "accepted",
+        "at": "2026-10-13T03:40:03.654Z"
+      },
+      {
+        "status": "assembling",
+        "at": "2026-10-14T03:40:00.000Z",
+        "note": "Приём в волну закрыт, заказ собирается"
+      }
+    ],
+    "postponements": []
+  },
+  {
+    "id": "435855",
+    "createdAt": "2026-10-13T04:59:20.682Z",
+    "direction": "YKT_DNR",
+    "waveId": "YKT_DNR-2026-11-21",
+    "scenario": "self",
+    "customer": {
+      "name": "Магазин «Северный гостинец»",
+      "phone": "+79855169221",
+      "email": "magazinsever14@example.com"
+    },
+    "recipient": null,
+    "gift": null,
+    "pickupPoint": {
+      "id": "DON-3",
+      "city": "Донецк",
+      "name": "ПВЗ «Пролетарский»",
+      "address": "ул. Куйбышева, 117",
+      "hours": "ежедневно 10:00–20:00"
+    },
+    "payment": {
+      "method": "card",
+      "label": "Картой онлайн (имитация)",
+      "status": "paid"
+    },
+    "items": [
+      {
+        "type": "product",
+        "productId": "YKT-015",
+        "name": "Карамель с начинкой «Брусника»",
+        "region": "Якутия",
+        "manufacturer": "ЯХК",
+        "weight_g": 300,
+        "price_rub": 180,
+        "temp_sensitive": false,
+        "shelf_life_days": 270,
+        "qty": 22,
+        "lineTotal": 3960
+      },
+      {
+        "type": "product",
+        "productId": "YKT-007",
+        "name": "Пряники медовые «Таёжные»",
+        "region": "Якутия",
+        "manufacturer": "ЯХК",
+        "weight_g": 400,
+        "price_rub": 240,
+        "temp_sensitive": false,
+        "shelf_life_days": 45,
+        "qty": 13,
+        "lineTotal": 3120
+      }
+    ],
+    "thermoChosen": false,
+    "totals": {
+      "goods": 7080,
+      "weightKg": 11.8,
+      "delivery": {
+        "tariffPerKg": 500,
+        "baseCost": 5900,
+        "waveWeightAfterKg": 11.8,
+        "fillPercent": 4,
+        "discount": 0,
+        "discountAmount": 0,
+        "thermoRequired": false,
+        "thermoApplied": false,
+        "thermoCost": 0,
+        "total": 5900
+      },
+      "total": 12980
+    },
+    "status": "accepted",
+    "statusHistory": [
+      {
+        "status": "accepted",
+        "at": "2026-10-13T04:59:20.682Z"
+      }
+    ],
+    "postponements": []
+  },
+  {
+    "id": "204817",
+    "createdAt": "2026-10-13T05:20:00.000Z",
+    "direction": "YKT_DNR",
+    "waveId": "YKT_DNR-2026-10-24",
+    "scenario": "gift",
+    "customer": {
+      "name": "Сардана Иванова",
+      "phone": "+79503776465",
+      "email": "sardanaivano66@example.com"
+    },
+    "recipient": {
+      "name": "Ольга Ковальчук",
+      "phone": "+79652370520"
+    },
+    "gift": {
+      "cardText": "С праздником! Пусть этот кусочек тепла дойдёт до тебя через всю страну.",
+      "cardDesign": "north",
+      "hidePrice": false
+    },
+    "pickupPoint": {
+      "id": "DON-1",
+      "city": "Донецк",
+      "name": "ПВЗ «Центр»",
+      "address": "ул. Артёма, 50",
+      "hours": "ежедневно 9:00–20:00"
+    },
+    "payment": {
+      "method": "cash",
+      "label": "При получении",
+      "status": "on_delivery"
+    },
+    "items": [
+      {
+        "type": "product",
+        "productId": "YKT-001",
+        "name": "Конфеты «Северное сияние» в коробке",
+        "region": "Якутия",
+        "manufacturer": "ЯХК",
+        "weight_g": 250,
+        "price_rub": 450,
+        "temp_sensitive": true,
+        "shelf_life_days": 180,
+        "qty": 2,
+        "lineTotal": 900
+      },
+      {
+        "type": "product",
+        "productId": "YKT-006",
+        "name": "Пряник «Олонхо» с брусничной начинкой",
+        "region": "Якутия",
+        "manufacturer": "ЯХК",
+        "weight_g": 350,
+        "price_rub": 280,
+        "temp_sensitive": false,
+        "shelf_life_days": 60,
+        "qty": 3,
+        "lineTotal": 840
+      },
+      {
+        "type": "product",
+        "productId": "YKT-014",
+        "name": "Карамель леденцовая «Морозко»",
+        "region": "Якутия",
+        "manufacturer": "ЯХК",
+        "weight_g": 250,
+        "price_rub": 150,
+        "temp_sensitive": false,
+        "shelf_life_days": 365,
+        "qty": 4,
+        "lineTotal": 600
+      }
+    ],
+    "thermoChosen": true,
+    "totals": {
+      "goods": 2340,
+      "weightKg": 2.55,
+      "delivery": {
+        "tariffPerKg": 500,
+        "baseCost": 1275,
+        "waveWeightAfterKg": 19.7,
+        "fillPercent": 7,
+        "discount": 0,
+        "discountAmount": 0,
+        "thermoRequired": false,
+        "thermoApplied": true,
+        "thermoCost": 150,
+        "total": 1425
+      },
+      "total": 3765
+    },
+    "status": "accepted",
+    "statusHistory": [
+      {
+        "status": "accepted",
+        "at": "2026-10-13T05:20:00.000Z"
+      }
+    ],
+    "postponements": []
+  },
+  {
+    "id": "919945",
+    "createdAt": "2026-10-13T05:49:08.076Z",
+    "direction": "YKT_DNR",
+    "waveId": "YKT_DNR-2026-10-24",
+    "scenario": "self",
+    "customer": {
+      "name": "Магазин «Северный гостинец»",
+      "phone": "+79359952776",
+      "email": "magazinsever95@example.com"
+    },
+    "recipient": null,
+    "gift": null,
+    "pickupPoint": {
+      "id": "DON-1",
+      "city": "Донецк",
+      "name": "ПВЗ «Центр»",
+      "address": "ул. Артёма, 50",
+      "hours": "ежедневно 9:00–20:00"
+    },
+    "payment": {
+      "method": "cash",
+      "label": "При получении",
+      "status": "on_delivery"
+    },
+    "items": [
+      {
+        "type": "product",
+        "productId": "YKT-005",
+        "name": "Шоколад молочный с кедровым орехом",
+        "region": "Якутия",
+        "manufacturer": "ЯХК",
+        "weight_g": 90,
+        "price_rub": 230,
+        "temp_sensitive": true,
+        "shelf_life_days": 300,
+        "qty": 23,
+        "lineTotal": 5290
+      },
+      {
+        "type": "product",
+        "productId": "YKT-010",
+        "name": "Зефир ванильный «Белые ночи»",
+        "region": "Якутия",
+        "manufacturer": "ЯХК",
+        "weight_g": 250,
+        "price_rub": 260,
+        "temp_sensitive": true,
+        "shelf_life_days": 30,
+        "qty": 20,
+        "lineTotal": 5200
+      },
+      {
+        "type": "product",
+        "productId": "YKT-008",
+        "name": "Печенье овсяное с голубикой",
+        "region": "Якутия",
+        "manufacturer": "ЯХК",
+        "weight_g": 300,
+        "price_rub": 190,
+        "temp_sensitive": false,
+        "shelf_life_days": 90,
+        "qty": 15,
+        "lineTotal": 2850
+      }
+    ],
+    "thermoChosen": false,
+    "totals": {
+      "goods": 13340,
+      "weightKg": 11.57,
+      "delivery": {
+        "tariffPerKg": 500,
+        "baseCost": 5785,
+        "waveWeightAfterKg": 31.27,
+        "fillPercent": 10,
+        "discount": 0,
+        "discountAmount": 0,
+        "thermoRequired": false,
+        "thermoApplied": false,
+        "thermoCost": 0,
+        "total": 5785
+      },
+      "total": 19125
+    },
+    "status": "accepted",
+    "statusHistory": [
+      {
+        "status": "accepted",
+        "at": "2026-10-13T05:49:08.076Z"
+      }
+    ],
+    "postponements": []
+  },
+  {
+    "id": "255698",
+    "createdAt": "2026-10-13T06:56:17.799Z",
+    "direction": "DNR_YKT",
+    "waveId": "DNR_YKT-2026-10-17",
+    "scenario": "self",
+    "customer": {
+      "name": "Кондитерская «Ленская»",
+      "phone": "+79283839215",
+      "email": "konditerskay5@example.com"
+    },
+    "recipient": null,
+    "gift": null,
+    "pickupPoint": {
+      "id": "YKS-1",
+      "city": "Якутск",
+      "name": "ПВЗ «Центральный»",
+      "address": "пр. Ленина, 12",
+      "hours": "ежедневно 10:00–20:00"
+    },
+    "payment": {
+      "method": "card",
+      "label": "Картой онлайн (имитация)",
+      "status": "paid"
+    },
+    "items": [
+      {
+        "type": "product",
+        "productId": "DNR-004",
+        "name": "Вафли «Лимонные»",
+        "region": "ДНР",
+        "manufacturer": "Степная пчела",
+        "weight_g": 200,
+        "price_rub": 140,
+        "temp_sensitive": false,
+        "shelf_life_days": 180,
+        "qty": 17,
+        "lineTotal": 2380
+      },
+      {
+        "type": "product",
+        "productId": "DNR-008",
+        "name": "Торт «Каштан» вафельно-шоколадный",
+        "region": "ДНР",
+        "manufacturer": "Терриконы",
+        "weight_g": 500,
+        "price_rub": 590,
+        "temp_sensitive": true,
+        "shelf_life_days": 60,
+        "qty": 16,
+        "lineTotal": 9440
+      },
+      {
+        "type": "product",
+        "productId": "DNR-011",
+        "name": "Шоколад тёмный «Терриконы» 70 %",
+        "region": "ДНР",
+        "manufacturer": "Кальмиус-Конд",
+        "weight_g": 100,
+        "price_rub": 200,
+        "temp_sensitive": true,
+        "shelf_life_days": 365,
+        "qty": 33,
+        "lineTotal": 6600
+      }
+    ],
+    "thermoChosen": false,
+    "totals": {
+      "goods": 18420,
+      "weightKg": 14.7,
+      "delivery": {
+        "tariffPerKg": 500,
+        "baseCost": 7350,
+        "waveWeightAfterKg": 34.95,
+        "fillPercent": 12,
+        "discount": 0,
+        "discountAmount": 0,
+        "thermoRequired": false,
+        "thermoApplied": false,
+        "thermoCost": 0,
+        "total": 7350
+      },
+      "total": 25770
+    },
+    "status": "assembling",
+    "statusHistory": [
+      {
+        "status": "accepted",
+        "at": "2026-10-13T06:56:17.799Z"
+      },
+      {
+        "status": "assembling",
+        "at": "2026-10-14T03:40:00.000Z",
+        "note": "Приём в волну закрыт, заказ собирается"
+      }
+    ],
+    "postponements": []
+  },
+  {
+    "id": "126452",
+    "createdAt": "2026-10-13T07:03:35.222Z",
+    "direction": "YKT_DNR",
+    "waveId": "YKT_DNR-2026-10-24",
+    "scenario": "self",
+    "customer": {
+      "name": "Ирина Бондаренко",
+      "phone": "+79907322613",
+      "email": "irinabondare49@example.com"
+    },
+    "recipient": null,
+    "gift": null,
+    "pickupPoint": {
+      "id": "DON-1",
+      "city": "Донецк",
+      "name": "ПВЗ «Центр»",
+      "address": "ул. Артёма, 50",
+      "hours": "ежедневно 9:00–20:00"
+    },
+    "payment": {
+      "method": "cash",
+      "label": "При получении",
+      "status": "on_delivery"
+    },
+    "items": [
+      {
+        "type": "product",
+        "productId": "YKT-011",
+        "name": "Зефир брусничный",
+        "region": "Якутия",
+        "manufacturer": "ЯХК",
+        "weight_g": 250,
+        "price_rub": 280,
+        "temp_sensitive": true,
+        "shelf_life_days": 25,
+        "qty": 1,
+        "lineTotal": 280
+      },
+      {
+        "type": "product",
+        "productId": "YKT-004",
+        "name": "Шоколад горький «Ленские столбы» 72 %",
+        "region": "Якутия",
+        "manufacturer": "ЯХК",
+        "weight_g": 100,
+        "price_rub": 210,
+        "temp_sensitive": true,
+        "shelf_life_days": 365,
+        "qty": 2,
+        "lineTotal": 420
+      },
+      {
+        "type": "product",
+        "productId": "YKT-008",
+        "name": "Печенье овсяное с голубикой",
+        "region": "Якутия",
+        "manufacturer": "ЯХК",
+        "weight_g": 300,
+        "price_rub": 190,
+        "temp_sensitive": false,
+        "shelf_life_days": 90,
+        "qty": 2,
+        "lineTotal": 380
+      },
+      {
+        "type": "product",
+        "productId": "YKT-015",
+        "name": "Карамель с начинкой «Брусника»",
+        "region": "Якутия",
+        "manufacturer": "ЯХК",
+        "weight_g": 300,
+        "price_rub": 180,
+        "temp_sensitive": false,
+        "shelf_life_days": 270,
+        "qty": 1,
+        "lineTotal": 180
+      }
+    ],
+    "thermoChosen": false,
+    "totals": {
+      "goods": 1260,
+      "weightKg": 1.35,
+      "delivery": {
+        "tariffPerKg": 500,
+        "baseCost": 675,
+        "waveWeightAfterKg": 32.62,
+        "fillPercent": 11,
+        "discount": 0,
+        "discountAmount": 0,
+        "thermoRequired": false,
+        "thermoApplied": false,
+        "thermoCost": 0,
+        "total": 675
+      },
+      "total": 1935
+    },
+    "status": "accepted",
+    "statusHistory": [
+      {
+        "status": "accepted",
+        "at": "2026-10-13T07:03:35.222Z"
+      }
+    ],
+    "postponements": []
+  },
+  {
+    "id": "924259",
+    "createdAt": "2026-10-13T07:05:16.143Z",
+    "direction": "YKT_DNR",
+    "waveId": "YKT_DNR-2026-10-24",
+    "scenario": "self",
+    "customer": {
+      "name": "Магазин «Сладкоежка»",
+      "phone": "+79263835734",
+      "email": "magazinsladk90@example.com"
+    },
+    "recipient": null,
+    "gift": null,
+    "pickupPoint": {
+      "id": "DON-1",
+      "city": "Донецк",
+      "name": "ПВЗ «Центр»",
+      "address": "ул. Артёма, 50",
+      "hours": "ежедневно 9:00–20:00"
+    },
+    "payment": {
+      "method": "card",
+      "label": "Картой онлайн (имитация)",
+      "status": "paid"
+    },
+    "items": [
+      {
+        "type": "product",
+        "productId": "YKT-015",
+        "name": "Карамель с начинкой «Брусника»",
+        "region": "Якутия",
+        "manufacturer": "ЯХК",
+        "weight_g": 300,
+        "price_rub": 180,
+        "temp_sensitive": false,
+        "shelf_life_days": 270,
+        "qty": 15,
+        "lineTotal": 2700
+      },
+      {
+        "type": "product",
+        "productId": "YKT-010",
+        "name": "Зефир ванильный «Белые ночи»",
+        "region": "Якутия",
+        "manufacturer": "ЯХК",
+        "weight_g": 250,
+        "price_rub": 260,
+        "temp_sensitive": true,
+        "shelf_life_days": 30,
+        "qty": 30,
+        "lineTotal": 7800
+      },
+      {
+        "type": "product",
+        "productId": "YKT-004",
+        "name": "Шоколад горький «Ленские столбы» 72 %",
+        "region": "Якутия",
+        "manufacturer": "ЯХК",
+        "weight_g": 100,
+        "price_rub": 210,
+        "temp_sensitive": true,
+        "shelf_life_days": 365,
+        "qty": 34,
+        "lineTotal": 7140
+      }
+    ],
+    "thermoChosen": false,
+    "totals": {
+      "goods": 17640,
+      "weightKg": 15.4,
+      "delivery": {
+        "tariffPerKg": 500,
+        "baseCost": 7700,
+        "waveWeightAfterKg": 48.02,
+        "fillPercent": 16,
+        "discount": 0,
+        "discountAmount": 0,
+        "thermoRequired": false,
+        "thermoApplied": false,
+        "thermoCost": 0,
+        "total": 7700
+      },
+      "total": 25340
+    },
+    "status": "accepted",
+    "statusHistory": [
+      {
+        "status": "accepted",
+        "at": "2026-10-13T07:05:16.143Z"
+      }
+    ],
+    "postponements": []
+  },
+  {
+    "id": "354015",
+    "createdAt": "2026-10-13T07:07:01.051Z",
+    "direction": "DNR_YKT",
+    "waveId": "DNR_YKT-2026-10-17",
+    "scenario": "self",
+    "customer": {
+      "name": "Айаал Николаев",
+      "phone": "+79491452256",
+      "email": "ayaalnikolae3@example.com"
+    },
+    "recipient": null,
+    "gift": null,
+    "pickupPoint": {
+      "id": "YKS-1",
+      "city": "Якутск",
+      "name": "ПВЗ «Центральный»",
+      "address": "пр. Ленина, 12",
+      "hours": "ежедневно 10:00–20:00"
+    },
+    "payment": {
+      "method": "card",
+      "label": "Картой онлайн (имитация)",
+      "status": "paid"
+    },
+    "items": [
+      {
+        "type": "product",
+        "productId": "DNR-002",
+        "name": "Конфеты «Шахтёрская ночь» с черносливом",
+        "region": "ДНР",
+        "manufacturer": "Кальмиус-Конд",
+        "weight_g": 250,
+        "price_rub": 430,
+        "temp_sensitive": true,
+        "shelf_life_days": 150,
+        "qty": 2,
+        "lineTotal": 860
+      },
+      {
+        "type": "product",
+        "productId": "DNR-004",
+        "name": "Вафли «Лимонные»",
+        "region": "ДНР",
+        "manufacturer": "Степная пчела",
+        "weight_g": 200,
+        "price_rub": 140,
+        "temp_sensitive": false,
+        "shelf_life_days": 180,
+        "qty": 2,
+        "lineTotal": 280
+      }
+    ],
+    "thermoChosen": false,
+    "totals": {
+      "goods": 1140,
+      "weightKg": 0.9,
+      "delivery": {
+        "tariffPerKg": 500,
+        "baseCost": 450,
+        "waveWeightAfterKg": 35.85,
+        "fillPercent": 12,
+        "discount": 0,
+        "discountAmount": 0,
+        "thermoRequired": false,
+        "thermoApplied": false,
+        "thermoCost": 0,
+        "total": 450
+      },
+      "total": 1590
+    },
+    "status": "assembling",
+    "statusHistory": [
+      {
+        "status": "accepted",
+        "at": "2026-10-13T07:07:01.051Z"
+      },
+      {
+        "status": "assembling",
+        "at": "2026-10-14T03:40:00.000Z",
+        "note": "Приём в волну закрыт, заказ собирается"
+      }
+    ],
+    "postponements": []
+  },
+  {
+    "id": "394571",
+    "createdAt": "2026-10-13T07:44:42.002Z",
+    "direction": "DNR_YKT",
+    "waveId": "DNR_YKT-2026-11-14",
+    "scenario": "self",
+    "customer": {
+      "name": "Айаал Николаев",
+      "phone": "+79707822410",
+      "email": "ayaalnikolae34@example.com"
+    },
+    "recipient": null,
+    "gift": null,
+    "pickupPoint": {
+      "id": "YKS-1",
+      "city": "Якутск",
+      "name": "ПВЗ «Центральный»",
+      "address": "пр. Ленина, 12",
+      "hours": "ежедневно 10:00–20:00"
+    },
+    "payment": {
+      "method": "cash",
+      "label": "При получении",
+      "status": "on_delivery"
+    },
+    "items": [
+      {
+        "type": "product",
+        "productId": "DNR-012",
+        "name": "Шоколад молочный с курагой",
+        "region": "ДНР",
+        "manufacturer": "Кальмиус-Конд",
+        "weight_g": 90,
+        "price_rub": 190,
+        "temp_sensitive": true,
+        "shelf_life_days": 300,
+        "qty": 3,
+        "lineTotal": 570
+      },
+      {
+        "type": "product",
+        "productId": "DNR-001",
+        "name": "Конфеты «Донецкие розы» ассорти",
+        "region": "ДНР",
+        "manufacturer": "Кальмиус-Конд",
+        "weight_g": 300,
+        "price_rub": 490,
+        "temp_sensitive": true,
+        "shelf_life_days": 120,
+        "qty": 3,
+        "lineTotal": 1470
+      },
+      {
+        "type": "product",
+        "productId": "DNR-004",
+        "name": "Вафли «Лимонные»",
+        "region": "ДНР",
+        "manufacturer": "Степная пчела",
+        "weight_g": 200,
+        "price_rub": 140,
+        "temp_sensitive": false,
+        "shelf_life_days": 180,
+        "qty": 3,
+        "lineTotal": 420
+      },
+      {
+        "type": "product",
+        "productId": "DNR-008",
+        "name": "Торт «Каштан» вафельно-шоколадный",
+        "region": "ДНР",
+        "manufacturer": "Терриконы",
+        "weight_g": 500,
+        "price_rub": 590,
+        "temp_sensitive": true,
+        "shelf_life_days": 60,
+        "qty": 1,
+        "lineTotal": 590
+      }
+    ],
+    "thermoChosen": false,
+    "totals": {
+      "goods": 3050,
+      "weightKg": 2.27,
+      "delivery": {
+        "tariffPerKg": 500,
+        "baseCost": 1135,
+        "waveWeightAfterKg": 2.27,
+        "fillPercent": 1,
+        "discount": 0,
+        "discountAmount": 0,
+        "thermoRequired": false,
+        "thermoApplied": false,
+        "thermoCost": 0,
+        "total": 1135
+      },
+      "total": 4185
+    },
+    "status": "accepted",
+    "statusHistory": [
+      {
+        "status": "accepted",
+        "at": "2026-10-13T07:44:42.002Z"
+      }
+    ],
+    "postponements": []
+  },
+  {
+    "id": "861281",
+    "createdAt": "2026-10-13T07:45:25.222Z",
+    "direction": "DNR_YKT",
+    "waveId": "DNR_YKT-2026-10-31",
+    "scenario": "self",
+    "customer": {
+      "name": "Кафе «Олонхо»",
+      "phone": "+79268558971",
+      "email": "kafeolonho38@example.com"
+    },
+    "recipient": null,
+    "gift": null,
+    "pickupPoint": {
+      "id": "YKS-3",
+      "city": "Якутск",
+      "name": "ПВЗ «202-й микрорайон»",
+      "address": "202-й мкр, корп. 7",
+      "hours": "ежедневно 11:00–21:00"
+    },
+    "payment": {
+      "method": "card",
+      "label": "Картой онлайн (имитация)",
+      "status": "paid"
+    },
+    "items": [
+      {
+        "type": "product",
+        "productId": "DNR-010",
+        "name": "Мармелад желейный «Вишнёвый сад»",
+        "region": "ДНР",
+        "manufacturer": "Терриконы",
+        "weight_g": 250,
+        "price_rub": 200,
+        "temp_sensitive": true,
+        "shelf_life_days": 60,
+        "qty": 15,
+        "lineTotal": 3000
+      }
+    ],
+    "thermoChosen": true,
+    "totals": {
+      "goods": 3000,
+      "weightKg": 3.75,
+      "delivery": {
+        "tariffPerKg": 500,
+        "baseCost": 1875,
+        "waveWeightAfterKg": 14.75,
+        "fillPercent": 5,
+        "discount": 0,
+        "discountAmount": 0,
+        "thermoRequired": false,
+        "thermoApplied": true,
+        "thermoCost": 150,
+        "total": 2025
+      },
+      "total": 5025
+    },
+    "status": "accepted",
+    "statusHistory": [
+      {
+        "status": "accepted",
+        "at": "2026-10-13T07:45:25.222Z"
+      }
+    ],
+    "postponements": []
+  },
+  {
+    "id": "713772",
+    "createdAt": "2026-10-13T08:22:27.540Z",
+    "direction": "DNR_YKT",
+    "waveId": "DNR_YKT-2026-10-31",
+    "scenario": "self",
+    "customer": {
+      "name": "Кафе «Олонхо»",
+      "phone": "+79242295034",
+      "email": "kafeolonho47@example.com"
+    },
+    "recipient": null,
+    "gift": null,
+    "pickupPoint": {
+      "id": "YKS-3",
+      "city": "Якутск",
+      "name": "ПВЗ «202-й микрорайон»",
+      "address": "202-й мкр, корп. 7",
+      "hours": "ежедневно 11:00–21:00"
+    },
+    "payment": {
+      "method": "card",
+      "label": "Картой онлайн (имитация)",
+      "status": "paid"
+    },
+    "items": [
+      {
+        "type": "product",
+        "productId": "DNR-010",
+        "name": "Мармелад желейный «Вишнёвый сад»",
+        "region": "ДНР",
+        "manufacturer": "Терриконы",
+        "weight_g": 250,
+        "price_rub": 200,
+        "temp_sensitive": true,
+        "shelf_life_days": 60,
+        "qty": 22,
+        "lineTotal": 4400
+      },
+      {
+        "type": "product",
+        "productId": "DNR-005",
+        "name": "Печенье сдобное «Донское»",
+        "region": "ДНР",
+        "manufacturer": "Степная пчела",
+        "weight_g": 350,
+        "price_rub": 210,
+        "temp_sensitive": false,
+        "shelf_life_days": 90,
+        "qty": 15,
+        "lineTotal": 3150
+      }
+    ],
+    "thermoChosen": false,
+    "totals": {
+      "goods": 7550,
+      "weightKg": 10.75,
+      "delivery": {
+        "tariffPerKg": 500,
+        "baseCost": 5375,
+        "waveWeightAfterKg": 25.5,
+        "fillPercent": 9,
+        "discount": 0,
+        "discountAmount": 0,
+        "thermoRequired": false,
+        "thermoApplied": false,
+        "thermoCost": 0,
+        "total": 5375
+      },
+      "total": 12925
+    },
+    "status": "accepted",
+    "statusHistory": [
+      {
+        "status": "accepted",
+        "at": "2026-10-13T08:22:27.540Z"
+      }
+    ],
+    "postponements": []
+  },
+  {
+    "id": "938897",
+    "createdAt": "2026-10-13T08:24:49.592Z",
+    "direction": "DNR_YKT",
+    "waveId": "DNR_YKT-2026-10-17",
+    "scenario": "self",
+    "customer": {
+      "name": "Кондитерская «Ленская»",
+      "phone": "+79716282912",
+      "email": "konditerskay9@example.com"
+    },
+    "recipient": null,
+    "gift": null,
+    "pickupPoint": {
+      "id": "YKS-2",
+      "city": "Якутск",
+      "name": "ПВЗ «Автовокзал»",
+      "address": "ул. Октябрьская, 24",
+      "hours": "пн–сб 9:00–19:00"
+    },
+    "payment": {
+      "method": "card",
+      "label": "Картой онлайн (имитация)",
+      "status": "paid"
+    },
+    "items": [
+      {
+        "type": "product",
+        "productId": "DNR-004",
+        "name": "Вафли «Лимонные»",
+        "region": "ДНР",
+        "manufacturer": "Степная пчела",
+        "weight_g": 200,
+        "price_rub": 140,
+        "temp_sensitive": false,
+        "shelf_life_days": 180,
+        "qty": 24,
+        "lineTotal": 3360
+      }
+    ],
+    "thermoChosen": false,
+    "totals": {
+      "goods": 3360,
+      "weightKg": 4.8,
+      "delivery": {
+        "tariffPerKg": 500,
+        "baseCost": 2400,
+        "waveWeightAfterKg": 40.65,
+        "fillPercent": 14,
+        "discount": 0,
+        "discountAmount": 0,
+        "thermoRequired": false,
+        "thermoApplied": false,
+        "thermoCost": 0,
+        "total": 2400
+      },
+      "total": 5760
+    },
+    "status": "assembling",
+    "statusHistory": [
+      {
+        "status": "accepted",
+        "at": "2026-10-13T08:24:49.592Z"
+      },
+      {
+        "status": "assembling",
+        "at": "2026-10-14T03:40:00.000Z",
+        "note": "Приём в волну закрыт, заказ собирается"
+      }
+    ],
+    "postponements": []
+  },
+  {
+    "id": "401145",
+    "createdAt": "2026-10-13T09:34:06.585Z",
+    "direction": "DNR_YKT",
+    "waveId": "DNR_YKT-2026-11-14",
+    "scenario": "self",
+    "customer": {
+      "name": "Кюннэй Васильева",
+      "phone": "+79847990047",
+      "email": "kyunneyvasil98@example.com"
+    },
+    "recipient": null,
+    "gift": null,
+    "pickupPoint": {
+      "id": "YKS-1",
+      "city": "Якутск",
+      "name": "ПВЗ «Центральный»",
+      "address": "пр. Ленина, 12",
+      "hours": "ежедневно 10:00–20:00"
+    },
+    "payment": {
+      "method": "card",
+      "label": "Картой онлайн (имитация)",
+      "status": "paid"
+    },
+    "items": [
+      {
+        "type": "product",
+        "productId": "DNR-001",
+        "name": "Конфеты «Донецкие розы» ассорти",
+        "region": "ДНР",
+        "manufacturer": "Кальмиус-Конд",
+        "weight_g": 300,
+        "price_rub": 490,
+        "temp_sensitive": true,
+        "shelf_life_days": 120,
+        "qty": 1,
+        "lineTotal": 490
+      }
+    ],
+    "thermoChosen": false,
+    "totals": {
+      "goods": 490,
+      "weightKg": 0.3,
+      "delivery": {
+        "tariffPerKg": 500,
+        "baseCost": 150,
+        "waveWeightAfterKg": 2.57,
+        "fillPercent": 1,
+        "discount": 0,
+        "discountAmount": 0,
+        "thermoRequired": false,
+        "thermoApplied": false,
+        "thermoCost": 0,
+        "total": 150
+      },
+      "total": 640
+    },
+    "status": "accepted",
+    "statusHistory": [
+      {
+        "status": "accepted",
+        "at": "2026-10-13T09:34:06.585Z"
+      }
+    ],
+    "postponements": []
+  },
+  {
+    "id": "248133",
+    "createdAt": "2026-10-13T09:49:00.665Z",
+    "direction": "DNR_YKT",
+    "waveId": "DNR_YKT-2026-10-17",
+    "scenario": "self",
+    "customer": {
+      "name": "Николай Егоров",
+      "phone": "+79807778259",
+      "email": "nikolayegoro72@example.com"
+    },
+    "recipient": null,
+    "gift": null,
+    "pickupPoint": {
+      "id": "YKS-2",
+      "city": "Якутск",
+      "name": "ПВЗ «Автовокзал»",
+      "address": "ул. Октябрьская, 24",
+      "hours": "пн–сб 9:00–19:00"
+    },
+    "payment": {
+      "method": "cash",
+      "label": "При получении",
+      "status": "on_delivery"
+    },
+    "items": [
+      {
+        "type": "product",
+        "productId": "DNR-010",
+        "name": "Мармелад желейный «Вишнёвый сад»",
+        "region": "ДНР",
+        "manufacturer": "Терриконы",
+        "weight_g": 250,
+        "price_rub": 200,
+        "temp_sensitive": true,
+        "shelf_life_days": 60,
+        "qty": 3,
+        "lineTotal": 600
+      },
+      {
+        "type": "product",
+        "productId": "DNR-008",
+        "name": "Торт «Каштан» вафельно-шоколадный",
+        "region": "ДНР",
+        "manufacturer": "Терриконы",
+        "weight_g": 500,
+        "price_rub": 590,
+        "temp_sensitive": true,
+        "shelf_life_days": 60,
+        "qty": 2,
+        "lineTotal": 1180
+      },
+      {
+        "type": "product",
+        "productId": "DNR-001",
+        "name": "Конфеты «Донецкие розы» ассорти",
+        "region": "ДНР",
+        "manufacturer": "Кальмиус-Конд",
+        "weight_g": 300,
+        "price_rub": 490,
+        "temp_sensitive": true,
+        "shelf_life_days": 120,
+        "qty": 2,
+        "lineTotal": 980
+      },
+      {
+        "type": "product",
+        "productId": "DNR-011",
+        "name": "Шоколад тёмный «Терриконы» 70 %",
+        "region": "ДНР",
+        "manufacturer": "Кальмиус-Конд",
+        "weight_g": 100,
+        "price_rub": 200,
+        "temp_sensitive": true,
+        "shelf_life_days": 365,
+        "qty": 1,
+        "lineTotal": 200
+      }
+    ],
+    "thermoChosen": true,
+    "totals": {
+      "goods": 2960,
+      "weightKg": 2.45,
+      "delivery": {
+        "tariffPerKg": 500,
+        "baseCost": 1225,
+        "waveWeightAfterKg": 43.1,
+        "fillPercent": 14,
+        "discount": 0,
+        "discountAmount": 0,
+        "thermoRequired": false,
+        "thermoApplied": true,
+        "thermoCost": 150,
+        "total": 1375
+      },
+      "total": 4335
+    },
+    "status": "assembling",
+    "statusHistory": [
+      {
+        "status": "accepted",
+        "at": "2026-10-13T09:49:00.665Z"
+      },
+      {
+        "status": "assembling",
+        "at": "2026-10-14T03:40:00.000Z",
+        "note": "Приём в волну закрыт, заказ собирается"
+      }
+    ],
+    "postponements": []
+  },
+  {
+    "id": "261764",
+    "createdAt": "2026-10-13T10:30:19.307Z",
+    "direction": "DNR_YKT",
+    "waveId": "DNR_YKT-2026-11-14",
+    "scenario": "self",
+    "customer": {
+      "name": "Магазин «Южные сладости»",
+      "phone": "+79702344240",
+      "email": "magazinyuzhn36@example.com"
+    },
+    "recipient": null,
+    "gift": null,
+    "pickupPoint": {
+      "id": "YKS-2",
+      "city": "Якутск",
+      "name": "ПВЗ «Автовокзал»",
+      "address": "ул. Октябрьская, 24",
+      "hours": "пн–сб 9:00–19:00"
+    },
+    "payment": {
+      "method": "card",
+      "label": "Картой онлайн (имитация)",
+      "status": "paid"
+    },
+    "items": [
+      {
+        "type": "product",
+        "productId": "DNR-001",
+        "name": "Конфеты «Донецкие розы» ассорти",
+        "region": "ДНР",
+        "manufacturer": "Кальмиус-Конд",
+        "weight_g": 300,
+        "price_rub": 490,
+        "temp_sensitive": true,
+        "shelf_life_days": 120,
+        "qty": 29,
+        "lineTotal": 14210
+      },
+      {
+        "type": "product",
+        "productId": "DNR-005",
+        "name": "Печенье сдобное «Донское»",
+        "region": "ДНР",
+        "manufacturer": "Степная пчела",
+        "weight_g": 350,
+        "price_rub": 210,
+        "temp_sensitive": false,
+        "shelf_life_days": 90,
+        "qty": 27,
+        "lineTotal": 5670
+      },
+      {
+        "type": "product",
+        "productId": "DNR-002",
+        "name": "Конфеты «Шахтёрская ночь» с черносливом",
+        "region": "ДНР",
+        "manufacturer": "Кальмиус-Конд",
+        "weight_g": 250,
+        "price_rub": 430,
+        "temp_sensitive": true,
+        "shelf_life_days": 150,
+        "qty": 33,
+        "lineTotal": 14190
+      }
+    ],
+    "thermoChosen": false,
+    "totals": {
+      "goods": 34070,
+      "weightKg": 26.4,
+      "delivery": {
+        "tariffPerKg": 500,
+        "baseCost": 13200,
+        "waveWeightAfterKg": 28.97,
+        "fillPercent": 10,
+        "discount": 0,
+        "discountAmount": 0,
+        "thermoRequired": false,
+        "thermoApplied": false,
+        "thermoCost": 0,
+        "total": 13200
+      },
+      "total": 47270
+    },
+    "status": "accepted",
+    "statusHistory": [
+      {
+        "status": "accepted",
+        "at": "2026-10-13T10:30:19.307Z"
+      }
+    ],
+    "postponements": []
+  },
+  {
+    "id": "411093",
+    "createdAt": "2026-10-13T10:40:00.000Z",
+    "direction": "DNR_YKT",
+    "waveId": "DNR_YKT-2026-10-31",
+    "scenario": "gift",
+    "customer": {
+      "name": "Наталья Ткаченко",
+      "phone": "+79361384013",
+      "email": "natalyatkach7@example.com"
+    },
+    "recipient": {
+      "name": "Туйаара Попова",
+      "phone": "+79654499298"
+    },
+    "gift": {
+      "cardText": "Обнимаю крепко-крепко! Попробуй — это вкус моего детства.",
+      "cardDesign": "bridge",
+      "hidePrice": true
+    },
+    "pickupPoint": {
+      "id": "YKS-2",
+      "city": "Якутск",
+      "name": "ПВЗ «Автовокзал»",
+      "address": "ул. Октябрьская, 24",
+      "hours": "пн–сб 9:00–19:00"
+    },
+    "payment": {
+      "method": "card",
+      "label": "Картой онлайн (имитация)",
+      "status": "paid"
+    },
+    "items": [
+      {
+        "type": "giftBox",
+        "name": "Набор «Север + Юг» → Якутия",
+        "destination": "Якутия",
+        "contents": [
+          {
+            "productId": "YKT-003",
+            "name": "Брусника в шоколаде",
+            "region": "Якутия",
+            "manufacturer": "ЯХК",
+            "weight_g": 200,
+            "price_rub": 390,
+            "temp_sensitive": true,
+            "shelf_life_days": 120
+          },
+          {
+            "productId": "YKT-008",
+            "name": "Печенье овсяное с голубикой",
+            "region": "Якутия",
+            "manufacturer": "ЯХК",
+            "weight_g": 300,
+            "price_rub": 190,
+            "temp_sensitive": false,
+            "shelf_life_days": 90
+          },
+          {
+            "productId": "DNR-003",
+            "name": "Вафли «Степные» с орехом",
+            "region": "ДНР",
+            "manufacturer": "Степная пчела",
+            "weight_g": 220,
+            "price_rub": 160,
+            "temp_sensitive": false,
+            "shelf_life_days": 180
+          },
+          {
+            "productId": "DNR-011",
+            "name": "Шоколад тёмный «Терриконы» 70 %",
+            "region": "ДНР",
+            "manufacturer": "Кальмиус-Конд",
+            "weight_g": 100,
+            "price_rub": 200,
+            "temp_sensitive": true,
+            "shelf_life_days": 365
+          }
+        ],
+        "weight_g": 820,
+        "price_rub": 940,
+        "temp_sensitive": true,
+        "shelf_life_days": 90,
+        "qty": 1,
+        "lineTotal": 940
+      }
+    ],
+    "thermoChosen": false,
+    "totals": {
+      "goods": 940,
+      "weightKg": 0.82,
+      "delivery": {
+        "tariffPerKg": 500,
+        "baseCost": 410,
+        "waveWeightAfterKg": 26.32,
+        "fillPercent": 9,
+        "discount": 0,
+        "discountAmount": 0,
+        "thermoRequired": false,
+        "thermoApplied": false,
+        "thermoCost": 0,
+        "total": 410
+      },
+      "total": 1350
+    },
+    "status": "accepted",
+    "statusHistory": [
+      {
+        "status": "accepted",
+        "at": "2026-10-13T10:40:00.000Z"
+      }
+    ],
+    "postponements": []
+  },
+  {
+    "id": "807693",
+    "createdAt": "2026-10-13T10:42:49.320Z",
+    "direction": "DNR_YKT",
+    "waveId": "DNR_YKT-2026-10-31",
+    "scenario": "self",
+    "customer": {
+      "name": "Кафе «Олонхо»",
+      "phone": "+79218088389",
+      "email": "kafeolonho1@example.com"
+    },
+    "recipient": null,
+    "gift": null,
+    "pickupPoint": {
+      "id": "YKS-2",
+      "city": "Якутск",
+      "name": "ПВЗ «Автовокзал»",
+      "address": "ул. Октябрьская, 24",
+      "hours": "пн–сб 9:00–19:00"
+    },
+    "payment": {
+      "method": "card",
+      "label": "Картой онлайн (имитация)",
+      "status": "paid"
+    },
+    "items": [
+      {
+        "type": "product",
+        "productId": "DNR-001",
+        "name": "Конфеты «Донецкие розы» ассорти",
+        "region": "ДНР",
+        "manufacturer": "Кальмиус-Конд",
+        "weight_g": 300,
+        "price_rub": 490,
+        "temp_sensitive": true,
+        "shelf_life_days": 120,
+        "qty": 18,
+        "lineTotal": 8820
+      },
+      {
+        "type": "product",
+        "productId": "DNR-002",
+        "name": "Конфеты «Шахтёрская ночь» с черносливом",
+        "region": "ДНР",
+        "manufacturer": "Кальмиус-Конд",
+        "weight_g": 250,
+        "price_rub": 430,
+        "temp_sensitive": true,
+        "shelf_life_days": 150,
+        "qty": 31,
+        "lineTotal": 13330
+      }
+    ],
+    "thermoChosen": false,
+    "totals": {
+      "goods": 22150,
+      "weightKg": 13.15,
+      "delivery": {
+        "tariffPerKg": 500,
+        "baseCost": 6575,
+        "waveWeightAfterKg": 39.47,
+        "fillPercent": 13,
+        "discount": 0,
+        "discountAmount": 0,
+        "thermoRequired": false,
+        "thermoApplied": false,
+        "thermoCost": 0,
+        "total": 6575
+      },
+      "total": 28725
+    },
+    "status": "accepted",
+    "statusHistory": [
+      {
+        "status": "accepted",
+        "at": "2026-10-13T10:42:49.320Z"
+      }
+    ],
+    "postponements": []
+  },
+  {
+    "id": "363991",
+    "createdAt": "2026-10-13T10:45:48.315Z",
+    "direction": "DNR_YKT",
+    "waveId": "DNR_YKT-2026-11-14",
+    "scenario": "self",
+    "customer": {
+      "name": "Туйаара Попова",
+      "phone": "+79651197976",
+      "email": "tuyaarapopov83@example.com"
+    },
+    "recipient": null,
+    "gift": null,
+    "pickupPoint": {
+      "id": "YKS-3",
+      "city": "Якутск",
+      "name": "ПВЗ «202-й микрорайон»",
+      "address": "202-й мкр, корп. 7",
+      "hours": "ежедневно 11:00–21:00"
+    },
+    "payment": {
+      "method": "card",
+      "label": "Картой онлайн (имитация)",
+      "status": "paid"
+    },
+    "items": [
+      {
+        "type": "product",
+        "productId": "DNR-012",
+        "name": "Шоколад молочный с курагой",
+        "region": "ДНР",
+        "manufacturer": "Кальмиус-Конд",
+        "weight_g": 90,
+        "price_rub": 190,
+        "temp_sensitive": true,
+        "shelf_life_days": 300,
+        "qty": 3,
+        "lineTotal": 570
+      },
+      {
+        "type": "product",
+        "productId": "DNR-001",
+        "name": "Конфеты «Донецкие розы» ассорти",
+        "region": "ДНР",
+        "manufacturer": "Кальмиус-Конд",
+        "weight_g": 300,
+        "price_rub": 490,
+        "temp_sensitive": true,
+        "shelf_life_days": 120,
+        "qty": 2,
+        "lineTotal": 980
+      },
+      {
+        "type": "product",
+        "productId": "DNR-003",
+        "name": "Вафли «Степные» с орехом",
+        "region": "ДНР",
+        "manufacturer": "Степная пчела",
+        "weight_g": 220,
+        "price_rub": 160,
+        "temp_sensitive": false,
+        "shelf_life_days": 180,
+        "qty": 2,
+        "lineTotal": 320
+      }
+    ],
+    "thermoChosen": false,
+    "totals": {
+      "goods": 1870,
+      "weightKg": 1.31,
+      "delivery": {
+        "tariffPerKg": 500,
+        "baseCost": 655,
+        "waveWeightAfterKg": 30.28,
+        "fillPercent": 10,
+        "discount": 0,
+        "discountAmount": 0,
+        "thermoRequired": false,
+        "thermoApplied": false,
+        "thermoCost": 0,
+        "total": 655
+      },
+      "total": 2525
+    },
+    "status": "accepted",
+    "statusHistory": [
+      {
+        "status": "accepted",
+        "at": "2026-10-13T10:45:48.315Z"
+      }
+    ],
+    "postponements": []
+  },
+  {
+    "id": "180343",
+    "createdAt": "2026-10-13T11:00:46.270Z",
+    "direction": "DNR_YKT",
+    "waveId": "DNR_YKT-2026-10-31",
+    "scenario": "self",
+    "customer": {
+      "name": "Сардана Иванова",
+      "phone": "+79702320474",
+      "email": "sardanaivano59@example.com"
+    },
+    "recipient": null,
+    "gift": null,
+    "pickupPoint": {
+      "id": "YKS-2",
+      "city": "Якутск",
+      "name": "ПВЗ «Автовокзал»",
+      "address": "ул. Октябрьская, 24",
+      "hours": "пн–сб 9:00–19:00"
+    },
+    "payment": {
+      "method": "card",
+      "label": "Картой онлайн (имитация)",
+      "status": "paid"
+    },
+    "items": [
+      {
+        "type": "product",
+        "productId": "DNR-001",
+        "name": "Конфеты «Донецкие розы» ассорти",
+        "region": "ДНР",
+        "manufacturer": "Кальмиус-Конд",
+        "weight_g": 300,
+        "price_rub": 490,
+        "temp_sensitive": true,
+        "shelf_life_days": 120,
+        "qty": 2,
+        "lineTotal": 980
+      },
+      {
+        "type": "product",
+        "productId": "DNR-008",
+        "name": "Торт «Каштан» вафельно-шоколадный",
+        "region": "ДНР",
+        "manufacturer": "Терриконы",
+        "weight_g": 500,
+        "price_rub": 590,
+        "temp_sensitive": true,
+        "shelf_life_days": 60,
+        "qty": 2,
+        "lineTotal": 1180
+      },
+      {
+        "type": "product",
+        "productId": "DNR-004",
+        "name": "Вафли «Лимонные»",
+        "region": "ДНР",
+        "manufacturer": "Степная пчела",
+        "weight_g": 200,
+        "price_rub": 140,
+        "temp_sensitive": false,
+        "shelf_life_days": 180,
+        "qty": 2,
+        "lineTotal": 280
+      }
+    ],
+    "thermoChosen": true,
+    "totals": {
+      "goods": 2440,
+      "weightKg": 2,
+      "delivery": {
+        "tariffPerKg": 500,
+        "baseCost": 1000,
+        "waveWeightAfterKg": 41.47,
+        "fillPercent": 14,
+        "discount": 0,
+        "discountAmount": 0,
+        "thermoRequired": false,
+        "thermoApplied": true,
+        "thermoCost": 150,
+        "total": 1150
+      },
+      "total": 3590
+    },
+    "status": "accepted",
+    "statusHistory": [
+      {
+        "status": "accepted",
+        "at": "2026-10-13T11:00:46.270Z"
+      }
+    ],
+    "postponements": []
+  },
+  {
+    "id": "729672",
+    "createdAt": "2026-10-13T11:10:46.472Z",
+    "direction": "DNR_YKT",
+    "waveId": "DNR_YKT-2026-10-31",
+    "scenario": "self",
+    "customer": {
+      "name": "Кафе «Олонхо»",
+      "phone": "+79389611537",
+      "email": "kafeolonho49@example.com"
+    },
+    "recipient": null,
+    "gift": null,
+    "pickupPoint": {
+      "id": "YKS-1",
+      "city": "Якутск",
+      "name": "ПВЗ «Центральный»",
+      "address": "пр. Ленина, 12",
+      "hours": "ежедневно 10:00–20:00"
+    },
+    "payment": {
+      "method": "card",
+      "label": "Картой онлайн (имитация)",
+      "status": "paid"
+    },
+    "items": [
+      {
+        "type": "product",
+        "productId": "DNR-001",
+        "name": "Конфеты «Донецкие розы» ассорти",
+        "region": "ДНР",
+        "manufacturer": "Кальмиус-Конд",
+        "weight_g": 300,
+        "price_rub": 490,
+        "temp_sensitive": true,
+        "shelf_life_days": 120,
+        "qty": 19,
+        "lineTotal": 9310
+      },
+      {
+        "type": "product",
+        "productId": "DNR-002",
+        "name": "Конфеты «Шахтёрская ночь» с черносливом",
+        "region": "ДНР",
+        "manufacturer": "Кальмиус-Конд",
+        "weight_g": 250,
+        "price_rub": 430,
+        "temp_sensitive": true,
+        "shelf_life_days": 150,
+        "qty": 16,
+        "lineTotal": 6880
+      }
+    ],
+    "thermoChosen": false,
+    "totals": {
+      "goods": 16190,
+      "weightKg": 9.7,
+      "delivery": {
+        "tariffPerKg": 500,
+        "baseCost": 4850,
+        "waveWeightAfterKg": 51.17,
+        "fillPercent": 17,
+        "discount": 0,
+        "discountAmount": 0,
+        "thermoRequired": false,
+        "thermoApplied": false,
+        "thermoCost": 0,
+        "total": 4850
+      },
+      "total": 21040
+    },
+    "status": "accepted",
+    "statusHistory": [
+      {
+        "status": "accepted",
+        "at": "2026-10-13T11:10:46.472Z"
+      }
+    ],
+    "postponements": []
+  },
+  {
+    "id": "224430",
+    "createdAt": "2026-10-13T11:14:01.986Z",
+    "direction": "YKT_DNR",
+    "waveId": "YKT_DNR-2026-10-24",
+    "scenario": "self",
+    "customer": {
+      "name": "Чайная «Терриконъ»",
+      "phone": "+79648827396",
+      "email": "chaynayaterr77@example.com"
+    },
+    "recipient": null,
+    "gift": null,
+    "pickupPoint": {
+      "id": "DON-2",
+      "city": "Донецк",
+      "name": "ПВЗ «Калининский»",
+      "address": "пр. Ильича, 40",
+      "hours": "пн–сб 10:00–19:00"
+    },
+    "payment": {
+      "method": "card",
+      "label": "Картой онлайн (имитация)",
+      "status": "paid"
+    },
+    "items": [
+      {
+        "type": "product",
+        "productId": "YKT-004",
+        "name": "Шоколад горький «Ленские столбы» 72 %",
+        "region": "Якутия",
+        "manufacturer": "ЯХК",
+        "weight_g": 100,
+        "price_rub": 210,
+        "temp_sensitive": true,
+        "shelf_life_days": 365,
+        "qty": 23,
+        "lineTotal": 4830
+      }
+    ],
+    "thermoChosen": false,
+    "totals": {
+      "goods": 4830,
+      "weightKg": 2.3,
+      "delivery": {
+        "tariffPerKg": 500,
+        "baseCost": 1150,
+        "waveWeightAfterKg": 50.32,
+        "fillPercent": 17,
+        "discount": 0,
+        "discountAmount": 0,
+        "thermoRequired": false,
+        "thermoApplied": false,
+        "thermoCost": 0,
+        "total": 1150
+      },
+      "total": 5980
+    },
+    "status": "accepted",
+    "statusHistory": [
+      {
+        "status": "accepted",
+        "at": "2026-10-13T11:14:01.986Z"
+      }
+    ],
+    "postponements": []
+  },
+  {
+    "id": "130271",
+    "createdAt": "2026-10-13T11:29:13.990Z",
+    "direction": "DNR_YKT",
+    "waveId": "DNR_YKT-2026-10-17",
+    "scenario": "self",
+    "customer": {
+      "name": "Мария Слепцова",
+      "phone": "+79778962459",
+      "email": "mariyaslepco47@example.com"
+    },
+    "recipient": null,
+    "gift": null,
+    "pickupPoint": {
+      "id": "YKS-2",
+      "city": "Якутск",
+      "name": "ПВЗ «Автовокзал»",
+      "address": "ул. Октябрьская, 24",
+      "hours": "пн–сб 9:00–19:00"
+    },
+    "payment": {
+      "method": "cash",
+      "label": "При получении",
+      "status": "on_delivery"
+    },
+    "items": [
+      {
+        "type": "product",
+        "productId": "DNR-004",
+        "name": "Вафли «Лимонные»",
+        "region": "ДНР",
+        "manufacturer": "Степная пчела",
+        "weight_g": 200,
+        "price_rub": 140,
+        "temp_sensitive": false,
+        "shelf_life_days": 180,
+        "qty": 2,
+        "lineTotal": 280
+      },
+      {
+        "type": "product",
+        "productId": "DNR-002",
+        "name": "Конфеты «Шахтёрская ночь» с черносливом",
+        "region": "ДНР",
+        "manufacturer": "Кальмиус-Конд",
+        "weight_g": 250,
+        "price_rub": 430,
+        "temp_sensitive": true,
+        "shelf_life_days": 150,
+        "qty": 3,
+        "lineTotal": 1290
+      },
+      {
+        "type": "product",
+        "productId": "DNR-011",
+        "name": "Шоколад тёмный «Терриконы» 70 %",
+        "region": "ДНР",
+        "manufacturer": "Кальмиус-Конд",
+        "weight_g": 100,
+        "price_rub": 200,
+        "temp_sensitive": true,
+        "shelf_life_days": 365,
+        "qty": 1,
+        "lineTotal": 200
+      },
+      {
+        "type": "product",
+        "productId": "DNR-010",
+        "name": "Мармелад желейный «Вишнёвый сад»",
+        "region": "ДНР",
+        "manufacturer": "Терриконы",
+        "weight_g": 250,
+        "price_rub": 200,
+        "temp_sensitive": true,
+        "shelf_life_days": 60,
+        "qty": 1,
+        "lineTotal": 200
+      }
+    ],
+    "thermoChosen": false,
+    "totals": {
+      "goods": 1970,
+      "weightKg": 1.5,
+      "delivery": {
+        "tariffPerKg": 500,
+        "baseCost": 750,
+        "waveWeightAfterKg": 44.6,
+        "fillPercent": 15,
+        "discount": 0,
+        "discountAmount": 0,
+        "thermoRequired": false,
+        "thermoApplied": false,
+        "thermoCost": 0,
+        "total": 750
+      },
+      "total": 2720
+    },
+    "status": "assembling",
+    "statusHistory": [
+      {
+        "status": "accepted",
+        "at": "2026-10-13T11:29:13.990Z"
+      },
+      {
+        "status": "assembling",
+        "at": "2026-10-14T03:40:00.000Z",
+        "note": "Приём в волну закрыт, заказ собирается"
+      }
+    ],
+    "postponements": []
+  },
+  {
+    "id": "235818",
+    "createdAt": "2026-10-13T11:58:34.071Z",
+    "direction": "DNR_YKT",
+    "waveId": "DNR_YKT-2026-10-17",
+    "scenario": "self",
+    "customer": {
+      "name": "Магазин «Южные сладости»",
+      "phone": "+79138914591",
+      "email": "magazinyuzhn17@example.com"
+    },
+    "recipient": null,
+    "gift": null,
+    "pickupPoint": {
+      "id": "YKS-1",
+      "city": "Якутск",
+      "name": "ПВЗ «Центральный»",
+      "address": "пр. Ленина, 12",
+      "hours": "ежедневно 10:00–20:00"
+    },
+    "payment": {
+      "method": "card",
+      "label": "Картой онлайн (имитация)",
+      "status": "paid"
+    },
+    "items": [
+      {
+        "type": "product",
+        "productId": "DNR-010",
+        "name": "Мармелад желейный «Вишнёвый сад»",
+        "region": "ДНР",
+        "manufacturer": "Терриконы",
+        "weight_g": 250,
+        "price_rub": 200,
+        "temp_sensitive": true,
+        "shelf_life_days": 60,
+        "qty": 28,
+        "lineTotal": 5600
+      },
+      {
+        "type": "product",
+        "productId": "DNR-011",
+        "name": "Шоколад тёмный «Терриконы» 70 %",
+        "region": "ДНР",
+        "manufacturer": "Кальмиус-Конд",
+        "weight_g": 100,
+        "price_rub": 200,
+        "temp_sensitive": true,
+        "shelf_life_days": 365,
+        "qty": 22,
+        "lineTotal": 4400
+      }
+    ],
+    "thermoChosen": false,
+    "totals": {
+      "goods": 10000,
+      "weightKg": 9.2,
+      "delivery": {
+        "tariffPerKg": 500,
+        "baseCost": 4600,
+        "waveWeightAfterKg": 53.8,
+        "fillPercent": 18,
+        "discount": 0,
+        "discountAmount": 0,
+        "thermoRequired": false,
+        "thermoApplied": false,
+        "thermoCost": 0,
+        "total": 4600
+      },
+      "total": 14600
+    },
+    "status": "assembling",
+    "statusHistory": [
+      {
+        "status": "accepted",
+        "at": "2026-10-13T11:58:34.071Z"
+      },
+      {
+        "status": "assembling",
+        "at": "2026-10-14T03:40:00.000Z",
+        "note": "Приём в волну закрыт, заказ собирается"
+      }
+    ],
+    "postponements": []
+  },
+  {
+    "id": "120472",
+    "createdAt": "2026-10-13T12:32:12.635Z",
+    "direction": "YKT_DNR",
+    "waveId": "YKT_DNR-2026-10-24",
+    "scenario": "self",
+    "customer": {
+      "name": "Магазин «Сладкоежка»",
+      "phone": "+79219168149",
+      "email": "magazinsladk14@example.com"
+    },
+    "recipient": null,
+    "gift": null,
+    "pickupPoint": {
+      "id": "DON-1",
+      "city": "Донецк",
+      "name": "ПВЗ «Центр»",
+      "address": "ул. Артёма, 50",
+      "hours": "ежедневно 9:00–20:00"
+    },
+    "payment": {
+      "method": "cash",
+      "label": "При получении",
+      "status": "on_delivery"
+    },
+    "items": [
+      {
+        "type": "product",
+        "productId": "YKT-006",
+        "name": "Пряник «Олонхо» с брусничной начинкой",
+        "region": "Якутия",
+        "manufacturer": "ЯХК",
+        "weight_g": 350,
+        "price_rub": 280,
+        "temp_sensitive": false,
+        "shelf_life_days": 60,
+        "qty": 20,
+        "lineTotal": 5600
+      }
+    ],
+    "thermoChosen": false,
+    "totals": {
+      "goods": 5600,
+      "weightKg": 7,
+      "delivery": {
+        "tariffPerKg": 500,
+        "baseCost": 3500,
+        "waveWeightAfterKg": 57.32,
+        "fillPercent": 19,
+        "discount": 0,
+        "discountAmount": 0,
+        "thermoRequired": false,
+        "thermoApplied": false,
+        "thermoCost": 0,
+        "total": 3500
+      },
+      "total": 9100
+    },
+    "status": "accepted",
+    "statusHistory": [
+      {
+        "status": "accepted",
+        "at": "2026-10-13T12:32:12.635Z"
+      }
+    ],
+    "postponements": []
+  },
+  {
+    "id": "650598",
+    "createdAt": "2026-10-13T13:19:42.612Z",
+    "direction": "YKT_DNR",
+    "waveId": "YKT_DNR-2026-11-07",
+    "scenario": "self",
+    "customer": {
+      "name": "Виктор Гребенюк",
+      "phone": "+79466618341",
+      "email": "viktorgreben39@example.com"
+    },
+    "recipient": null,
+    "gift": null,
+    "pickupPoint": {
+      "id": "DON-2",
+      "city": "Донецк",
+      "name": "ПВЗ «Калининский»",
+      "address": "пр. Ильича, 40",
+      "hours": "пн–сб 10:00–19:00"
+    },
+    "payment": {
+      "method": "card",
+      "label": "Картой онлайн (имитация)",
+      "status": "paid"
+    },
+    "items": [
+      {
+        "type": "product",
+        "productId": "YKT-002",
+        "name": "Конфеты «Якутяночка» ассорти",
+        "region": "Якутия",
+        "manufacturer": "ЯХК",
+        "weight_g": 300,
+        "price_rub": 520,
+        "temp_sensitive": true,
+        "shelf_life_days": 150,
+        "qty": 1,
+        "lineTotal": 520
+      },
+      {
+        "type": "product",
+        "productId": "YKT-015",
+        "name": "Карамель с начинкой «Брусника»",
+        "region": "Якутия",
+        "manufacturer": "ЯХК",
+        "weight_g": 300,
+        "price_rub": 180,
+        "temp_sensitive": false,
+        "shelf_life_days": 270,
+        "qty": 2,
+        "lineTotal": 360
+      }
+    ],
+    "thermoChosen": true,
+    "totals": {
+      "goods": 880,
+      "weightKg": 0.9,
+      "delivery": {
+        "tariffPerKg": 500,
+        "baseCost": 450,
+        "waveWeightAfterKg": 0.9,
+        "fillPercent": 0,
+        "discount": 0,
+        "discountAmount": 0,
+        "thermoRequired": false,
+        "thermoApplied": true,
+        "thermoCost": 150,
+        "total": 600
+      },
+      "total": 1480
+    },
+    "status": "accepted",
+    "statusHistory": [
+      {
+        "status": "accepted",
+        "at": "2026-10-13T13:19:42.612Z"
+      }
+    ],
+    "postponements": []
+  },
+  {
+    "id": "425608",
+    "createdAt": "2026-10-13T13:39:51.237Z",
+    "direction": "DNR_YKT",
+    "waveId": "DNR_YKT-2026-10-31",
+    "scenario": "self",
+    "customer": {
+      "name": "Магазин «Южные сладости»",
+      "phone": "+79766263030",
+      "email": "magazinyuzhn69@example.com"
+    },
+    "recipient": null,
+    "gift": null,
+    "pickupPoint": {
+      "id": "YKS-3",
+      "city": "Якутск",
+      "name": "ПВЗ «202-й микрорайон»",
+      "address": "202-й мкр, корп. 7",
+      "hours": "ежедневно 11:00–21:00"
+    },
+    "payment": {
+      "method": "cash",
+      "label": "При получении",
+      "status": "on_delivery"
+    },
+    "items": [
+      {
+        "type": "product",
+        "productId": "DNR-011",
+        "name": "Шоколад тёмный «Терриконы» 70 %",
+        "region": "ДНР",
+        "manufacturer": "Кальмиус-Конд",
+        "weight_g": 100,
+        "price_rub": 200,
+        "temp_sensitive": true,
+        "shelf_life_days": 365,
+        "qty": 16,
+        "lineTotal": 3200
+      },
+      {
+        "type": "product",
+        "productId": "DNR-001",
+        "name": "Конфеты «Донецкие розы» ассорти",
+        "region": "ДНР",
+        "manufacturer": "Кальмиус-Конд",
+        "weight_g": 300,
+        "price_rub": 490,
+        "temp_sensitive": true,
+        "shelf_life_days": 120,
+        "qty": 12,
+        "lineTotal": 5880
+      }
+    ],
+    "thermoChosen": false,
+    "totals": {
+      "goods": 9080,
+      "weightKg": 5.2,
+      "delivery": {
+        "tariffPerKg": 500,
+        "baseCost": 2600,
+        "waveWeightAfterKg": 56.37,
+        "fillPercent": 19,
+        "discount": 0,
+        "discountAmount": 0,
+        "thermoRequired": false,
+        "thermoApplied": false,
+        "thermoCost": 0,
+        "total": 2600
+      },
+      "total": 11680
+    },
+    "status": "accepted",
+    "statusHistory": [
+      {
+        "status": "accepted",
+        "at": "2026-10-13T13:39:51.237Z"
+      }
+    ],
+    "postponements": []
+  },
+  {
+    "id": "954305",
+    "createdAt": "2026-10-13T23:37:52.374Z",
+    "direction": "YKT_DNR",
+    "waveId": "YKT_DNR-2026-11-07",
+    "scenario": "self",
+    "customer": {
+      "name": "Кофейня «Каштан»",
+      "phone": "+79135720136",
+      "email": "kofeynyakash42@example.com"
+    },
+    "recipient": null,
+    "gift": null,
+    "pickupPoint": {
+      "id": "DON-1",
+      "city": "Донецк",
+      "name": "ПВЗ «Центр»",
+      "address": "ул. Артёма, 50",
+      "hours": "ежедневно 9:00–20:00"
+    },
+    "payment": {
+      "method": "card",
+      "label": "Картой онлайн (имитация)",
+      "status": "paid"
+    },
+    "items": [
+      {
+        "type": "product",
+        "productId": "YKT-001",
+        "name": "Конфеты «Северное сияние» в коробке",
+        "region": "Якутия",
+        "manufacturer": "ЯХК",
+        "weight_g": 250,
+        "price_rub": 450,
+        "temp_sensitive": true,
+        "shelf_life_days": 180,
+        "qty": 30,
+        "lineTotal": 13500
+      },
+      {
+        "type": "product",
+        "productId": "YKT-004",
+        "name": "Шоколад горький «Ленские столбы» 72 %",
+        "region": "Якутия",
+        "manufacturer": "ЯХК",
+        "weight_g": 100,
+        "price_rub": 210,
+        "temp_sensitive": true,
+        "shelf_life_days": 365,
+        "qty": 33,
+        "lineTotal": 6930
+      },
+      {
+        "type": "product",
+        "productId": "YKT-010",
+        "name": "Зефир ванильный «Белые ночи»",
+        "region": "Якутия",
+        "manufacturer": "ЯХК",
+        "weight_g": 250,
+        "price_rub": 260,
+        "temp_sensitive": true,
+        "shelf_life_days": 30,
+        "qty": 32,
+        "lineTotal": 8320
+      }
+    ],
+    "thermoChosen": false,
+    "totals": {
+      "goods": 28750,
+      "weightKg": 18.8,
+      "delivery": {
+        "tariffPerKg": 500,
+        "baseCost": 9400,
+        "waveWeightAfterKg": 19.7,
+        "fillPercent": 7,
+        "discount": 0,
+        "discountAmount": 0,
+        "thermoRequired": false,
+        "thermoApplied": false,
+        "thermoCost": 0,
+        "total": 9400
+      },
+      "total": 38150
+    },
+    "status": "accepted",
+    "statusHistory": [
+      {
+        "status": "accepted",
+        "at": "2026-10-13T23:37:52.374Z"
+      }
+    ],
+    "postponements": []
+  },
+  {
+    "id": "343916",
+    "createdAt": "2026-10-14T01:45:55.131Z",
+    "direction": "YKT_DNR",
+    "waveId": "YKT_DNR-2026-10-24",
+    "scenario": "self",
+    "customer": {
+      "name": "Чайная «Терриконъ»",
+      "phone": "+79949042539",
+      "email": "chaynayaterr51@example.com"
+    },
+    "recipient": null,
+    "gift": null,
+    "pickupPoint": {
+      "id": "DON-3",
+      "city": "Донецк",
+      "name": "ПВЗ «Пролетарский»",
+      "address": "ул. Куйбышева, 117",
+      "hours": "ежедневно 10:00–20:00"
+    },
+    "payment": {
+      "method": "card",
+      "label": "Картой онлайн (имитация)",
+      "status": "paid"
+    },
+    "items": [
+      {
+        "type": "product",
+        "productId": "YKT-001",
+        "name": "Конфеты «Северное сияние» в коробке",
+        "region": "Якутия",
+        "manufacturer": "ЯХК",
+        "weight_g": 250,
+        "price_rub": 450,
+        "temp_sensitive": true,
+        "shelf_life_days": 180,
+        "qty": 23,
+        "lineTotal": 10350
+      },
+      {
+        "type": "product",
+        "productId": "YKT-006",
+        "name": "Пряник «Олонхо» с брусничной начинкой",
+        "region": "Якутия",
+        "manufacturer": "ЯХК",
+        "weight_g": 350,
+        "price_rub": 280,
+        "temp_sensitive": false,
+        "shelf_life_days": 60,
+        "qty": 33,
+        "lineTotal": 9240
+      }
+    ],
+    "thermoChosen": false,
+    "totals": {
+      "goods": 19590,
+      "weightKg": 17.3,
+      "delivery": {
+        "tariffPerKg": 500,
+        "baseCost": 8650,
+        "waveWeightAfterKg": 74.62,
+        "fillPercent": 25,
+        "discount": 0,
+        "discountAmount": 0,
+        "thermoRequired": false,
+        "thermoApplied": false,
+        "thermoCost": 0,
+        "total": 8650
+      },
+      "total": 28240
+    },
+    "status": "accepted",
+    "statusHistory": [
+      {
+        "status": "accepted",
+        "at": "2026-10-14T01:45:55.131Z"
+      }
+    ],
+    "postponements": []
+  },
+  {
+    "id": "380270",
+    "createdAt": "2026-10-14T01:54:53.592Z",
+    "direction": "YKT_DNR",
+    "waveId": "YKT_DNR-2026-10-24",
+    "scenario": "self",
+    "customer": {
+      "name": "Виктор Гребенюк",
+      "phone": "+79614401971",
+      "email": "viktorgreben9@example.com"
+    },
+    "recipient": null,
+    "gift": null,
+    "pickupPoint": {
+      "id": "DON-2",
+      "city": "Донецк",
+      "name": "ПВЗ «Калининский»",
+      "address": "пр. Ильича, 40",
+      "hours": "пн–сб 10:00–19:00"
+    },
+    "payment": {
+      "method": "card",
+      "label": "Картой онлайн (имитация)",
+      "status": "paid"
+    },
+    "items": [
+      {
+        "type": "product",
+        "productId": "YKT-008",
+        "name": "Печенье овсяное с голубикой",
+        "region": "Якутия",
+        "manufacturer": "ЯХК",
+        "weight_g": 300,
+        "price_rub": 190,
+        "temp_sensitive": false,
+        "shelf_life_days": 90,
+        "qty": 2,
+        "lineTotal": 380
+      },
+      {
+        "type": "product",
+        "productId": "YKT-015",
+        "name": "Карамель с начинкой «Брусника»",
+        "region": "Якутия",
+        "manufacturer": "ЯХК",
+        "weight_g": 300,
+        "price_rub": 180,
+        "temp_sensitive": false,
+        "shelf_life_days": 270,
+        "qty": 2,
+        "lineTotal": 360
+      },
+      {
+        "type": "product",
+        "productId": "YKT-004",
+        "name": "Шоколад горький «Ленские столбы» 72 %",
+        "region": "Якутия",
+        "manufacturer": "ЯХК",
+        "weight_g": 100,
+        "price_rub": 210,
+        "temp_sensitive": true,
+        "shelf_life_days": 365,
+        "qty": 3,
+        "lineTotal": 630
+      },
+      {
+        "type": "product",
+        "productId": "YKT-009",
+        "name": "Печенье песочное «Чочур Муран»",
+        "region": "Якутия",
+        "manufacturer": "ЯХК",
+        "weight_g": 250,
+        "price_rub": 210,
+        "temp_sensitive": false,
+        "shelf_life_days": 120,
+        "qty": 2,
+        "lineTotal": 420
+      }
+    ],
+    "thermoChosen": false,
+    "totals": {
+      "goods": 1790,
+      "weightKg": 2,
+      "delivery": {
+        "tariffPerKg": 500,
+        "baseCost": 1000,
+        "waveWeightAfterKg": 76.62,
+        "fillPercent": 26,
+        "discount": 0,
+        "discountAmount": 0,
+        "thermoRequired": false,
+        "thermoApplied": false,
+        "thermoCost": 0,
+        "total": 1000
+      },
+      "total": 2790
+    },
+    "status": "accepted",
+    "statusHistory": [
+      {
+        "status": "accepted",
+        "at": "2026-10-14T01:54:53.592Z"
+      }
+    ],
+    "postponements": []
+  },
+  {
+    "id": "576334",
+    "createdAt": "2026-10-14T02:11:14.312Z",
+    "direction": "YKT_DNR",
+    "waveId": "YKT_DNR-2026-10-24",
+    "scenario": "self",
+    "customer": {
+      "name": "Магазин «Сладкоежка»",
+      "phone": "+79835592558",
+      "email": "magazinsladk40@example.com"
+    },
+    "recipient": null,
+    "gift": null,
+    "pickupPoint": {
+      "id": "DON-2",
+      "city": "Донецк",
+      "name": "ПВЗ «Калининский»",
+      "address": "пр. Ильича, 40",
+      "hours": "пн–сб 10:00–19:00"
+    },
+    "payment": {
+      "method": "card",
+      "label": "Картой онлайн (имитация)",
+      "status": "paid"
+    },
+    "items": [
+      {
+        "type": "product",
+        "productId": "YKT-015",
+        "name": "Карамель с начинкой «Брусника»",
+        "region": "Якутия",
+        "manufacturer": "ЯХК",
+        "weight_g": 300,
+        "price_rub": 180,
+        "temp_sensitive": false,
+        "shelf_life_days": 270,
+        "qty": 20,
+        "lineTotal": 3600
+      },
+      {
+        "type": "product",
+        "productId": "YKT-005",
+        "name": "Шоколад молочный с кедровым орехом",
+        "region": "Якутия",
+        "manufacturer": "ЯХК",
+        "weight_g": 90,
+        "price_rub": 230,
+        "temp_sensitive": true,
+        "shelf_life_days": 300,
+        "qty": 21,
+        "lineTotal": 4830
+      }
+    ],
+    "thermoChosen": true,
+    "totals": {
+      "goods": 8430,
+      "weightKg": 7.89,
+      "delivery": {
+        "tariffPerKg": 500,
+        "baseCost": 3945,
+        "waveWeightAfterKg": 84.51,
+        "fillPercent": 28,
+        "discount": 0,
+        "discountAmount": 0,
+        "thermoRequired": false,
+        "thermoApplied": true,
+        "thermoCost": 150,
+        "total": 4095
+      },
+      "total": 12525
+    },
+    "status": "accepted",
+    "statusHistory": [
+      {
+        "status": "accepted",
+        "at": "2026-10-14T02:11:14.312Z"
+      }
+    ],
+    "postponements": []
+  },
+  {
+    "id": "728340",
+    "createdAt": "2026-10-14T02:22:11.586Z",
+    "direction": "DNR_YKT",
+    "waveId": "DNR_YKT-2026-10-17",
+    "scenario": "self",
+    "customer": {
+      "name": "Магазин «Южные сладости»",
+      "phone": "+79574275891",
+      "email": "magazinyuzhn51@example.com"
+    },
+    "recipient": null,
+    "gift": null,
+    "pickupPoint": {
+      "id": "YKS-3",
+      "city": "Якутск",
+      "name": "ПВЗ «202-й микрорайон»",
+      "address": "202-й мкр, корп. 7",
+      "hours": "ежедневно 11:00–21:00"
+    },
+    "payment": {
+      "method": "card",
+      "label": "Картой онлайн (имитация)",
+      "status": "paid"
+    },
+    "items": [
+      {
+        "type": "product",
+        "productId": "DNR-008",
+        "name": "Торт «Каштан» вафельно-шоколадный",
+        "region": "ДНР",
+        "manufacturer": "Терриконы",
+        "weight_g": 500,
+        "price_rub": 590,
+        "temp_sensitive": true,
+        "shelf_life_days": 60,
+        "qty": 24,
+        "lineTotal": 14160
+      },
+      {
+        "type": "product",
+        "productId": "DNR-009",
+        "name": "Мармелад «Абрикосовый»",
+        "region": "ДНР",
+        "manufacturer": "Терриконы",
+        "weight_g": 300,
+        "price_rub": 220,
+        "temp_sensitive": false,
+        "shelf_life_days": 90,
+        "qty": 21,
+        "lineTotal": 4620
+      },
+      {
+        "type": "product",
+        "productId": "DNR-012",
+        "name": "Шоколад молочный с курагой",
+        "region": "ДНР",
+        "manufacturer": "Кальмиус-Конд",
+        "weight_g": 90,
+        "price_rub": 190,
+        "temp_sensitive": true,
+        "shelf_life_days": 300,
+        "qty": 20,
+        "lineTotal": 3800
+      }
+    ],
+    "thermoChosen": false,
+    "totals": {
+      "goods": 22580,
+      "weightKg": 20.1,
+      "delivery": {
+        "tariffPerKg": 500,
+        "baseCost": 10050,
+        "waveWeightAfterKg": 73.9,
+        "fillPercent": 25,
+        "discount": 0,
+        "discountAmount": 0,
+        "thermoRequired": false,
+        "thermoApplied": false,
+        "thermoCost": 0,
+        "total": 10050
+      },
+      "total": 32630
+    },
+    "status": "assembling",
+    "statusHistory": [
+      {
+        "status": "accepted",
+        "at": "2026-10-14T02:22:11.586Z"
+      },
+      {
+        "status": "assembling",
+        "at": "2026-10-14T03:40:00.000Z",
+        "note": "Приём в волну закрыт, заказ собирается"
+      }
+    ],
+    "postponements": []
+  },
+  {
+    "id": "915195",
+    "createdAt": "2026-10-14T03:00:04.108Z",
+    "direction": "YKT_DNR",
+    "waveId": "YKT_DNR-2026-10-24",
+    "scenario": "self",
+    "customer": {
+      "name": "Кофейня «Каштан»",
+      "phone": "+79632990075",
+      "email": "kofeynyakash6@example.com"
+    },
+    "recipient": null,
+    "gift": null,
+    "pickupPoint": {
+      "id": "DON-3",
+      "city": "Донецк",
+      "name": "ПВЗ «Пролетарский»",
+      "address": "ул. Куйбышева, 117",
+      "hours": "ежедневно 10:00–20:00"
+    },
+    "payment": {
+      "method": "card",
+      "label": "Картой онлайн (имитация)",
+      "status": "paid"
+    },
+    "items": [
+      {
+        "type": "product",
+        "productId": "YKT-009",
+        "name": "Печенье песочное «Чочур Муран»",
+        "region": "Якутия",
+        "manufacturer": "ЯХК",
+        "weight_g": 250,
+        "price_rub": 210,
+        "temp_sensitive": false,
+        "shelf_life_days": 120,
+        "qty": 12,
+        "lineTotal": 2520
+      },
+      {
+        "type": "product",
+        "productId": "YKT-004",
+        "name": "Шоколад горький «Ленские столбы» 72 %",
+        "region": "Якутия",
+        "manufacturer": "ЯХК",
+        "weight_g": 100,
+        "price_rub": 210,
+        "temp_sensitive": true,
+        "shelf_life_days": 365,
+        "qty": 14,
+        "lineTotal": 2940
+      },
+      {
+        "type": "product",
+        "productId": "YKT-014",
+        "name": "Карамель леденцовая «Морозко»",
+        "region": "Якутия",
+        "manufacturer": "ЯХК",
+        "weight_g": 250,
+        "price_rub": 150,
+        "temp_sensitive": false,
+        "shelf_life_days": 365,
+        "qty": 21,
+        "lineTotal": 3150
+      }
+    ],
+    "thermoChosen": true,
+    "totals": {
+      "goods": 8610,
+      "weightKg": 9.65,
+      "delivery": {
+        "tariffPerKg": 500,
+        "baseCost": 4825,
+        "waveWeightAfterKg": 94.16,
+        "fillPercent": 31,
+        "discount": 0,
+        "discountAmount": 0,
+        "thermoRequired": false,
+        "thermoApplied": true,
+        "thermoCost": 150,
+        "total": 4975
+      },
+      "total": 13585
+    },
+    "status": "accepted",
+    "statusHistory": [
+      {
+        "status": "accepted",
+        "at": "2026-10-14T03:00:04.108Z"
+      }
+    ],
+    "postponements": []
+  },
+  {
+    "id": "497610",
+    "createdAt": "2026-10-14T03:02:05.531Z",
+    "direction": "YKT_DNR",
+    "waveId": "YKT_DNR-2026-11-07",
+    "scenario": "self",
+    "customer": {
+      "name": "Кофейня «Каштан»",
+      "phone": "+79911376411",
+      "email": "kofeynyakash76@example.com"
+    },
+    "recipient": null,
+    "gift": null,
+    "pickupPoint": {
+      "id": "DON-1",
+      "city": "Донецк",
+      "name": "ПВЗ «Центр»",
+      "address": "ул. Артёма, 50",
+      "hours": "ежедневно 9:00–20:00"
+    },
+    "payment": {
+      "method": "cash",
+      "label": "При получении",
+      "status": "on_delivery"
+    },
+    "items": [
+      {
+        "type": "product",
+        "productId": "YKT-003",
+        "name": "Брусника в шоколаде",
+        "region": "Якутия",
+        "manufacturer": "ЯХК",
+        "weight_g": 200,
+        "price_rub": 390,
+        "temp_sensitive": true,
+        "shelf_life_days": 120,
+        "qty": 23,
+        "lineTotal": 8970
+      }
+    ],
+    "thermoChosen": false,
+    "totals": {
+      "goods": 8970,
+      "weightKg": 4.6,
+      "delivery": {
+        "tariffPerKg": 500,
+        "baseCost": 2300,
+        "waveWeightAfterKg": 24.3,
+        "fillPercent": 8,
+        "discount": 0,
+        "discountAmount": 0,
+        "thermoRequired": false,
+        "thermoApplied": false,
+        "thermoCost": 0,
+        "total": 2300
+      },
+      "total": 11270
+    },
+    "status": "accepted",
+    "statusHistory": [
+      {
+        "status": "accepted",
+        "at": "2026-10-14T03:02:05.531Z"
+      }
+    ],
+    "postponements": []
+  },
+  {
+    "id": "930779",
+    "createdAt": "2026-10-14T03:07:17.718Z",
+    "direction": "DNR_YKT",
+    "waveId": "DNR_YKT-2026-10-31",
+    "scenario": "self",
+    "customer": {
+      "name": "Кафе «Олонхо»",
+      "phone": "+79293967158",
+      "email": "kafeolonho85@example.com"
+    },
+    "recipient": null,
+    "gift": null,
+    "pickupPoint": {
+      "id": "YKS-1",
+      "city": "Якутск",
+      "name": "ПВЗ «Центральный»",
+      "address": "пр. Ленина, 12",
+      "hours": "ежедневно 10:00–20:00"
+    },
+    "payment": {
+      "method": "card",
+      "label": "Картой онлайн (имитация)",
+      "status": "paid"
+    },
+    "items": [
+      {
+        "type": "product",
+        "productId": "DNR-003",
+        "name": "Вафли «Степные» с орехом",
+        "region": "ДНР",
+        "manufacturer": "Степная пчела",
+        "weight_g": 220,
+        "price_rub": 160,
+        "temp_sensitive": false,
+        "shelf_life_days": 180,
+        "qty": 18,
+        "lineTotal": 2880
+      },
+      {
+        "type": "product",
+        "productId": "DNR-011",
+        "name": "Шоколад тёмный «Терриконы» 70 %",
+        "region": "ДНР",
+        "manufacturer": "Кальмиус-Конд",
+        "weight_g": 100,
+        "price_rub": 200,
+        "temp_sensitive": true,
+        "shelf_life_days": 365,
+        "qty": 32,
+        "lineTotal": 6400
+      }
+    ],
+    "thermoChosen": false,
+    "totals": {
+      "goods": 9280,
+      "weightKg": 7.16,
+      "delivery": {
+        "tariffPerKg": 500,
+        "baseCost": 3580,
+        "waveWeightAfterKg": 63.53,
+        "fillPercent": 21,
+        "discount": 0,
+        "discountAmount": 0,
+        "thermoRequired": false,
+        "thermoApplied": false,
+        "thermoCost": 0,
+        "total": 3580
+      },
+      "total": 12860
+    },
+    "status": "accepted",
+    "statusHistory": [
+      {
+        "status": "accepted",
+        "at": "2026-10-14T03:07:17.718Z"
+      }
+    ],
+    "postponements": []
+  },
+  {
+    "id": "865722",
+    "createdAt": "2026-10-14T03:35:10.857Z",
+    "direction": "DNR_YKT",
+    "waveId": "DNR_YKT-2026-10-17",
+    "scenario": "self",
+    "customer": {
+      "name": "Супермаркет «Туймаада»",
+      "phone": "+79537017305",
+      "email": "supermarkett28@example.com"
+    },
+    "recipient": null,
+    "gift": null,
+    "pickupPoint": {
+      "id": "YKS-2",
+      "city": "Якутск",
+      "name": "ПВЗ «Автовокзал»",
+      "address": "ул. Октябрьская, 24",
+      "hours": "пн–сб 9:00–19:00"
+    },
+    "payment": {
+      "method": "cash",
+      "label": "При получении",
+      "status": "on_delivery"
+    },
+    "items": [
+      {
+        "type": "product",
+        "productId": "DNR-001",
+        "name": "Конфеты «Донецкие розы» ассорти",
+        "region": "ДНР",
+        "manufacturer": "Кальмиус-Конд",
+        "weight_g": 300,
+        "price_rub": 490,
+        "temp_sensitive": true,
+        "shelf_life_days": 120,
+        "qty": 33,
+        "lineTotal": 16170
+      },
+      {
+        "type": "product",
+        "productId": "DNR-009",
+        "name": "Мармелад «Абрикосовый»",
+        "region": "ДНР",
+        "manufacturer": "Терриконы",
+        "weight_g": 300,
+        "price_rub": 220,
+        "temp_sensitive": false,
+        "shelf_life_days": 90,
+        "qty": 26,
+        "lineTotal": 5720
+      },
+      {
+        "type": "product",
+        "productId": "DNR-010",
+        "name": "Мармелад желейный «Вишнёвый сад»",
+        "region": "ДНР",
+        "manufacturer": "Терриконы",
+        "weight_g": 250,
+        "price_rub": 200,
+        "temp_sensitive": true,
+        "shelf_life_days": 60,
+        "qty": 18,
+        "lineTotal": 3600
+      }
+    ],
+    "thermoChosen": false,
+    "totals": {
+      "goods": 25490,
+      "weightKg": 22.2,
+      "delivery": {
+        "tariffPerKg": 500,
+        "baseCost": 11100,
+        "waveWeightAfterKg": 96.1,
+        "fillPercent": 32,
+        "discount": 0,
+        "discountAmount": 0,
+        "thermoRequired": false,
+        "thermoApplied": false,
+        "thermoCost": 0,
+        "total": 11100
+      },
+      "total": 36590
+    },
+    "status": "assembling",
+    "statusHistory": [
+      {
+        "status": "accepted",
+        "at": "2026-10-14T03:35:10.857Z"
+      },
+      {
+        "status": "assembling",
+        "at": "2026-10-14T03:40:00.000Z",
+        "note": "Приём в волну закрыт, заказ собирается"
+      }
+    ],
+    "postponements": []
+  },
+  {
+    "id": "563890",
+    "createdAt": "2026-10-14T04:39:44.238Z",
+    "direction": "DNR_YKT",
+    "waveId": "DNR_YKT-2026-10-31",
+    "scenario": "self",
+    "customer": {
+      "name": "Супермаркет «Туймаада»",
+      "phone": "+79289137500",
+      "email": "supermarkett26@example.com"
+    },
+    "recipient": null,
+    "gift": null,
+    "pickupPoint": {
+      "id": "YKS-2",
+      "city": "Якутск",
+      "name": "ПВЗ «Автовокзал»",
+      "address": "ул. Октябрьская, 24",
+      "hours": "пн–сб 9:00–19:00"
+    },
+    "payment": {
+      "method": "card",
+      "label": "Картой онлайн (имитация)",
+      "status": "paid"
+    },
+    "items": [
+      {
+        "type": "product",
+        "productId": "DNR-002",
+        "name": "Конфеты «Шахтёрская ночь» с черносливом",
+        "region": "ДНР",
+        "manufacturer": "Кальмиус-Конд",
+        "weight_g": 250,
+        "price_rub": 430,
+        "temp_sensitive": true,
+        "shelf_life_days": 150,
+        "qty": 16,
+        "lineTotal": 6880
+      }
+    ],
+    "thermoChosen": false,
+    "totals": {
+      "goods": 6880,
+      "weightKg": 4,
+      "delivery": {
+        "tariffPerKg": 500,
+        "baseCost": 2000,
+        "waveWeightAfterKg": 67.53,
+        "fillPercent": 23,
+        "discount": 0,
+        "discountAmount": 0,
+        "thermoRequired": false,
+        "thermoApplied": false,
+        "thermoCost": 0,
+        "total": 2000
+      },
+      "total": 8880
+    },
+    "status": "accepted",
+    "statusHistory": [
+      {
+        "status": "accepted",
+        "at": "2026-10-14T04:39:44.238Z"
+      }
+    ],
+    "postponements": []
+  },
+  {
+    "id": "531638",
+    "createdAt": "2026-10-14T04:44:52.157Z",
+    "direction": "YKT_DNR",
+    "waveId": "YKT_DNR-2026-11-07",
+    "scenario": "self",
+    "customer": {
+      "name": "Чайная «Терриконъ»",
+      "phone": "+79311112321",
+      "email": "chaynayaterr83@example.com"
+    },
+    "recipient": null,
+    "gift": null,
+    "pickupPoint": {
+      "id": "DON-3",
+      "city": "Донецк",
+      "name": "ПВЗ «Пролетарский»",
+      "address": "ул. Куйбышева, 117",
+      "hours": "ежедневно 10:00–20:00"
+    },
+    "payment": {
+      "method": "card",
+      "label": "Картой онлайн (имитация)",
+      "status": "paid"
+    },
+    "items": [
+      {
+        "type": "product",
+        "productId": "YKT-003",
+        "name": "Брусника в шоколаде",
+        "region": "Якутия",
+        "manufacturer": "ЯХК",
+        "weight_g": 200,
+        "price_rub": 390,
+        "temp_sensitive": true,
+        "shelf_life_days": 120,
+        "qty": 19,
+        "lineTotal": 7410
+      },
+      {
+        "type": "product",
+        "productId": "YKT-008",
+        "name": "Печенье овсяное с голубикой",
+        "region": "Якутия",
+        "manufacturer": "ЯХК",
+        "weight_g": 300,
+        "price_rub": 190,
+        "temp_sensitive": false,
+        "shelf_life_days": 90,
+        "qty": 32,
+        "lineTotal": 6080
+      }
+    ],
+    "thermoChosen": false,
+    "totals": {
+      "goods": 13490,
+      "weightKg": 13.4,
+      "delivery": {
+        "tariffPerKg": 500,
+        "baseCost": 6700,
+        "waveWeightAfterKg": 37.7,
+        "fillPercent": 13,
+        "discount": 0,
+        "discountAmount": 0,
+        "thermoRequired": false,
+        "thermoApplied": false,
+        "thermoCost": 0,
+        "total": 6700
+      },
+      "total": 20190
+    },
+    "status": "accepted",
+    "statusHistory": [
+      {
+        "status": "accepted",
+        "at": "2026-10-14T04:44:52.157Z"
+      }
+    ],
+    "postponements": []
+  },
+  {
+    "id": "761733",
+    "createdAt": "2026-10-14T05:01:26.124Z",
+    "direction": "DNR_YKT",
+    "waveId": "DNR_YKT-2026-10-31",
+    "scenario": "self",
+    "customer": {
+      "name": "Кондитерская «Ленская»",
+      "phone": "+79768097915",
+      "email": "konditerskay96@example.com"
+    },
+    "recipient": null,
+    "gift": null,
+    "pickupPoint": {
+      "id": "YKS-3",
+      "city": "Якутск",
+      "name": "ПВЗ «202-й микрорайон»",
+      "address": "202-й мкр, корп. 7",
+      "hours": "ежедневно 11:00–21:00"
+    },
+    "payment": {
+      "method": "card",
+      "label": "Картой онлайн (имитация)",
+      "status": "paid"
+    },
+    "items": [
+      {
+        "type": "product",
+        "productId": "DNR-002",
+        "name": "Конфеты «Шахтёрская ночь» с черносливом",
+        "region": "ДНР",
+        "manufacturer": "Кальмиус-Конд",
+        "weight_g": 250,
+        "price_rub": 430,
+        "temp_sensitive": true,
+        "shelf_life_days": 150,
+        "qty": 12,
+        "lineTotal": 5160
+      },
+      {
+        "type": "product",
+        "productId": "DNR-004",
+        "name": "Вафли «Лимонные»",
+        "region": "ДНР",
+        "manufacturer": "Степная пчела",
+        "weight_g": 200,
+        "price_rub": 140,
+        "temp_sensitive": false,
+        "shelf_life_days": 180,
+        "qty": 26,
+        "lineTotal": 3640
+      },
+      {
+        "type": "product",
+        "productId": "DNR-006",
+        "name": "Печенье «Подсолнух» с семечками",
+        "region": "ДНР",
+        "manufacturer": "Степная пчела",
+        "weight_g": 300,
+        "price_rub": 180,
+        "temp_sensitive": false,
+        "shelf_life_days": 120,
+        "qty": 12,
+        "lineTotal": 2160
+      }
+    ],
+    "thermoChosen": false,
+    "totals": {
+      "goods": 10960,
+      "weightKg": 11.8,
+      "delivery": {
+        "tariffPerKg": 500,
+        "baseCost": 5900,
+        "waveWeightAfterKg": 79.33,
+        "fillPercent": 26,
+        "discount": 0,
+        "discountAmount": 0,
+        "thermoRequired": false,
+        "thermoApplied": false,
+        "thermoCost": 0,
+        "total": 5900
+      },
+      "total": 16860
+    },
+    "status": "accepted",
+    "statusHistory": [
+      {
+        "status": "accepted",
+        "at": "2026-10-14T05:01:26.124Z"
+      }
+    ],
+    "postponements": []
+  },
+  {
+    "id": "398959",
+    "createdAt": "2026-10-14T06:11:11.326Z",
+    "direction": "YKT_DNR",
+    "waveId": "YKT_DNR-2026-10-24",
+    "scenario": "self",
+    "customer": {
+      "name": "Кофейня «Каштан»",
+      "phone": "+79568079335",
+      "email": "kofeynyakash76@example.com"
+    },
+    "recipient": null,
+    "gift": null,
+    "pickupPoint": {
+      "id": "DON-1",
+      "city": "Донецк",
+      "name": "ПВЗ «Центр»",
+      "address": "ул. Артёма, 50",
+      "hours": "ежедневно 9:00–20:00"
+    },
+    "payment": {
+      "method": "card",
+      "label": "Картой онлайн (имитация)",
+      "status": "paid"
+    },
+    "items": [
+      {
+        "type": "product",
+        "productId": "YKT-010",
+        "name": "Зефир ванильный «Белые ночи»",
+        "region": "Якутия",
+        "manufacturer": "ЯХК",
+        "weight_g": 250,
+        "price_rub": 260,
+        "temp_sensitive": true,
+        "shelf_life_days": 30,
+        "qty": 24,
+        "lineTotal": 6240
+      },
+      {
+        "type": "product",
+        "productId": "YKT-011",
+        "name": "Зефир брусничный",
+        "region": "Якутия",
+        "manufacturer": "ЯХК",
+        "weight_g": 250,
+        "price_rub": 280,
+        "temp_sensitive": true,
+        "shelf_life_days": 25,
+        "qty": 19,
+        "lineTotal": 5320
+      },
+      {
+        "type": "product",
+        "productId": "YKT-009",
+        "name": "Печенье песочное «Чочур Муран»",
+        "region": "Якутия",
+        "manufacturer": "ЯХК",
+        "weight_g": 250,
+        "price_rub": 210,
+        "temp_sensitive": false,
+        "shelf_life_days": 120,
+        "qty": 34,
+        "lineTotal": 7140
+      }
+    ],
+    "thermoChosen": false,
+    "totals": {
+      "goods": 18700,
+      "weightKg": 19.25,
+      "delivery": {
+        "tariffPerKg": 500,
+        "baseCost": 9625,
+        "waveWeightAfterKg": 113.41,
+        "fillPercent": 38,
+        "discount": 0,
+        "discountAmount": 0,
+        "thermoRequired": false,
+        "thermoApplied": false,
+        "thermoCost": 0,
+        "total": 9625
+      },
+      "total": 28325
+    },
+    "status": "accepted",
+    "statusHistory": [
+      {
+        "status": "accepted",
+        "at": "2026-10-14T06:11:11.326Z"
+      }
+    ],
+    "postponements": []
+  },
+  {
+    "id": "876286",
+    "createdAt": "2026-10-14T06:56:54.183Z",
+    "direction": "DNR_YKT",
+    "waveId": "DNR_YKT-2026-10-31",
+    "scenario": "self",
+    "customer": {
+      "name": "Николай Егоров",
+      "phone": "+79151640123",
+      "email": "nikolayegoro24@example.com"
+    },
+    "recipient": null,
+    "gift": null,
+    "pickupPoint": {
+      "id": "YKS-2",
+      "city": "Якутск",
+      "name": "ПВЗ «Автовокзал»",
+      "address": "ул. Октябрьская, 24",
+      "hours": "пн–сб 9:00–19:00"
+    },
+    "payment": {
+      "method": "cash",
+      "label": "При получении",
+      "status": "on_delivery"
+    },
+    "items": [
+      {
+        "type": "product",
+        "productId": "DNR-004",
+        "name": "Вафли «Лимонные»",
+        "region": "ДНР",
+        "manufacturer": "Степная пчела",
+        "weight_g": 200,
+        "price_rub": 140,
+        "temp_sensitive": false,
+        "shelf_life_days": 180,
+        "qty": 2,
+        "lineTotal": 280
+      },
+      {
+        "type": "product",
+        "productId": "DNR-003",
+        "name": "Вафли «Степные» с орехом",
+        "region": "ДНР",
+        "manufacturer": "Степная пчела",
+        "weight_g": 220,
+        "price_rub": 160,
+        "temp_sensitive": false,
+        "shelf_life_days": 180,
+        "qty": 2,
+        "lineTotal": 320
+      }
+    ],
+    "thermoChosen": true,
+    "totals": {
+      "goods": 600,
+      "weightKg": 0.84,
+      "delivery": {
+        "tariffPerKg": 500,
+        "baseCost": 420,
+        "waveWeightAfterKg": 80.17,
+        "fillPercent": 27,
+        "discount": 0,
+        "discountAmount": 0,
+        "thermoRequired": false,
+        "thermoApplied": true,
+        "thermoCost": 150,
+        "total": 570
+      },
+      "total": 1170
+    },
+    "status": "accepted",
+    "statusHistory": [
+      {
+        "status": "accepted",
+        "at": "2026-10-14T06:56:54.183Z"
+      }
+    ],
+    "postponements": []
+  },
+  {
+    "id": "898494",
+    "createdAt": "2026-10-14T06:59:02.930Z",
+    "direction": "YKT_DNR",
+    "waveId": "YKT_DNR-2026-10-24",
+    "scenario": "self",
+    "customer": {
+      "name": "Магазин «Сладкоежка»",
+      "phone": "+79985561441",
+      "email": "magazinsladk51@example.com"
+    },
+    "recipient": null,
+    "gift": null,
+    "pickupPoint": {
+      "id": "DON-2",
+      "city": "Донецк",
+      "name": "ПВЗ «Калининский»",
+      "address": "пр. Ильича, 40",
+      "hours": "пн–сб 10:00–19:00"
+    },
+    "payment": {
+      "method": "card",
+      "label": "Картой онлайн (имитация)",
+      "status": "paid"
+    },
+    "items": [
+      {
+        "type": "product",
+        "productId": "YKT-010",
+        "name": "Зефир ванильный «Белые ночи»",
+        "region": "Якутия",
+        "manufacturer": "ЯХК",
+        "weight_g": 250,
+        "price_rub": 260,
+        "temp_sensitive": true,
+        "shelf_life_days": 30,
+        "qty": 14,
+        "lineTotal": 3640
+      },
+      {
+        "type": "product",
+        "productId": "YKT-008",
+        "name": "Печенье овсяное с голубикой",
+        "region": "Якутия",
+        "manufacturer": "ЯХК",
+        "weight_g": 300,
+        "price_rub": 190,
+        "temp_sensitive": false,
+        "shelf_life_days": 90,
+        "qty": 28,
+        "lineTotal": 5320
+      },
+      {
+        "type": "product",
+        "productId": "YKT-011",
+        "name": "Зефир брусничный",
+        "region": "Якутия",
+        "manufacturer": "ЯХК",
+        "weight_g": 250,
+        "price_rub": 280,
+        "temp_sensitive": true,
+        "shelf_life_days": 25,
+        "qty": 27,
+        "lineTotal": 7560
+      }
+    ],
+    "thermoChosen": false,
+    "totals": {
+      "goods": 16520,
+      "weightKg": 18.65,
+      "delivery": {
+        "tariffPerKg": 500,
+        "baseCost": 9325,
+        "waveWeightAfterKg": 132.06,
+        "fillPercent": 44,
+        "discount": 0,
+        "discountAmount": 0,
+        "thermoRequired": false,
+        "thermoApplied": false,
+        "thermoCost": 0,
+        "total": 9325
+      },
+      "total": 25845
+    },
+    "status": "accepted",
+    "statusHistory": [
+      {
+        "status": "accepted",
+        "at": "2026-10-14T06:59:02.930Z"
+      }
+    ],
+    "postponements": []
+  },
+  {
+    "id": "834837",
+    "createdAt": "2026-10-14T07:29:36.678Z",
+    "direction": "DNR_YKT",
+    "waveId": "DNR_YKT-2026-11-14",
+    "scenario": "self",
+    "customer": {
+      "name": "Кюннэй Васильева",
+      "phone": "+79294692134",
+      "email": "kyunneyvasil90@example.com"
+    },
+    "recipient": null,
+    "gift": null,
+    "pickupPoint": {
+      "id": "YKS-1",
+      "city": "Якутск",
+      "name": "ПВЗ «Центральный»",
+      "address": "пр. Ленина, 12",
+      "hours": "ежедневно 10:00–20:00"
+    },
+    "payment": {
+      "method": "cash",
+      "label": "При получении",
+      "status": "on_delivery"
+    },
+    "items": [
+      {
+        "type": "product",
+        "productId": "DNR-011",
+        "name": "Шоколад тёмный «Терриконы» 70 %",
+        "region": "ДНР",
+        "manufacturer": "Кальмиус-Конд",
+        "weight_g": 100,
+        "price_rub": 200,
+        "temp_sensitive": true,
+        "shelf_life_days": 365,
+        "qty": 3,
+        "lineTotal": 600
+      },
+      {
+        "type": "product",
+        "productId": "DNR-010",
+        "name": "Мармелад желейный «Вишнёвый сад»",
+        "region": "ДНР",
+        "manufacturer": "Терриконы",
+        "weight_g": 250,
+        "price_rub": 200,
+        "temp_sensitive": true,
+        "shelf_life_days": 60,
+        "qty": 1,
+        "lineTotal": 200
+      },
+      {
+        "type": "product",
+        "productId": "DNR-012",
+        "name": "Шоколад молочный с курагой",
+        "region": "ДНР",
+        "manufacturer": "Кальмиус-Конд",
+        "weight_g": 90,
+        "price_rub": 190,
+        "temp_sensitive": true,
+        "shelf_life_days": 300,
+        "qty": 1,
+        "lineTotal": 190
+      },
+      {
+        "type": "product",
+        "productId": "DNR-004",
+        "name": "Вафли «Лимонные»",
+        "region": "ДНР",
+        "manufacturer": "Степная пчела",
+        "weight_g": 200,
+        "price_rub": 140,
+        "temp_sensitive": false,
+        "shelf_life_days": 180,
+        "qty": 2,
+        "lineTotal": 280
+      }
+    ],
+    "thermoChosen": false,
+    "totals": {
+      "goods": 1270,
+      "weightKg": 1.04,
+      "delivery": {
+        "tariffPerKg": 500,
+        "baseCost": 520,
+        "waveWeightAfterKg": 31.32,
+        "fillPercent": 10,
+        "discount": 0,
+        "discountAmount": 0,
+        "thermoRequired": false,
+        "thermoApplied": false,
+        "thermoCost": 0,
+        "total": 520
+      },
+      "total": 1790
+    },
+    "status": "accepted",
+    "statusHistory": [
+      {
+        "status": "accepted",
+        "at": "2026-10-14T07:29:36.678Z"
+      }
+    ],
+    "postponements": []
+  },
+  {
+    "id": "845647",
+    "createdAt": "2026-10-14T08:01:59.523Z",
+    "direction": "DNR_YKT",
+    "waveId": "DNR_YKT-2026-10-31",
+    "scenario": "self",
+    "customer": {
+      "name": "Кафе «Олонхо»",
+      "phone": "+79162481513",
+      "email": "kafeolonho15@example.com"
+    },
+    "recipient": null,
+    "gift": null,
+    "pickupPoint": {
+      "id": "YKS-2",
+      "city": "Якутск",
+      "name": "ПВЗ «Автовокзал»",
+      "address": "ул. Октябрьская, 24",
+      "hours": "пн–сб 9:00–19:00"
+    },
+    "payment": {
+      "method": "card",
+      "label": "Картой онлайн (имитация)",
+      "status": "paid"
+    },
+    "items": [
+      {
+        "type": "product",
+        "productId": "DNR-009",
+        "name": "Мармелад «Абрикосовый»",
+        "region": "ДНР",
+        "manufacturer": "Терриконы",
+        "weight_g": 300,
+        "price_rub": 220,
+        "temp_sensitive": false,
+        "shelf_life_days": 90,
+        "qty": 25,
+        "lineTotal": 5500
+      },
+      {
+        "type": "product",
+        "productId": "DNR-006",
+        "name": "Печенье «Подсолнух» с семечками",
+        "region": "ДНР",
+        "manufacturer": "Степная пчела",
+        "weight_g": 300,
+        "price_rub": 180,
+        "temp_sensitive": false,
+        "shelf_life_days": 120,
+        "qty": 31,
+        "lineTotal": 5580
+      },
+      {
+        "type": "product",
+        "productId": "DNR-004",
+        "name": "Вафли «Лимонные»",
+        "region": "ДНР",
+        "manufacturer": "Степная пчела",
+        "weight_g": 200,
+        "price_rub": 140,
+        "temp_sensitive": false,
+        "shelf_life_days": 180,
+        "qty": 12,
+        "lineTotal": 1680
+      }
+    ],
+    "thermoChosen": false,
+    "totals": {
+      "goods": 12760,
+      "weightKg": 19.2,
+      "delivery": {
+        "tariffPerKg": 500,
+        "baseCost": 9600,
+        "waveWeightAfterKg": 99.37,
+        "fillPercent": 33,
+        "discount": 0,
+        "discountAmount": 0,
+        "thermoRequired": false,
+        "thermoApplied": false,
+        "thermoCost": 0,
+        "total": 9600
+      },
+      "total": 22360
+    },
+    "status": "accepted",
+    "statusHistory": [
+      {
+        "status": "accepted",
+        "at": "2026-10-14T08:01:59.523Z"
+      }
+    ],
+    "postponements": []
+  },
+  {
+    "id": "369794",
+    "createdAt": "2026-10-14T08:20:42.207Z",
+    "direction": "DNR_YKT",
+    "waveId": "DNR_YKT-2026-10-31",
+    "scenario": "self",
+    "customer": {
+      "name": "Магазин «Южные сладости»",
+      "phone": "+79768363797",
+      "email": "magazinyuzhn37@example.com"
+    },
+    "recipient": null,
+    "gift": null,
+    "pickupPoint": {
+      "id": "YKS-2",
+      "city": "Якутск",
+      "name": "ПВЗ «Автовокзал»",
+      "address": "ул. Октябрьская, 24",
+      "hours": "пн–сб 9:00–19:00"
+    },
+    "payment": {
+      "method": "cash",
+      "label": "При получении",
+      "status": "on_delivery"
+    },
+    "items": [
+      {
+        "type": "product",
+        "productId": "DNR-004",
+        "name": "Вафли «Лимонные»",
+        "region": "ДНР",
+        "manufacturer": "Степная пчела",
+        "weight_g": 200,
+        "price_rub": 140,
+        "temp_sensitive": false,
+        "shelf_life_days": 180,
+        "qty": 15,
+        "lineTotal": 2100
+      },
+      {
+        "type": "product",
+        "productId": "DNR-010",
+        "name": "Мармелад желейный «Вишнёвый сад»",
+        "region": "ДНР",
+        "manufacturer": "Терриконы",
+        "weight_g": 250,
+        "price_rub": 200,
+        "temp_sensitive": true,
+        "shelf_life_days": 60,
+        "qty": 14,
+        "lineTotal": 2800
+      },
+      {
+        "type": "product",
+        "productId": "DNR-009",
+        "name": "Мармелад «Абрикосовый»",
+        "region": "ДНР",
+        "manufacturer": "Терриконы",
+        "weight_g": 300,
+        "price_rub": 220,
+        "temp_sensitive": false,
+        "shelf_life_days": 90,
+        "qty": 34,
+        "lineTotal": 7480
+      }
+    ],
+    "thermoChosen": false,
+    "totals": {
+      "goods": 12380,
+      "weightKg": 16.7,
+      "delivery": {
+        "tariffPerKg": 500,
+        "baseCost": 8350,
+        "waveWeightAfterKg": 116.07,
+        "fillPercent": 39,
+        "discount": 0,
+        "discountAmount": 0,
+        "thermoRequired": false,
+        "thermoApplied": false,
+        "thermoCost": 0,
+        "total": 8350
+      },
+      "total": 20730
+    },
+    "status": "accepted",
+    "statusHistory": [
+      {
+        "status": "accepted",
+        "at": "2026-10-14T08:20:42.207Z"
+      }
+    ],
+    "postponements": []
+  },
+  {
+    "id": "524839",
+    "createdAt": "2026-10-14T11:04:19.645Z",
+    "direction": "DNR_YKT",
+    "waveId": "DNR_YKT-2026-11-14",
+    "scenario": "self",
+    "customer": {
+      "name": "Магазин «Южные сладости»",
+      "phone": "+79196212134",
+      "email": "magazinyuzhn45@example.com"
+    },
+    "recipient": null,
+    "gift": null,
+    "pickupPoint": {
+      "id": "YKS-1",
+      "city": "Якутск",
+      "name": "ПВЗ «Центральный»",
+      "address": "пр. Ленина, 12",
+      "hours": "ежедневно 10:00–20:00"
+    },
+    "payment": {
+      "method": "card",
+      "label": "Картой онлайн (имитация)",
+      "status": "paid"
+    },
+    "items": [
+      {
+        "type": "product",
+        "productId": "DNR-008",
+        "name": "Торт «Каштан» вафельно-шоколадный",
+        "region": "ДНР",
+        "manufacturer": "Терриконы",
+        "weight_g": 500,
+        "price_rub": 590,
+        "temp_sensitive": true,
+        "shelf_life_days": 60,
+        "qty": 19,
+        "lineTotal": 11210
+      },
+      {
+        "type": "product",
+        "productId": "DNR-009",
+        "name": "Мармелад «Абрикосовый»",
+        "region": "ДНР",
+        "manufacturer": "Терриконы",
+        "weight_g": 300,
+        "price_rub": 220,
+        "temp_sensitive": false,
+        "shelf_life_days": 90,
+        "qty": 26,
+        "lineTotal": 5720
+      },
+      {
+        "type": "product",
+        "productId": "DNR-010",
+        "name": "Мармелад желейный «Вишнёвый сад»",
+        "region": "ДНР",
+        "manufacturer": "Терриконы",
+        "weight_g": 250,
+        "price_rub": 200,
+        "temp_sensitive": true,
+        "shelf_life_days": 60,
+        "qty": 16,
+        "lineTotal": 3200
+      }
+    ],
+    "thermoChosen": false,
+    "totals": {
+      "goods": 20130,
+      "weightKg": 21.3,
+      "delivery": {
+        "tariffPerKg": 500,
+        "baseCost": 10650,
+        "waveWeightAfterKg": 52.62,
+        "fillPercent": 18,
+        "discount": 0,
+        "discountAmount": 0,
+        "thermoRequired": false,
+        "thermoApplied": false,
+        "thermoCost": 0,
+        "total": 10650
+      },
+      "total": 30780
+    },
+    "status": "accepted",
+    "statusHistory": [
+      {
+        "status": "accepted",
+        "at": "2026-10-14T11:04:19.645Z"
+      }
+    ],
+    "postponements": []
+  },
+  {
+    "id": "252362",
+    "createdAt": "2026-10-14T11:46:28.244Z",
+    "direction": "DNR_YKT",
+    "waveId": "DNR_YKT-2026-10-31",
+    "scenario": "self",
+    "customer": {
+      "name": "Магазин «Южные сладости»",
+      "phone": "+79953939541",
+      "email": "magazinyuzhn87@example.com"
+    },
+    "recipient": null,
+    "gift": null,
+    "pickupPoint": {
+      "id": "YKS-3",
+      "city": "Якутск",
+      "name": "ПВЗ «202-й микрорайон»",
+      "address": "202-й мкр, корп. 7",
+      "hours": "ежедневно 11:00–21:00"
+    },
+    "payment": {
+      "method": "cash",
+      "label": "При получении",
+      "status": "on_delivery"
+    },
+    "items": [
+      {
+        "type": "product",
+        "productId": "DNR-010",
+        "name": "Мармелад желейный «Вишнёвый сад»",
+        "region": "ДНР",
+        "manufacturer": "Терриконы",
+        "weight_g": 250,
+        "price_rub": 200,
+        "temp_sensitive": true,
+        "shelf_life_days": 60,
+        "qty": 15,
+        "lineTotal": 3000
+      },
+      {
+        "type": "product",
+        "productId": "DNR-008",
+        "name": "Торт «Каштан» вафельно-шоколадный",
+        "region": "ДНР",
+        "manufacturer": "Терриконы",
+        "weight_g": 500,
+        "price_rub": 590,
+        "temp_sensitive": true,
+        "shelf_life_days": 60,
+        "qty": 15,
+        "lineTotal": 8850
+      }
+    ],
+    "thermoChosen": true,
+    "totals": {
+      "goods": 11850,
+      "weightKg": 11.25,
+      "delivery": {
+        "tariffPerKg": 500,
+        "baseCost": 5625,
+        "waveWeightAfterKg": 127.32,
+        "fillPercent": 42,
+        "discount": 0,
+        "discountAmount": 0,
+        "thermoRequired": false,
+        "thermoApplied": true,
+        "thermoCost": 150,
+        "total": 5775
+      },
+      "total": 17625
+    },
+    "status": "accepted",
+    "statusHistory": [
+      {
+        "status": "accepted",
+        "at": "2026-10-14T11:46:28.244Z"
+      }
+    ],
+    "postponements": []
+  },
+  {
+    "id": "543519",
+    "createdAt": "2026-10-14T11:56:30.037Z",
+    "direction": "DNR_YKT",
+    "waveId": "DNR_YKT-2026-10-31",
+    "scenario": "self",
+    "customer": {
+      "name": "Кондитерская «Ленская»",
+      "phone": "+79238064623",
+      "email": "konditerskay7@example.com"
+    },
+    "recipient": null,
+    "gift": null,
+    "pickupPoint": {
+      "id": "YKS-2",
+      "city": "Якутск",
+      "name": "ПВЗ «Автовокзал»",
+      "address": "ул. Октябрьская, 24",
+      "hours": "пн–сб 9:00–19:00"
+    },
+    "payment": {
+      "method": "card",
+      "label": "Картой онлайн (имитация)",
+      "status": "paid"
+    },
+    "items": [
+      {
+        "type": "product",
+        "productId": "DNR-012",
+        "name": "Шоколад молочный с курагой",
+        "region": "ДНР",
+        "manufacturer": "Кальмиус-Конд",
+        "weight_g": 90,
+        "price_rub": 190,
+        "temp_sensitive": true,
+        "shelf_life_days": 300,
+        "qty": 17,
+        "lineTotal": 3230
+      }
+    ],
+    "thermoChosen": false,
+    "totals": {
+      "goods": 3230,
+      "weightKg": 1.53,
+      "delivery": {
+        "tariffPerKg": 500,
+        "baseCost": 765,
+        "waveWeightAfterKg": 128.85,
+        "fillPercent": 43,
+        "discount": 0,
+        "discountAmount": 0,
+        "thermoRequired": false,
+        "thermoApplied": false,
+        "thermoCost": 0,
+        "total": 765
+      },
+      "total": 3995
+    },
+    "status": "accepted",
+    "statusHistory": [
+      {
+        "status": "accepted",
+        "at": "2026-10-14T11:56:30.037Z"
+      }
+    ],
+    "postponements": []
+  },
+  {
+    "id": "910653",
+    "createdAt": "2026-10-14T12:05:59.847Z",
+    "direction": "DNR_YKT",
+    "waveId": "DNR_YKT-2026-10-31",
+    "scenario": "self",
+    "customer": {
+      "name": "Кафе «Олонхо»",
+      "phone": "+79998140410",
+      "email": "kafeolonho33@example.com"
+    },
+    "recipient": null,
+    "gift": null,
+    "pickupPoint": {
+      "id": "YKS-3",
+      "city": "Якутск",
+      "name": "ПВЗ «202-й микрорайон»",
+      "address": "202-й мкр, корп. 7",
+      "hours": "ежедневно 11:00–21:00"
+    },
+    "payment": {
+      "method": "card",
+      "label": "Картой онлайн (имитация)",
+      "status": "paid"
+    },
+    "items": [
+      {
+        "type": "product",
+        "productId": "DNR-001",
+        "name": "Конфеты «Донецкие розы» ассорти",
+        "region": "ДНР",
+        "manufacturer": "Кальмиус-Конд",
+        "weight_g": 300,
+        "price_rub": 490,
+        "temp_sensitive": true,
+        "shelf_life_days": 120,
+        "qty": 33,
+        "lineTotal": 16170
+      },
+      {
+        "type": "product",
+        "productId": "DNR-012",
+        "name": "Шоколад молочный с курагой",
+        "region": "ДНР",
+        "manufacturer": "Кальмиус-Конд",
+        "weight_g": 90,
+        "price_rub": 190,
+        "temp_sensitive": true,
+        "shelf_life_days": 300,
+        "qty": 29,
+        "lineTotal": 5510
+      },
+      {
+        "type": "product",
+        "productId": "DNR-006",
+        "name": "Печенье «Подсолнух» с семечками",
+        "region": "ДНР",
+        "manufacturer": "Степная пчела",
+        "weight_g": 300,
+        "price_rub": 180,
+        "temp_sensitive": false,
+        "shelf_life_days": 120,
+        "qty": 22,
+        "lineTotal": 3960
+      }
+    ],
+    "thermoChosen": false,
+    "totals": {
+      "goods": 25640,
+      "weightKg": 19.11,
+      "delivery": {
+        "tariffPerKg": 500,
+        "baseCost": 9555,
+        "waveWeightAfterKg": 147.96,
+        "fillPercent": 49,
+        "discount": 0,
+        "discountAmount": 0,
+        "thermoRequired": false,
+        "thermoApplied": false,
+        "thermoCost": 0,
+        "total": 9555
+      },
+      "total": 35195
+    },
+    "status": "accepted",
+    "statusHistory": [
+      {
+        "status": "accepted",
+        "at": "2026-10-14T12:05:59.847Z"
+      }
+    ],
+    "postponements": []
+  },
+  {
+    "id": "467080",
+    "createdAt": "2026-10-14T23:52:04.674Z",
+    "direction": "DNR_YKT",
+    "waveId": "DNR_YKT-2026-10-31",
+    "scenario": "self",
+    "customer": {
+      "name": "Супермаркет «Туймаада»",
+      "phone": "+79622860304",
+      "email": "supermarkett60@example.com"
+    },
+    "recipient": null,
+    "gift": null,
+    "pickupPoint": {
+      "id": "YKS-1",
+      "city": "Якутск",
+      "name": "ПВЗ «Центральный»",
+      "address": "пр. Ленина, 12",
+      "hours": "ежедневно 10:00–20:00"
+    },
+    "payment": {
+      "method": "card",
+      "label": "Картой онлайн (имитация)",
+      "status": "paid"
+    },
+    "items": [
+      {
+        "type": "product",
+        "productId": "DNR-001",
+        "name": "Конфеты «Донецкие розы» ассорти",
+        "region": "ДНР",
+        "manufacturer": "Кальмиус-Конд",
+        "weight_g": 300,
+        "price_rub": 490,
+        "temp_sensitive": true,
+        "shelf_life_days": 120,
+        "qty": 17,
+        "lineTotal": 8330
+      },
+      {
+        "type": "product",
+        "productId": "DNR-009",
+        "name": "Мармелад «Абрикосовый»",
+        "region": "ДНР",
+        "manufacturer": "Терриконы",
+        "weight_g": 300,
+        "price_rub": 220,
+        "temp_sensitive": false,
+        "shelf_life_days": 90,
+        "qty": 32,
+        "lineTotal": 7040
+      }
+    ],
+    "thermoChosen": false,
+    "totals": {
+      "goods": 15370,
+      "weightKg": 14.7,
+      "delivery": {
+        "tariffPerKg": 500,
+        "baseCost": 7350,
+        "waveWeightAfterKg": 162.66,
+        "fillPercent": 54,
+        "discount": 0.2,
+        "discountAmount": 1470,
+        "thermoRequired": false,
+        "thermoApplied": false,
+        "thermoCost": 0,
+        "total": 5880
+      },
+      "total": 21250
+    },
+    "status": "accepted",
+    "statusHistory": [
+      {
+        "status": "accepted",
+        "at": "2026-10-14T23:52:04.674Z"
+      }
+    ],
+    "postponements": []
+  },
+  {
+    "id": "969906",
+    "createdAt": "2026-10-15T04:57:19.523Z",
+    "direction": "DNR_YKT",
+    "waveId": "DNR_YKT-2026-10-31",
+    "scenario": "self",
+    "customer": {
+      "name": "Кафе «Олонхо»",
+      "phone": "+79604619474",
+      "email": "kafeolonho55@example.com"
+    },
+    "recipient": null,
+    "gift": null,
+    "pickupPoint": {
+      "id": "YKS-1",
+      "city": "Якутск",
+      "name": "ПВЗ «Центральный»",
+      "address": "пр. Ленина, 12",
+      "hours": "ежедневно 10:00–20:00"
+    },
+    "payment": {
+      "method": "card",
+      "label": "Картой онлайн (имитация)",
+      "status": "paid"
+    },
+    "items": [
+      {
+        "type": "product",
+        "productId": "DNR-001",
+        "name": "Конфеты «Донецкие розы» ассорти",
+        "region": "ДНР",
+        "manufacturer": "Кальмиус-Конд",
+        "weight_g": 300,
+        "price_rub": 490,
+        "temp_sensitive": true,
+        "shelf_life_days": 120,
+        "qty": 13,
+        "lineTotal": 6370
+      },
+      {
+        "type": "product",
+        "productId": "DNR-004",
+        "name": "Вафли «Лимонные»",
+        "region": "ДНР",
+        "manufacturer": "Степная пчела",
+        "weight_g": 200,
+        "price_rub": 140,
+        "temp_sensitive": false,
+        "shelf_life_days": 180,
+        "qty": 20,
+        "lineTotal": 2800
+      }
+    ],
+    "thermoChosen": false,
+    "totals": {
+      "goods": 9170,
+      "weightKg": 7.9,
+      "delivery": {
+        "tariffPerKg": 500,
+        "baseCost": 3950,
+        "waveWeightAfterKg": 170.56,
+        "fillPercent": 57,
+        "discount": 0.2,
+        "discountAmount": 790,
+        "thermoRequired": false,
+        "thermoApplied": false,
+        "thermoCost": 0,
+        "total": 3160
+      },
+      "total": 12330
+    },
+    "status": "accepted",
+    "statusHistory": [
+      {
+        "status": "accepted",
+        "at": "2026-10-15T04:57:19.523Z"
+      }
+    ],
+    "postponements": []
+  },
+  {
+    "id": "756337",
+    "createdAt": "2026-10-15T06:21:45.833Z",
+    "direction": "DNR_YKT",
+    "waveId": "DNR_YKT-2026-10-31",
+    "scenario": "self",
+    "customer": {
+      "name": "Кондитерская «Ленская»",
+      "phone": "+79874704826",
+      "email": "konditerskay60@example.com"
+    },
+    "recipient": null,
+    "gift": null,
+    "pickupPoint": {
+      "id": "YKS-1",
+      "city": "Якутск",
+      "name": "ПВЗ «Центральный»",
+      "address": "пр. Ленина, 12",
+      "hours": "ежедневно 10:00–20:00"
+    },
+    "payment": {
+      "method": "card",
+      "label": "Картой онлайн (имитация)",
+      "status": "paid"
+    },
+    "items": [
+      {
+        "type": "product",
+        "productId": "DNR-001",
+        "name": "Конфеты «Донецкие розы» ассорти",
+        "region": "ДНР",
+        "manufacturer": "Кальмиус-Конд",
+        "weight_g": 300,
+        "price_rub": 490,
+        "temp_sensitive": true,
+        "shelf_life_days": 120,
+        "qty": 30,
+        "lineTotal": 14700
+      }
+    ],
+    "thermoChosen": false,
+    "totals": {
+      "goods": 14700,
+      "weightKg": 9,
+      "delivery": {
+        "tariffPerKg": 500,
+        "baseCost": 4500,
+        "waveWeightAfterKg": 179.56,
+        "fillPercent": 60,
+        "discount": 0.2,
+        "discountAmount": 900,
+        "thermoRequired": false,
+        "thermoApplied": false,
+        "thermoCost": 0,
+        "total": 3600
+      },
+      "total": 18300
+    },
+    "status": "accepted",
+    "statusHistory": [
+      {
+        "status": "accepted",
+        "at": "2026-10-15T06:21:45.833Z"
+      }
+    ],
+    "postponements": []
+  },
+  {
+    "id": "373034",
+    "createdAt": "2026-10-15T06:35:50.942Z",
+    "direction": "DNR_YKT",
+    "waveId": "DNR_YKT-2026-10-31",
+    "scenario": "self",
+    "customer": {
+      "name": "Кондитерская «Ленская»",
+      "phone": "+79418169920",
+      "email": "konditerskay41@example.com"
+    },
+    "recipient": null,
+    "gift": null,
+    "pickupPoint": {
+      "id": "YKS-3",
+      "city": "Якутск",
+      "name": "ПВЗ «202-й микрорайон»",
+      "address": "202-й мкр, корп. 7",
+      "hours": "ежедневно 11:00–21:00"
+    },
+    "payment": {
+      "method": "card",
+      "label": "Картой онлайн (имитация)",
+      "status": "paid"
+    },
+    "items": [
+      {
+        "type": "product",
+        "productId": "DNR-006",
+        "name": "Печенье «Подсолнух» с семечками",
+        "region": "ДНР",
+        "manufacturer": "Степная пчела",
+        "weight_g": 300,
+        "price_rub": 180,
+        "temp_sensitive": false,
+        "shelf_life_days": 120,
+        "qty": 20,
+        "lineTotal": 3600
+      },
+      {
+        "type": "product",
+        "productId": "DNR-008",
+        "name": "Торт «Каштан» вафельно-шоколадный",
+        "region": "ДНР",
+        "manufacturer": "Терриконы",
+        "weight_g": 500,
+        "price_rub": 590,
+        "temp_sensitive": true,
+        "shelf_life_days": 60,
+        "qty": 30,
+        "lineTotal": 17700
+      },
+      {
+        "type": "product",
+        "productId": "DNR-002",
+        "name": "Конфеты «Шахтёрская ночь» с черносливом",
+        "region": "ДНР",
+        "manufacturer": "Кальмиус-Конд",
+        "weight_g": 250,
+        "price_rub": 430,
+        "temp_sensitive": true,
+        "shelf_life_days": 150,
+        "qty": 34,
+        "lineTotal": 14620
+      }
+    ],
+    "thermoChosen": true,
+    "totals": {
+      "goods": 35920,
+      "weightKg": 29.5,
+      "delivery": {
+        "tariffPerKg": 500,
+        "baseCost": 14750,
+        "waveWeightAfterKg": 209.06,
+        "fillPercent": 70,
+        "discount": 0.2,
+        "discountAmount": 2950,
+        "thermoRequired": false,
+        "thermoApplied": true,
+        "thermoCost": 150,
+        "total": 11950
+      },
+      "total": 47870
+    },
+    "status": "accepted",
+    "statusHistory": [
+      {
+        "status": "accepted",
+        "at": "2026-10-15T06:35:50.942Z"
+      }
+    ],
+    "postponements": []
+  },
+  {
+    "id": "944207",
+    "createdAt": "2026-10-15T07:39:03.473Z",
+    "direction": "DNR_YKT",
+    "waveId": "DNR_YKT-2026-11-14",
+    "scenario": "self",
+    "customer": {
+      "name": "Николай Егоров",
+      "phone": "+79559447095",
+      "email": "nikolayegoro78@example.com"
+    },
+    "recipient": null,
+    "gift": null,
+    "pickupPoint": {
+      "id": "YKS-1",
+      "city": "Якутск",
+      "name": "ПВЗ «Центральный»",
+      "address": "пр. Ленина, 12",
+      "hours": "ежедневно 10:00–20:00"
+    },
+    "payment": {
+      "method": "cash",
+      "label": "При получении",
+      "status": "on_delivery"
+    },
+    "items": [
+      {
+        "type": "product",
+        "productId": "DNR-010",
+        "name": "Мармелад желейный «Вишнёвый сад»",
+        "region": "ДНР",
+        "manufacturer": "Терриконы",
+        "weight_g": 250,
+        "price_rub": 200,
+        "temp_sensitive": true,
+        "shelf_life_days": 60,
+        "qty": 3,
+        "lineTotal": 600
+      },
+      {
+        "type": "product",
+        "productId": "DNR-002",
+        "name": "Конфеты «Шахтёрская ночь» с черносливом",
+        "region": "ДНР",
+        "manufacturer": "Кальмиус-Конд",
+        "weight_g": 250,
+        "price_rub": 430,
+        "temp_sensitive": true,
+        "shelf_life_days": 150,
+        "qty": 3,
+        "lineTotal": 1290
+      }
+    ],
+    "thermoChosen": false,
+    "totals": {
+      "goods": 1890,
+      "weightKg": 1.5,
+      "delivery": {
+        "tariffPerKg": 500,
+        "baseCost": 750,
+        "waveWeightAfterKg": 54.12,
+        "fillPercent": 18,
+        "discount": 0,
+        "discountAmount": 0,
+        "thermoRequired": false,
+        "thermoApplied": false,
+        "thermoCost": 0,
+        "total": 750
+      },
+      "total": 2640
+    },
+    "status": "accepted",
+    "statusHistory": [
+      {
+        "status": "accepted",
+        "at": "2026-10-15T07:39:03.473Z"
+      }
+    ],
+    "postponements": []
+  },
+  {
+    "id": "521025",
+    "createdAt": "2026-10-15T08:13:34.409Z",
+    "direction": "YKT_DNR",
+    "waveId": "YKT_DNR-2026-11-21",
+    "scenario": "self",
+    "customer": {
+      "name": "Сергей Мельник",
+      "phone": "+79322476654",
+      "email": "sergeymelnik77@example.com"
+    },
+    "recipient": null,
+    "gift": null,
+    "pickupPoint": {
+      "id": "DON-2",
+      "city": "Донецк",
+      "name": "ПВЗ «Калининский»",
+      "address": "пр. Ильича, 40",
+      "hours": "пн–сб 10:00–19:00"
+    },
+    "payment": {
+      "method": "card",
+      "label": "Картой онлайн (имитация)",
+      "status": "paid"
+    },
+    "items": [
+      {
+        "type": "product",
+        "productId": "YKT-010",
+        "name": "Зефир ванильный «Белые ночи»",
+        "region": "Якутия",
+        "manufacturer": "ЯХК",
+        "weight_g": 250,
+        "price_rub": 260,
+        "temp_sensitive": true,
+        "shelf_life_days": 30,
+        "qty": 3,
+        "lineTotal": 780
+      }
+    ],
+    "thermoChosen": false,
+    "totals": {
+      "goods": 780,
+      "weightKg": 0.75,
+      "delivery": {
+        "tariffPerKg": 500,
+        "baseCost": 375,
+        "waveWeightAfterKg": 12.55,
+        "fillPercent": 4,
+        "discount": 0,
+        "discountAmount": 0,
+        "thermoRequired": false,
+        "thermoApplied": false,
+        "thermoCost": 0,
+        "total": 375
+      },
+      "total": 1155
+    },
+    "status": "accepted",
+    "statusHistory": [
+      {
+        "status": "accepted",
+        "at": "2026-10-15T08:13:34.409Z"
+      }
+    ],
+    "postponements": []
+  },
+  {
+    "id": "222352",
+    "createdAt": "2026-10-15T08:20:55.298Z",
+    "direction": "YKT_DNR",
+    "waveId": "YKT_DNR-2026-10-24",
+    "scenario": "self",
+    "customer": {
+      "name": "Магазин «Северный гостинец»",
+      "phone": "+79359566889",
+      "email": "magazinsever84@example.com"
+    },
+    "recipient": null,
+    "gift": null,
+    "pickupPoint": {
+      "id": "DON-1",
+      "city": "Донецк",
+      "name": "ПВЗ «Центр»",
+      "address": "ул. Артёма, 50",
+      "hours": "ежедневно 9:00–20:00"
+    },
+    "payment": {
+      "method": "card",
+      "label": "Картой онлайн (имитация)",
+      "status": "paid"
+    },
+    "items": [
+      {
+        "type": "product",
+        "productId": "YKT-007",
+        "name": "Пряники медовые «Таёжные»",
+        "region": "Якутия",
+        "manufacturer": "ЯХК",
+        "weight_g": 400,
+        "price_rub": 240,
+        "temp_sensitive": false,
+        "shelf_life_days": 45,
+        "qty": 17,
+        "lineTotal": 4080
+      },
+      {
+        "type": "product",
+        "productId": "YKT-014",
+        "name": "Карамель леденцовая «Морозко»",
+        "region": "Якутия",
+        "manufacturer": "ЯХК",
+        "weight_g": 250,
+        "price_rub": 150,
+        "temp_sensitive": false,
+        "shelf_life_days": 365,
+        "qty": 23,
+        "lineTotal": 3450
+      },
+      {
+        "type": "product",
+        "productId": "YKT-001",
+        "name": "Конфеты «Северное сияние» в коробке",
+        "region": "Якутия",
+        "manufacturer": "ЯХК",
+        "weight_g": 250,
+        "price_rub": 450,
+        "temp_sensitive": true,
+        "shelf_life_days": 180,
+        "qty": 19,
+        "lineTotal": 8550
+      }
+    ],
+    "thermoChosen": false,
+    "totals": {
+      "goods": 16080,
+      "weightKg": 17.3,
+      "delivery": {
+        "tariffPerKg": 500,
+        "baseCost": 8650,
+        "waveWeightAfterKg": 149.36,
+        "fillPercent": 50,
+        "discount": 0,
+        "discountAmount": 0,
+        "thermoRequired": false,
+        "thermoApplied": false,
+        "thermoCost": 0,
+        "total": 8650
+      },
+      "total": 24730
+    },
+    "status": "accepted",
+    "statusHistory": [
+      {
+        "status": "accepted",
+        "at": "2026-10-15T08:20:55.298Z"
+      }
+    ],
+    "postponements": []
+  },
+  {
+    "id": "213760",
+    "createdAt": "2026-10-15T08:58:38.007Z",
+    "direction": "DNR_YKT",
+    "waveId": "DNR_YKT-2026-10-31",
+    "scenario": "self",
+    "customer": {
+      "name": "Магазин «Южные сладости»",
+      "phone": "+79207392661",
+      "email": "magazinyuzhn22@example.com"
+    },
+    "recipient": null,
+    "gift": null,
+    "pickupPoint": {
+      "id": "YKS-3",
+      "city": "Якутск",
+      "name": "ПВЗ «202-й микрорайон»",
+      "address": "202-й мкр, корп. 7",
+      "hours": "ежедневно 11:00–21:00"
+    },
+    "payment": {
+      "method": "card",
+      "label": "Картой онлайн (имитация)",
+      "status": "paid"
+    },
+    "items": [
+      {
+        "type": "product",
+        "productId": "DNR-002",
+        "name": "Конфеты «Шахтёрская ночь» с черносливом",
+        "region": "ДНР",
+        "manufacturer": "Кальмиус-Конд",
+        "weight_g": 250,
+        "price_rub": 430,
+        "temp_sensitive": true,
+        "shelf_life_days": 150,
+        "qty": 16,
+        "lineTotal": 6880
+      },
+      {
+        "type": "product",
+        "productId": "DNR-005",
+        "name": "Печенье сдобное «Донское»",
+        "region": "ДНР",
+        "manufacturer": "Степная пчела",
+        "weight_g": 350,
+        "price_rub": 210,
+        "temp_sensitive": false,
+        "shelf_life_days": 90,
+        "qty": 31,
+        "lineTotal": 6510
+      },
+      {
+        "type": "product",
+        "productId": "DNR-011",
+        "name": "Шоколад тёмный «Терриконы» 70 %",
+        "region": "ДНР",
+        "manufacturer": "Кальмиус-Конд",
+        "weight_g": 100,
+        "price_rub": 200,
+        "temp_sensitive": true,
+        "shelf_life_days": 365,
+        "qty": 32,
+        "lineTotal": 6400
+      }
+    ],
+    "thermoChosen": false,
+    "totals": {
+      "goods": 19790,
+      "weightKg": 18.05,
+      "delivery": {
+        "tariffPerKg": 500,
+        "baseCost": 9025,
+        "waveWeightAfterKg": 227.11,
+        "fillPercent": 76,
+        "discount": 0.2,
+        "discountAmount": 1805,
+        "thermoRequired": false,
+        "thermoApplied": false,
+        "thermoCost": 0,
+        "total": 7220
+      },
+      "total": 27010
+    },
+    "status": "accepted",
+    "statusHistory": [
+      {
+        "status": "accepted",
+        "at": "2026-10-15T08:58:38.007Z"
+      }
+    ],
+    "postponements": []
+  },
+  {
+    "id": "280213",
+    "createdAt": "2026-10-15T09:07:16.152Z",
+    "direction": "YKT_DNR",
+    "waveId": "YKT_DNR-2026-10-24",
+    "scenario": "self",
+    "customer": {
+      "name": "Кофейня «Каштан»",
+      "phone": "+79511008537",
+      "email": "kofeynyakash25@example.com"
+    },
+    "recipient": null,
+    "gift": null,
+    "pickupPoint": {
+      "id": "DON-3",
+      "city": "Донецк",
+      "name": "ПВЗ «Пролетарский»",
+      "address": "ул. Куйбышева, 117",
+      "hours": "ежедневно 10:00–20:00"
+    },
+    "payment": {
+      "method": "card",
+      "label": "Картой онлайн (имитация)",
+      "status": "paid"
+    },
+    "items": [
+      {
+        "type": "product",
+        "productId": "YKT-007",
+        "name": "Пряники медовые «Таёжные»",
+        "region": "Якутия",
+        "manufacturer": "ЯХК",
+        "weight_g": 400,
+        "price_rub": 240,
+        "temp_sensitive": false,
+        "shelf_life_days": 45,
+        "qty": 33,
+        "lineTotal": 7920
+      }
+    ],
+    "thermoChosen": false,
+    "totals": {
+      "goods": 7920,
+      "weightKg": 13.2,
+      "delivery": {
+        "tariffPerKg": 500,
+        "baseCost": 6600,
+        "waveWeightAfterKg": 162.56,
+        "fillPercent": 54,
+        "discount": 0.2,
+        "discountAmount": 1320,
+        "thermoRequired": false,
+        "thermoApplied": false,
+        "thermoCost": 0,
+        "total": 5280
+      },
+      "total": 13200
+    },
+    "status": "accepted",
+    "statusHistory": [
+      {
+        "status": "accepted",
+        "at": "2026-10-15T09:07:16.152Z"
+      }
+    ],
+    "postponements": []
+  },
+  {
+    "id": "834927",
+    "createdAt": "2026-10-15T09:19:15.830Z",
+    "direction": "YKT_DNR",
+    "waveId": "YKT_DNR-2026-11-07",
+    "scenario": "self",
+    "customer": {
+      "name": "Кофейня «Каштан»",
+      "phone": "+79919902766",
+      "email": "kofeynyakash38@example.com"
+    },
+    "recipient": null,
+    "gift": null,
+    "pickupPoint": {
+      "id": "DON-2",
+      "city": "Донецк",
+      "name": "ПВЗ «Калининский»",
+      "address": "пр. Ильича, 40",
+      "hours": "пн–сб 10:00–19:00"
+    },
+    "payment": {
+      "method": "card",
+      "label": "Картой онлайн (имитация)",
+      "status": "paid"
+    },
+    "items": [
+      {
+        "type": "product",
+        "productId": "YKT-001",
+        "name": "Конфеты «Северное сияние» в коробке",
+        "region": "Якутия",
+        "manufacturer": "ЯХК",
+        "weight_g": 250,
+        "price_rub": 450,
+        "temp_sensitive": true,
+        "shelf_life_days": 180,
+        "qty": 30,
+        "lineTotal": 13500
+      }
+    ],
+    "thermoChosen": false,
+    "totals": {
+      "goods": 13500,
+      "weightKg": 7.5,
+      "delivery": {
+        "tariffPerKg": 500,
+        "baseCost": 3750,
+        "waveWeightAfterKg": 45.2,
+        "fillPercent": 15,
+        "discount": 0,
+        "discountAmount": 0,
+        "thermoRequired": false,
+        "thermoApplied": false,
+        "thermoCost": 0,
+        "total": 3750
+      },
+      "total": 17250
+    },
+    "status": "accepted",
+    "statusHistory": [
+      {
+        "status": "accepted",
+        "at": "2026-10-15T09:19:15.830Z"
+      }
+    ],
+    "postponements": []
+  },
+  {
+    "id": "147012",
+    "createdAt": "2026-10-15T09:19:37.790Z",
+    "direction": "DNR_YKT",
+    "waveId": "DNR_YKT-2026-10-31",
+    "scenario": "self",
+    "customer": {
+      "name": "Кюннэй Васильева",
+      "phone": "+79668910062",
+      "email": "kyunneyvasil42@example.com"
+    },
+    "recipient": null,
+    "gift": null,
+    "pickupPoint": {
+      "id": "YKS-3",
+      "city": "Якутск",
+      "name": "ПВЗ «202-й микрорайон»",
+      "address": "202-й мкр, корп. 7",
+      "hours": "ежедневно 11:00–21:00"
+    },
+    "payment": {
+      "method": "card",
+      "label": "Картой онлайн (имитация)",
+      "status": "paid"
+    },
+    "items": [
+      {
+        "type": "product",
+        "productId": "DNR-010",
+        "name": "Мармелад желейный «Вишнёвый сад»",
+        "region": "ДНР",
+        "manufacturer": "Терриконы",
+        "weight_g": 250,
+        "price_rub": 200,
+        "temp_sensitive": true,
+        "shelf_life_days": 60,
+        "qty": 1,
+        "lineTotal": 200
+      }
+    ],
+    "thermoChosen": true,
+    "totals": {
+      "goods": 200,
+      "weightKg": 0.25,
+      "delivery": {
+        "tariffPerKg": 500,
+        "baseCost": 125,
+        "waveWeightAfterKg": 227.36,
+        "fillPercent": 76,
+        "discount": 0.2,
+        "discountAmount": 25,
+        "thermoRequired": false,
+        "thermoApplied": true,
+        "thermoCost": 150,
+        "total": 250
+      },
+      "total": 450
+    },
+    "status": "accepted",
+    "statusHistory": [
+      {
+        "status": "accepted",
+        "at": "2026-10-15T09:19:37.790Z"
+      }
+    ],
+    "postponements": []
+  },
+  {
+    "id": "728636",
+    "createdAt": "2026-10-15T10:23:52.886Z",
+    "direction": "DNR_YKT",
+    "waveId": "DNR_YKT-2026-11-14",
+    "scenario": "self",
+    "customer": {
+      "name": "Кондитерская «Ленская»",
+      "phone": "+79925003639",
+      "email": "konditerskay36@example.com"
+    },
+    "recipient": null,
+    "gift": null,
+    "pickupPoint": {
+      "id": "YKS-3",
+      "city": "Якутск",
+      "name": "ПВЗ «202-й микрорайон»",
+      "address": "202-й мкр, корп. 7",
+      "hours": "ежедневно 11:00–21:00"
+    },
+    "payment": {
+      "method": "card",
+      "label": "Картой онлайн (имитация)",
+      "status": "paid"
+    },
+    "items": [
+      {
+        "type": "product",
+        "productId": "DNR-006",
+        "name": "Печенье «Подсолнух» с семечками",
+        "region": "ДНР",
+        "manufacturer": "Степная пчела",
+        "weight_g": 300,
+        "price_rub": 180,
+        "temp_sensitive": false,
+        "shelf_life_days": 120,
+        "qty": 14,
+        "lineTotal": 2520
+      },
+      {
+        "type": "product",
+        "productId": "DNR-003",
+        "name": "Вафли «Степные» с орехом",
+        "region": "ДНР",
+        "manufacturer": "Степная пчела",
+        "weight_g": 220,
+        "price_rub": 160,
+        "temp_sensitive": false,
+        "shelf_life_days": 180,
+        "qty": 19,
+        "lineTotal": 3040
+      }
+    ],
+    "thermoChosen": false,
+    "totals": {
+      "goods": 5560,
+      "weightKg": 8.38,
+      "delivery": {
+        "tariffPerKg": 500,
+        "baseCost": 4190,
+        "waveWeightAfterKg": 62.5,
+        "fillPercent": 21,
+        "discount": 0,
+        "discountAmount": 0,
+        "thermoRequired": false,
+        "thermoApplied": false,
+        "thermoCost": 0,
+        "total": 4190
+      },
+      "total": 9750
+    },
+    "status": "accepted",
+    "statusHistory": [
+      {
+        "status": "accepted",
+        "at": "2026-10-15T10:23:52.886Z"
+      }
+    ],
+    "postponements": []
+  },
+  {
+    "id": "214518",
+    "createdAt": "2026-10-15T11:08:48.753Z",
+    "direction": "DNR_YKT",
+    "waveId": "DNR_YKT-2026-10-31",
+    "scenario": "self",
+    "customer": {
+      "name": "Айаал Николаев",
+      "phone": "+79327300126",
+      "email": "ayaalnikolae11@example.com"
+    },
+    "recipient": null,
+    "gift": null,
+    "pickupPoint": {
+      "id": "YKS-1",
+      "city": "Якутск",
+      "name": "ПВЗ «Центральный»",
+      "address": "пр. Ленина, 12",
+      "hours": "ежедневно 10:00–20:00"
+    },
+    "payment": {
+      "method": "card",
+      "label": "Картой онлайн (имитация)",
+      "status": "paid"
+    },
+    "items": [
+      {
+        "type": "product",
+        "productId": "DNR-005",
+        "name": "Печенье сдобное «Донское»",
+        "region": "ДНР",
+        "manufacturer": "Степная пчела",
+        "weight_g": 350,
+        "price_rub": 210,
+        "temp_sensitive": false,
+        "shelf_life_days": 90,
+        "qty": 3,
+        "lineTotal": 630
+      }
+    ],
+    "thermoChosen": false,
+    "totals": {
+      "goods": 630,
+      "weightKg": 1.05,
+      "delivery": {
+        "tariffPerKg": 500,
+        "baseCost": 525,
+        "waveWeightAfterKg": 228.41,
+        "fillPercent": 76,
+        "discount": 0.2,
+        "discountAmount": 105,
+        "thermoRequired": false,
+        "thermoApplied": false,
+        "thermoCost": 0,
+        "total": 420
+      },
+      "total": 1050
+    },
+    "status": "assembling",
+    "statusHistory": [
+      {
+        "status": "accepted",
+        "at": "2026-10-15T11:08:48.753Z"
+      },
+      {
+        "status": "assembling",
+        "at": "2026-10-14T02:11:48.525Z",
+        "note": "Изменено администратором"
+      }
+    ],
+    "postponements": []
+  },
+  {
+    "id": "747203",
+    "createdAt": "2026-10-15T12:48:26.912Z",
+    "direction": "YKT_DNR",
+    "waveId": "YKT_DNR-2026-10-24",
+    "scenario": "self",
+    "customer": {
+      "name": "Кофейня «Каштан»",
+      "phone": "+79413891766",
+      "email": "kofeynyakash15@example.com"
+    },
+    "recipient": null,
+    "gift": null,
+    "pickupPoint": {
+      "id": "DON-2",
+      "city": "Донецк",
+      "name": "ПВЗ «Калининский»",
+      "address": "пр. Ильича, 40",
+      "hours": "пн–сб 10:00–19:00"
+    },
+    "payment": {
+      "method": "card",
+      "label": "Картой онлайн (имитация)",
+      "status": "paid"
+    },
+    "items": [
+      {
+        "type": "product",
+        "productId": "YKT-010",
+        "name": "Зефир ванильный «Белые ночи»",
+        "region": "Якутия",
+        "manufacturer": "ЯХК",
+        "weight_g": 250,
+        "price_rub": 260,
+        "temp_sensitive": true,
+        "shelf_life_days": 30,
+        "qty": 21,
+        "lineTotal": 5460
+      }
+    ],
+    "thermoChosen": false,
+    "totals": {
+      "goods": 5460,
+      "weightKg": 5.25,
+      "delivery": {
+        "tariffPerKg": 500,
+        "baseCost": 2625,
+        "waveWeightAfterKg": 167.81,
+        "fillPercent": 56,
+        "discount": 0.2,
+        "discountAmount": 525,
+        "thermoRequired": false,
+        "thermoApplied": false,
+        "thermoCost": 0,
+        "total": 2100
+      },
+      "total": 7560
+    },
+    "status": "received",
+    "statusHistory": [
+      {
+        "status": "accepted",
+        "at": "2026-10-15T12:48:26.912Z"
+      },
+      {
+        "status": "assembling",
+        "at": "2026-10-14T01:27:31.490Z",
+        "note": "Изменено администратором"
+      },
+      {
+        "status": "in_transit",
+        "at": "2026-10-14T01:27:32.095Z",
+        "note": "Изменено администратором"
+      },
+      {
+        "status": "at_pickup",
+        "at": "2026-10-14T01:27:36.035Z",
+        "note": "Изменено администратором"
+      },
+      {
+        "status": "received",
+        "at": "2026-10-14T01:27:37.706Z",
+        "note": "Изменено администратором"
+      }
+    ],
+    "postponements": []
+  },
+  {
+    "id": "592234",
+    "createdAt": "2026-10-14T02:11:10.042Z",
+    "direction": "YKT_DNR",
+    "waveId": "YKT_DNR-2026-10-24",
+    "scenario": "self",
+    "customer": {
+      "name": "Анна",
+      "phone": "+79659955773",
+      "email": "anna_svinoboeva@yahoo.com"
+    },
+    "recipient": null,
+    "gift": null,
+    "pickupPoint": {
+      "id": "DON-1",
+      "city": "Донецк",
+      "name": "ПВЗ «Центр»",
+      "address": "ул. Артёма, 50",
+      "hours": "ежедневно 9:00–20:00"
+    },
+    "payment": {
+      "method": "cash",
+      "label": "При получении",
+      "status": "on_delivery"
+    },
+    "items": [
+      {
+        "type": "product",
+        "productId": "YKT-010",
+        "name": "Зефир ванильный «Белые ночи»",
+        "region": "Якутия",
+        "manufacturer": "ЯХК",
+        "weight_g": 250,
+        "price_rub": 260,
+        "temp_sensitive": true,
+        "shelf_life_days": 30,
+        "qty": 1,
+        "lineTotal": 260
+      },
+      {
+        "type": "giftBox",
+        "name": "Набор «Север + Юг» → ДНР",
+        "destination": "ДНР",
+        "contents": [
+          {
+            "productId": "DNR-001",
+            "name": "Конфеты «Донецкие розы» ассорти",
+            "region": "ДНР",
+            "manufacturer": "Кальмиус-Конд",
+            "weight_g": 300,
+            "price_rub": 490,
+            "temp_sensitive": true,
+            "shelf_life_days": 120
+          },
+          {
+            "productId": "YKT-010",
+            "name": "Зефир ванильный «Белые ночи»",
+            "region": "Якутия",
+            "manufacturer": "ЯХК",
+            "weight_g": 250,
+            "price_rub": 260,
+            "temp_sensitive": true,
+            "shelf_life_days": 30
+          }
+        ],
+        "weight_g": 550,
+        "price_rub": 750,
+        "temp_sensitive": true,
+        "shelf_life_days": 30,
+        "qty": 1,
+        "lineTotal": 750
+      }
+    ],
+    "thermoChosen": false,
+    "totals": {
+      "goods": 1010,
+      "weightKg": 0.8,
+      "delivery": {
+        "tariffPerKg": 500,
+        "baseCost": 400,
+        "waveWeightAfterKg": 168.61,
+        "fillPercent": 56,
+        "discount": 0.2,
+        "discountAmount": 80,
+        "thermoRequired": false,
+        "thermoApplied": false,
+        "thermoCost": 0,
+        "total": 320
+      },
+      "total": 1330
+    },
+    "status": "accepted",
+    "statusHistory": [
+      {
+        "status": "accepted",
+        "at": "2026-10-14T02:11:10.042Z"
+      }
+    ],
+    "postponements": []
+  },
+  {
+    "id": "778503",
+    "createdAt": "2026-10-14T03:37:40.842Z",
+    "direction": "YKT_DNR",
+    "waveId": "YKT_DNR-2026-10-24",
+    "scenario": "self",
+    "customer": {
+      "name": "Ньургун",
+      "phone": "+79627354777",
+      "email": "ndanilov40@gmail.com"
+    },
+    "recipient": null,
+    "gift": null,
+    "pickupPoint": {
+      "id": "DON-1",
+      "city": "Донецк",
+      "name": "ПВЗ «Центр»",
+      "address": "ул. Артёма, 50",
+      "hours": "ежедневно 9:00–20:00"
+    },
+    "payment": {
+      "method": "cash",
+      "label": "При получении",
+      "status": "on_delivery"
+    },
+    "items": [
+      {
+        "type": "product",
+        "productId": "YKT-010",
+        "name": "Зефир ванильный «Белые ночи»",
+        "region": "Якутия",
+        "manufacturer": "ЯХК",
+        "weight_g": 250,
+        "price_rub": 260,
+        "temp_sensitive": true,
+        "shelf_life_days": 30,
+        "qty": 1,
+        "lineTotal": 260
+      }
+    ],
+    "thermoChosen": false,
+    "totals": {
+      "goods": 260,
+      "weightKg": 0.25,
+      "delivery": {
+        "tariffPerKg": 500,
+        "baseCost": 125,
+        "waveWeightAfterKg": 168.86,
+        "fillPercent": 56,
+        "discount": 0.2,
+        "discountAmount": 25,
+        "thermoRequired": false,
+        "thermoApplied": false,
+        "thermoCost": 0,
+        "total": 100
+      },
+      "total": 360
+    },
+    "status": "accepted",
+    "statusHistory": [
+      {
+        "status": "accepted",
+        "at": "2026-10-14T03:37:40.842Z"
+      }
+    ],
+    "postponements": []
+  },
+  {
+    "id": "505525",
+    "createdAt": "2026-10-14T03:38:26.419Z",
+    "direction": "DNR_YKT",
+    "waveId": "DNR_YKT-2026-10-31",
+    "scenario": "self",
+    "customer": {
+      "name": "Ньургун",
+      "phone": "+79627354777",
+      "email": "ndanilov40@gmail.com"
+    },
+    "recipient": null,
+    "gift": null,
+    "pickupPoint": {
+      "id": "YKS-1",
+      "city": "Якутск",
+      "name": "ПВЗ «Центральный»",
+      "address": "пр. Ленина, 12",
+      "hours": "ежедневно 10:00–20:00"
+    },
+    "payment": {
+      "method": "card",
+      "label": "Картой онлайн (имитация)",
+      "status": "paid"
+    },
+    "items": [
+      {
+        "type": "product",
+        "productId": "DNR-002",
+        "name": "Конфеты «Шахтёрская ночь» с черносливом",
+        "region": "ДНР",
+        "manufacturer": "Кальмиус-Конд",
+        "weight_g": 250,
+        "price_rub": 430,
+        "temp_sensitive": true,
+        "shelf_life_days": 150,
+        "qty": 1,
+        "lineTotal": 430
+      }
+    ],
+    "thermoChosen": false,
+    "totals": {
+      "goods": 430,
+      "weightKg": 0.25,
+      "delivery": {
+        "tariffPerKg": 500,
+        "baseCost": 125,
+        "waveWeightAfterKg": 228.66,
+        "fillPercent": 76,
+        "discount": 0.2,
+        "discountAmount": 25,
+        "thermoRequired": false,
+        "thermoApplied": false,
+        "thermoCost": 0,
+        "total": 100
+      },
+      "total": 530
+    },
+    "status": "accepted",
+    "statusHistory": [
+      {
+        "status": "accepted",
+        "at": "2026-10-14T03:38:26.419Z"
+      }
+    ],
+    "postponements": []
+  },
+  {
+    "id": "241370",
+    "createdAt": "2026-10-14T03:45:53.851Z",
+    "direction": "YKT_DNR",
+    "waveId": "YKT_DNR-2026-10-24",
+    "scenario": "self",
+    "customer": {
+      "name": "Раиса",
+      "phone": "+79142313562",
+      "email": "raisadyakonova@mail.ru"
+    },
+    "recipient": null,
+    "gift": null,
+    "pickupPoint": {
+      "id": "DON-2",
+      "city": "Донецк",
+      "name": "ПВЗ «Калининский»",
+      "address": "пр. Ильича, 40",
+      "hours": "пн–сб 10:00–19:00"
+    },
+    "payment": {
+      "method": "cash",
+      "label": "При получении",
+      "status": "on_delivery"
+    },
+    "items": [
+      {
+        "type": "product",
+        "productId": "YKT-006",
+        "name": "Пряник «Олонхо» с брусничной начинкой",
+        "region": "Якутия",
+        "manufacturer": "ЯХК",
+        "weight_g": 350,
+        "price_rub": 280,
+        "temp_sensitive": false,
+        "shelf_life_days": 60,
+        "qty": 1,
+        "lineTotal": 280
+      },
+      {
+        "type": "product",
+        "productId": "YKT-015",
+        "name": "Карамель с начинкой «Брусника»",
+        "region": "Якутия",
+        "manufacturer": "ЯХК",
+        "weight_g": 300,
+        "price_rub": 180,
+        "temp_sensitive": false,
+        "shelf_life_days": 270,
+        "qty": 1,
+        "lineTotal": 180
+      },
+      {
+        "type": "product",
+        "productId": "YKT-011",
+        "name": "Зефир брусничный",
+        "region": "Якутия",
+        "manufacturer": "ЯХК",
+        "weight_g": 250,
+        "price_rub": 280,
+        "temp_sensitive": true,
+        "shelf_life_days": 25,
+        "qty": 1,
+        "lineTotal": 280
+      },
+      {
+        "type": "product",
+        "productId": "YKT-013",
+        "name": "Торт вафельный «Полярный»",
+        "region": "Якутия",
+        "manufacturer": "ЯХК",
+        "weight_g": 450,
+        "price_rub": 520,
+        "temp_sensitive": false,
+        "shelf_life_days": 120,
+        "qty": 1,
+        "lineTotal": 520
+      }
+    ],
+    "thermoChosen": true,
+    "totals": {
+      "goods": 1260,
+      "weightKg": 1.35,
+      "delivery": {
+        "tariffPerKg": 500,
+        "baseCost": 675,
+        "waveWeightAfterKg": 170.21,
+        "fillPercent": 57,
+        "discount": 0.2,
+        "discountAmount": 135,
+        "thermoRequired": false,
+        "thermoApplied": true,
+        "thermoCost": 150,
+        "total": 690
+      },
+      "total": 1950
+    },
+    "status": "accepted",
+    "statusHistory": [
+      {
+        "status": "accepted",
+        "at": "2026-10-14T03:45:53.851Z"
+      }
+    ],
+    "postponements": []
+  },
+  {
+    "id": "434250",
+    "createdAt": "2026-10-14T04:32:48.962Z",
+    "direction": "YKT_DNR",
+    "waveId": "YKT_DNR-2026-10-24",
+    "scenario": "self",
+    "customer": {
+      "name": "Ньургун",
+      "phone": "+79627354777",
+      "email": "ndanilov40@gmail.com"
+    },
+    "recipient": null,
+    "gift": null,
+    "pickupPoint": {
+      "id": "DON-1",
+      "city": "Донецк",
+      "name": "ПВЗ «Центр»",
+      "address": "ул. Артёма, 50",
+      "hours": "ежедневно 9:00–20:00"
+    },
+    "payment": {
+      "method": "card",
+      "label": "Картой онлайн (имитация)",
+      "status": "paid"
+    },
+    "items": [
+      {
+        "type": "product",
+        "productId": "YKT-001",
+        "name": "Конфеты «Северное сияние» в коробке",
+        "region": "Якутия",
+        "manufacturer": "ЯХК",
+        "weight_g": 250,
+        "price_rub": 450,
+        "temp_sensitive": true,
+        "shelf_life_days": 180,
+        "qty": 1,
+        "lineTotal": 450
+      },
+      {
+        "type": "product",
+        "productId": "YKT-010",
+        "name": "Зефир ванильный «Белые ночи»",
+        "region": "Якутия",
+        "manufacturer": "ЯХК",
+        "weight_g": 250,
+        "price_rub": 260,
+        "temp_sensitive": true,
+        "shelf_life_days": 30,
+        "qty": 1,
+        "lineTotal": 260
+      }
+    ],
+    "thermoChosen": false,
+    "totals": {
+      "goods": 710,
+      "weightKg": 0.5,
+      "delivery": {
+        "tariffPerKg": 500,
+        "baseCost": 250,
+        "waveWeightAfterKg": 170.71,
+        "fillPercent": 57,
+        "discount": 0.2,
+        "discountAmount": 50,
+        "thermoRequired": false,
+        "thermoApplied": false,
+        "thermoCost": 0,
+        "total": 200
+      },
+      "total": 910
+    },
+    "status": "accepted",
+    "statusHistory": [
+      {
+        "status": "accepted",
+        "at": "2026-10-14T04:32:48.962Z"
+      }
+    ],
+    "postponements": []
+  },
+  {
+    "id": "146404",
+    "createdAt": "2026-10-14T04:38:46.066Z",
+    "direction": "YKT_DNR",
+    "waveId": "YKT_DNR-2026-10-24",
+    "scenario": "self",
+    "customer": {
+      "name": "Айастан",
+      "phone": "+79627354777",
+      "email": "ndanilov40@gmail.com"
+    },
+    "recipient": null,
+    "gift": null,
+    "pickupPoint": {
+      "id": "DON-2",
+      "city": "Донецк",
+      "name": "ПВЗ «Калининский»",
+      "address": "пр. Ильича, 40",
+      "hours": "пн–сб 10:00–19:00"
+    },
+    "payment": {
+      "method": "card",
+      "label": "Картой онлайн (имитация)",
+      "status": "paid"
+    },
+    "items": [
+      {
+        "type": "product",
+        "productId": "YKT-001",
+        "name": "Конфеты «Северное сияние» в коробке",
+        "region": "Якутия",
+        "manufacturer": "ЯХК",
+        "weight_g": 250,
+        "price_rub": 450,
+        "temp_sensitive": true,
+        "shelf_life_days": 180,
+        "qty": 1,
+        "lineTotal": 450
+      }
+    ],
+    "thermoChosen": false,
+    "totals": {
+      "goods": 450,
+      "weightKg": 0.25,
+      "delivery": {
+        "tariffPerKg": 500,
+        "baseCost": 125,
+        "waveWeightAfterKg": 170.96,
+        "fillPercent": 57,
+        "discount": 0.2,
+        "discountAmount": 25,
+        "thermoRequired": false,
+        "thermoApplied": false,
+        "thermoCost": 0,
+        "total": 100
+      },
+      "total": 550
+    },
+    "status": "accepted",
+    "statusHistory": [
+      {
+        "status": "accepted",
+        "at": "2026-10-14T04:38:46.066Z"
+      }
+    ],
+    "postponements": []
+  },
+  {
+    "id": "464650",
+    "createdAt": "2026-10-14T05:30:02.570Z",
+    "direction": "YKT_DNR",
+    "waveId": "YKT_DNR-2026-10-24",
+    "scenario": "self",
+    "customer": {
+      "name": "Ньургун",
+      "phone": "+79627354777",
+      "email": "ndanilov40@gmail.com"
+    },
+    "recipient": null,
+    "gift": null,
+    "pickupPoint": {
+      "id": "DON-1",
+      "city": "Донецк",
+      "name": "ПВЗ «Центр»",
+      "address": "ул. Артёма, 50",
+      "hours": "ежедневно 9:00–20:00"
+    },
+    "payment": {
+      "method": "card",
+      "label": "Картой онлайн (имитация)",
+      "status": "paid"
+    },
+    "items": [
+      {
+        "type": "product",
+        "productId": "YKT-001",
+        "name": "Конфеты «Северное сияние» в коробке",
+        "region": "Якутия",
+        "manufacturer": "ЯХК",
+        "weight_g": 250,
+        "price_rub": 450,
+        "temp_sensitive": true,
+        "shelf_life_days": 180,
+        "qty": 1,
+        "lineTotal": 450
+      },
+      {
+        "type": "giftBox",
+        "name": "Набор «Север + Юг» → ДНР",
+        "destination": "ДНР",
+        "contents": [
+          {
+            "productId": "YKT-010",
+            "name": "Зефир ванильный «Белые ночи»",
+            "region": "Якутия",
+            "manufacturer": "ЯХК",
+            "weight_g": 250,
+            "price_rub": 260,
+            "temp_sensitive": true,
+            "shelf_life_days": 30
+          },
+          {
+            "productId": "DNR-009",
+            "name": "Мармелад «Абрикосовый»",
+            "region": "ДНР",
+            "manufacturer": "Терриконы",
+            "weight_g": 300,
+            "price_rub": 220,
+            "temp_sensitive": false,
+            "shelf_life_days": 90
+          },
+          {
+            "productId": "YKT-008",
+            "name": "Печенье овсяное с голубикой",
+            "region": "Якутия",
+            "manufacturer": "ЯХК",
+            "weight_g": 300,
+            "price_rub": 190,
+            "temp_sensitive": false,
+            "shelf_life_days": 90
+          },
+          {
+            "productId": "DNR-006",
+            "name": "Печенье «Подсолнух» с семечками",
+            "region": "ДНР",
+            "manufacturer": "Степная пчела",
+            "weight_g": 300,
+            "price_rub": 180,
+            "temp_sensitive": false,
+            "shelf_life_days": 120
+          }
+        ],
+        "weight_g": 1150,
+        "price_rub": 850,
+        "temp_sensitive": true,
+        "shelf_life_days": 30,
+        "qty": 1,
+        "lineTotal": 850
+      }
+    ],
+    "thermoChosen": true,
+    "totals": {
+      "goods": 1300,
+      "weightKg": 1.4,
+      "delivery": {
+        "tariffPerKg": 500,
+        "baseCost": 700,
+        "waveWeightAfterKg": 172.36,
+        "fillPercent": 57,
+        "discount": 0.2,
+        "discountAmount": 140,
+        "thermoRequired": false,
+        "thermoApplied": true,
+        "thermoCost": 150,
+        "total": 710
+      },
+      "total": 2010
+    },
+    "status": "accepted",
+    "statusHistory": [
+      {
+        "status": "accepted",
+        "at": "2026-10-14T05:30:02.570Z"
+      }
+    ],
+    "postponements": []
+  },
+  {
+    "id": "670155",
+    "createdAt": "2026-10-14T06:39:16.717Z",
+    "direction": "YKT_DNR",
+    "waveId": "YKT_DNR-2026-10-24",
+    "scenario": "self",
+    "customer": {
+      "name": "Ньургун",
+      "phone": "+79627354777",
+      "email": "ndanilov40@gmail.com"
+    },
+    "recipient": null,
+    "gift": null,
+    "pickupPoint": {
+      "id": "DON-1",
+      "city": "Донецк",
+      "name": "ПВЗ «Центр»",
+      "address": "ул. Артёма, 50",
+      "hours": "ежедневно 9:00–20:00"
+    },
+    "payment": {
+      "method": "card",
+      "label": "Картой онлайн (имитация)",
+      "status": "paid"
+    },
+    "personalDataConsent": {
+      "given": true,
+      "at": "2026-10-14T06:39:16.717Z"
+    },
+    "items": [
+      {
+        "type": "product",
+        "productId": "YKT-001",
+        "name": "Конфеты «Северное сияние» в коробке",
+        "region": "Якутия",
+        "manufacturer": "ЯХК",
+        "weight_g": 250,
+        "price_rub": 450,
+        "temp_sensitive": true,
+        "shelf_life_days": 180,
+        "qty": 1,
+        "lineTotal": 450
+      }
+    ],
+    "thermoChosen": false,
+    "totals": {
+      "goods": 450,
+      "weightKg": 0.25,
+      "delivery": {
+        "tariffPerKg": 500,
+        "baseCost": 125,
+        "waveWeightAfterKg": 172.61,
+        "fillPercent": 58,
+        "discount": 0.2,
+        "discountAmount": 25,
+        "thermoRequired": false,
+        "thermoApplied": false,
+        "thermoCost": 0,
+        "total": 100
+      },
+      "total": 550
+    },
+    "status": "accepted",
+    "statusHistory": [
+      {
+        "status": "accepted",
+        "at": "2026-10-14T06:39:16.717Z"
+      }
+    ],
+    "postponements": [],
+    "userId": "u_635466a6-73b8-4135-9b2d-a9b722e403d8"
+  },
+  {
+    "id": "666523",
+    "createdAt": "2026-10-14T06:45:32.664Z",
+    "direction": "DNR_YKT",
+    "waveId": "DNR_YKT-2026-10-31",
+    "scenario": "self",
+    "customer": {
+      "name": "жужа",
+      "phone": "+79627302393",
+      "email": "nechaka@yandex.ru"
+    },
+    "recipient": null,
+    "gift": null,
+    "pickupPoint": {
+      "id": "YKS-1",
+      "city": "Якутск",
+      "name": "ПВЗ «Центральный»",
+      "address": "пр. Ленина, 12",
+      "hours": "ежедневно 10:00–20:00"
+    },
+    "payment": {
+      "method": "card",
+      "label": "Картой онлайн (имитация)",
+      "status": "paid"
+    },
+    "personalDataConsent": {
+      "given": true,
+      "at": "2026-10-14T06:45:32.664Z"
+    },
+    "items": [
+      {
+        "type": "product",
+        "productId": "DNR-002",
+        "name": "Конфеты «Шахтёрская ночь» с черносливом",
+        "region": "ДНР",
+        "manufacturer": "Кальмиус-Конд",
+        "weight_g": 250,
+        "price_rub": 430,
+        "temp_sensitive": true,
+        "shelf_life_days": 150,
+        "qty": 1,
+        "lineTotal": 430
+      },
+      {
+        "type": "product",
+        "productId": "DNR-009",
+        "name": "Мармелад «Абрикосовый»",
+        "region": "ДНР",
+        "manufacturer": "Терриконы",
+        "weight_g": 300,
+        "price_rub": 220,
+        "temp_sensitive": false,
+        "shelf_life_days": 90,
+        "qty": 1,
+        "lineTotal": 220
+      },
+      {
+        "type": "product",
+        "productId": "DNR-012",
+        "name": "Шоколад молочный с курагой",
+        "region": "ДНР",
+        "manufacturer": "Кальмиус-Конд",
+        "weight_g": 90,
+        "price_rub": 190,
+        "temp_sensitive": true,
+        "shelf_life_days": 300,
+        "qty": 1,
+        "lineTotal": 190
+      },
+      {
+        "type": "product",
+        "productId": "DNR-003",
+        "name": "Вафли «Степные» с орехом",
+        "region": "ДНР",
+        "manufacturer": "Степная пчела",
+        "weight_g": 220,
+        "price_rub": 160,
+        "temp_sensitive": false,
+        "shelf_life_days": 180,
+        "qty": 1,
+        "lineTotal": 160
+      }
+    ],
+    "thermoChosen": true,
+    "totals": {
+      "goods": 1000,
+      "weightKg": 0.86,
+      "delivery": {
+        "tariffPerKg": 500,
+        "baseCost": 430,
+        "waveWeightAfterKg": 229.52,
+        "fillPercent": 77,
+        "discount": 0.2,
+        "discountAmount": 86,
+        "thermoRequired": false,
+        "thermoApplied": true,
+        "thermoCost": 150,
+        "total": 494
+      },
+      "total": 1494
+    },
+    "status": "accepted",
+    "statusHistory": [
+      {
+        "status": "accepted",
+        "at": "2026-10-14T06:45:32.664Z"
+      }
+    ],
+    "postponements": [],
+    "userId": "u_173a95cf-426a-47bc-bb32-2a32aee12afa"
+  }
+]

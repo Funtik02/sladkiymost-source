@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300" role="img" aria-label="Торт «Донецкий медовик»">
+  <rect width="400" height="300" fill="#EAF4FC"/>
+  <g transform="translate(200 104) scale(1.15) translate(-200 -104)">
+    <ellipse cx="200" cy="174" rx="74" ry="8" fill="#2E6DA4" opacity="0.1"/>
+    <g transform="translate(200 112)">
+      <rect x="-66" y="-22" width="132" height="64" rx="12" fill="#D08A3E"/>
+      <rect x="-66" y="8" width="132" height="8" fill="#FFF8EE" opacity="0.9"/>
+      <path d="M-66 -22 a12 12 0 0 1 12 -12 H54 a12 12 0 0 1 12 12 v6 q-8.25 10 -16.5 0 q-8.25 10 -16.5 0 q-8.25 10 -16.5 0 q-8.25 10 -16.5 0 q-8.25 10 -16.5 0 q-8.25 10 -16.5 0 q-8.25 10 -16.5 0 q-8.25 10 -16.5 0 Z" fill="#FFF8EE"/>
+      <rect x="-4" y="-64" width="8" height="30" rx="3" fill="#E2A43B"/>
+      <path d="M0 -82 q9 11 0 15 q-9 -4 0 -15 z" fill="#F2B544"/>
+      <circle cx="-38" cy="-38" r="7" fill="#E2A43B"/>
+      <circle cx="38" cy="-38" r="7" fill="#E2A43B"/>
+    </g>
+  </g>
+  <g font-family="Manrope, 'Segoe UI', Arial, sans-serif" font-size="18" font-weight="700" fill="#2B1D14"><text x="200" y="226" text-anchor="middle">Торт «Донецкий медовик»</text></g>
+</svg>
