@@ -3,6 +3,7 @@ import { Link, Navigate, useNavigate } from 'react-router-dom'
 import { createOrder, quoteOrder } from '../api/orders'
 import { getPickupPoints, getWaves } from '../api/waves'
 import DeliveryBreakdown from '../components/DeliveryBreakdown'
+import CompanyFields from '../components/CompanyFields'
 import ConsentCheckbox from '../components/ConsentCheckbox'
 import ErrorMessage from '../components/ErrorMessage'
 import GiftFields from '../components/GiftFields'
@@ -17,6 +18,7 @@ import { useFetch } from '../hooks/useFetch'
 import { toOrderItems } from '../utils/cart'
 import { calcDelivery, getExpectedArrival, getWaveBlocker } from '../utils/delivery'
 import { formatDate, formatDateRange, formatRub } from '../utils/format'
+import { PAYMENT_OPTIONS } from '../utils/company'
 import { DIRECTIONS } from '../utils/regions'
 import { playSound } from '../utils/sound'
 import { readJSON, removeKey, writeJSON } from '../utils/storage'
@@ -25,20 +27,40 @@ import { formatPhone, normalizePhone, validateCheckout } from '../utils/validati
 const DRAFT_KEY = 'sweet-bridge:checkout-draft'
 
 const EMPTY_FORM = {
+    buyerType: 'person',
     scenario: 'self',
     customer: { name: '', phone: '', email: '' },
     recipient: { name: '', phone: '' },
+    company: { name: '', inn: '', kpp: '', address: '' },
     pickupPointId: '',
     gift: { cardText: '', cardDesign: 'north', hidePrice: false },
     paymentMethod: 'card',
 }
+
+const BUYER_TYPES = [
+    { value: 'person', label: 'Физическое лицо' },
+    { value: 'company', label: 'Юридическое лицо' },
+]
+
+const SCENARIOS = [
+    { value: 'self', label: 'Заказ себе' },
+    { value: 'gift', label: 'Подарок в другой регион' },
+]
 
 function loadDraft() {
     const draft = readJSON(sessionStorage, DRAFT_KEY, null)
     if (!draft || typeof draft !== 'object') return EMPTY_FORM
 
     const str = (v) => (typeof v === 'string' ? v : '')
+    const buyerType = draft.buyerType === 'company' ? 'company' : 'person'
     return {
+        buyerType,
+        company: {
+            name: str(draft.company?.name),
+            inn: str(draft.company?.inn),
+            kpp: str(draft.company?.kpp),
+            address: str(draft.company?.address),
+        },
         scenario: draft.scenario === 'gift' ? 'gift' : 'self',
         customer: { name: str(draft.customer?.name), phone: str(draft.customer?.phone), email: str(draft.customer?.email) },
         recipient: { name: str(draft.recipient?.name), phone: str(draft.recipient?.phone) },
@@ -48,15 +70,39 @@ function loadDraft() {
             cardDesign: ['north', 'south', 'bridge'].includes(draft.gift?.cardDesign) ? draft.gift.cardDesign : 'north',
             hidePrice: draft.gift?.hidePrice === true,
         },
-        paymentMethod: draft.paymentMethod === 'cash' ? 'cash' : 'card',
+        paymentMethod: PAYMENT_OPTIONS[buyerType].some((o) => o.value === draft.paymentMethod)
+            ? draft.paymentMethod
+            : PAYMENT_OPTIONS[buyerType][0].value,
     }
 }
 
-function fieldId(scenario, key) {
-    if (key === 'pickupPointId') return `${scenario}-pickup`
-    if (key === 'paymentMethod') return 'payment-card'
+function fieldId(section, key) {
+    if (key === 'pickupPointId') return `${section}-pickup`
+    if (key === 'paymentMethod') return 'payment-method'
     if (key === 'consent') return 'personal-data-consent'
-    return `${scenario}-${key.replace('.', '-')}`
+    return `${section}-${key.replace('.', '-')}`
+}
+
+function Segmented({ label, options, value, name, onChange }) {
+    return (
+        <div className="segmented" role="radiogroup" aria-label={label}>
+            {options.map((option) => (
+                <label
+                    key={option.value}
+                    className={`segmented__option ${value === option.value ? 'segmented__option--active' : ''}`}
+                >
+                    <input
+                        type="radio"
+                        name={name}
+                        value={option.value}
+                        checked={value === option.value}
+                        onChange={() => onChange(option.value)}
+                    />
+                    {option.label}
+                </label>
+            ))}
+        </div>
+    )
 }
 
 export default function Checkout() {
@@ -179,8 +225,26 @@ function CheckoutView({ placed, onPlaced }) {
         }
     }
 
+    const isCompany = form.buyerType === 'company'
+    const section = isCompany ? 'company' : form.scenario
+    const paymentOptions = PAYMENT_OPTIONS[form.buyerType]
+
+    const setBuyerType = (buyerType) => {
+        if (buyerType === form.buyerType) return
+        setForm((prev) => ({ ...prev, buyerType, paymentMethod: PAYMENT_OPTIONS[buyerType][0].value }))
+    }
+
     const buildPayload = () => ({
-        scenario: form.scenario,
+        buyerType: form.buyerType,
+        scenario: isCompany ? 'self' : form.scenario,
+        company: isCompany
+            ? {
+                  name: form.company.name.trim(),
+                  inn: form.company.inn.trim(),
+                  kpp: form.company.kpp.trim().toUpperCase(),
+                  address: form.company.address.trim(),
+              }
+            : undefined,
         items: toOrderItems(items),
         waveId,
         thermoChosen,
@@ -190,11 +254,11 @@ function CheckoutView({ placed, onPlaced }) {
             email: form.customer.email.trim(),
         },
         recipient:
-            form.scenario === 'gift'
+            !isCompany && form.scenario === 'gift'
                 ? { name: form.recipient.name.trim(), phone: normalizePhone(form.recipient.phone) }
                 : undefined,
         pickupPointId: form.pickupPointId,
-        gift: form.scenario === 'gift' ? { ...form.gift, cardText: form.gift.cardText.trim() } : undefined,
+        gift: !isCompany && form.scenario === 'gift' ? { ...form.gift, cardText: form.gift.cardText.trim() } : undefined,
         paymentMethod: form.paymentMethod,
         personalDataConsent: consent,
         clientTotal: total,
@@ -216,7 +280,7 @@ function CheckoutView({ placed, onPlaced }) {
 
         const firstError = Object.keys(allErrors)[0]
         if (firstError) {
-            document.getElementById(fieldId(form.scenario, firstError))?.focus()
+            document.getElementById(fieldId(section, firstError))?.focus()
             return
         }
 
@@ -269,28 +333,35 @@ function CheckoutView({ placed, onPlaced }) {
                     <p className="account-note">
                         Заказ сохранится в вашем <Link to="/account" className="link">личном кабинете</Link>.
                     </p>
-                    <div className="segmented" role="radiogroup" aria-label="Кому заказ">
-                        {[
-                            { value: 'self', label: 'Заказ себе' },
-                            { value: 'gift', label: 'Подарок в другой регион' },
-                        ].map((option) => (
-                            <label
-                                key={option.value}
-                                className={`segmented__option ${form.scenario === option.value ? 'segmented__option--active' : ''}`}
-                            >
-                                <input
-                                    type="radio"
-                                    name="scenario"
-                                    value={option.value}
-                                    checked={form.scenario === option.value}
-                                    onChange={() => setField('scenario', option.value)}
-                                />
-                                {option.label}
-                            </label>
-                        ))}
+                    <div className="buyer-switch">
+                        <Segmented
+                            label="Покупатель"
+                            name="buyerType"
+                            options={BUYER_TYPES}
+                            value={form.buyerType}
+                            onChange={setBuyerType}
+                        />
+                        {!isCompany && (
+                            <Segmented
+                                label="Кому заказ"
+                                name="scenario"
+                                options={SCENARIOS}
+                                value={form.scenario}
+                                onChange={(value) => setField('scenario', value)}
+                            />
+                        )}
                     </div>
 
-                    {form.scenario === 'self' ? (
+                    {isCompany ? (
+                        <CompanyFields
+                            form={form}
+                            errors={errors}
+                            onChange={setField}
+                            onBlur={touch}
+                            pickupPoints={pickupPoints}
+                            city={city}
+                        />
+                    ) : form.scenario === 'self' ? (
                         <fieldset className="form-section">
                             <legend className="form-section__title">Получатель — вы, в городе {city}</legend>
                             <div className="form-grid">
@@ -342,33 +413,25 @@ function CheckoutView({ placed, onPlaced }) {
                     <fieldset className="form-section">
                         <legend className="form-section__title">Оплата</legend>
                         <div className="pay-options">
-                            <label className={`pay-option ${form.paymentMethod === 'card' ? 'pay-option--active' : ''}`}>
-                                <input
-                                    id="payment-card"
-                                    type="radio"
-                                    name="paymentMethod"
-                                    value="card"
-                                    checked={form.paymentMethod === 'card'}
-                                    onChange={() => setField('paymentMethod', 'card')}
-                                />
-                                <span>
-                                    <strong>Картой онлайн (имитация)</strong>
-                                    <span className="pay-option__text">Демонстрационная оплата: успешна через 1,5 секунды</span>
-                                </span>
-                            </label>
-                            <label className={`pay-option ${form.paymentMethod === 'cash' ? 'pay-option--active' : ''}`}>
-                                <input
-                                    type="radio"
-                                    name="paymentMethod"
-                                    value="cash"
-                                    checked={form.paymentMethod === 'cash'}
-                                    onChange={() => setField('paymentMethod', 'cash')}
-                                />
-                                <span>
-                                    <strong>При получении</strong>
-                                    <span className="pay-option__text">Картой или наличными на пункте выдачи</span>
-                                </span>
-                            </label>
+                            {paymentOptions.map((option, index) => (
+                                <label
+                                    key={option.value}
+                                    className={`pay-option ${form.paymentMethod === option.value ? 'pay-option--active' : ''}`}
+                                >
+                                    <input
+                                        id={index === 0 ? 'payment-method' : undefined}
+                                        type="radio"
+                                        name="paymentMethod"
+                                        value={option.value}
+                                        checked={form.paymentMethod === option.value}
+                                        onChange={() => setField('paymentMethod', option.value)}
+                                    />
+                                    <span>
+                                        <strong>{option.title}</strong>
+                                        <span className="pay-option__text">{option.text}</span>
+                                    </span>
+                                </label>
+                            ))}
                         </div>
                     </fieldset>
 

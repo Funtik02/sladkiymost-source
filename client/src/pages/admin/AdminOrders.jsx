@@ -14,7 +14,10 @@ import { useFetch } from '../../hooks/useFetch'
 import { formatDate, formatDateTime, formatKg, formatRub } from '../../utils/format'
 import { DIRECTIONS, ORDER_STATUS_LABELS, ORDER_STATUSES } from '../../utils/regions'
 import { formatPhone } from '../../utils/validation'
+import { personRole } from '../../utils/company'
 import { GiftIcon } from '../../components/Icons'
+
+const PAYMENT_STATE = { paid: 'оплачено', invoice: 'ждёт оплаты по счёту', on_delivery: 'при получении' }
 
 const nextStatus = (status) => ORDER_STATUSES[ORDER_STATUSES.indexOf(status) + 1] ?? null
 
@@ -61,12 +64,23 @@ function OrderDetails({ order }) {
 
             <dl className="facts facts--stack">
                 <div>
-                    <dt>{order.scenario === 'gift' ? 'Отправитель' : 'Покупатель'}</dt>
+                    <dt>{personRole(order)}</dt>
                     <dd>
                         {order.customer.name}, <a href={`tel:${order.customer.phone}`}>{formatPhone(order.customer.phone)}</a>,{' '}
                         <a href={`mailto:${order.customer.email}`}>{order.customer.email}</a>
                     </dd>
                 </div>
+                {order.company && (
+                    <div>
+                        <dt>Организация</dt>
+                        <dd>
+                            {order.company.name}, ИНН {order.company.inn}
+                            {order.company.kpp && `, КПП ${order.company.kpp}`}
+                            <br />
+                            <span className="muted">{order.company.address}</span>
+                        </dd>
+                    </div>
+                )}
                 {order.recipient && (
                     <div>
                         <dt>Получатель</dt>
@@ -91,7 +105,7 @@ function OrderDetails({ order }) {
                 <div>
                     <dt>Оплата</dt>
                     <dd>
-                        {order.payment.label} — {order.payment.status === 'paid' ? 'оплачено' : 'при получении'}
+                        {order.payment.label} — {PAYMENT_STATE[order.payment.status] ?? 'при получении'}
                     </dd>
                 </div>
             </dl>
@@ -271,7 +285,10 @@ export default function AdminOrders() {
                                         )}
                                     </td>
                                     <td className="nowrap">{formatDateTime(order.createdAt)}</td>
-                                    <td>{order.customer.name}</td>
+                                    <td>
+                                        {order.company ? order.company.name : order.customer.name}
+                                        {order.company && <span className="tag">юр. лицо</span>}
+                                    </td>
                                     <td className="nowrap">
                                         {DIRECTIONS[order.direction].label}
                                         <br />

@@ -6495,5 +6495,84 @@
     ],
     "postponements": [],
     "userId": "u_173a95cf-426a-47bc-bb32-2a32aee12afa"
+  },
+  {
+    "id": "462172",
+    "createdAt": "2026-10-15T03:29:27.042Z",
+    "direction": "YKT_DNR",
+    "waveId": "YKT_DNR-2026-10-24",
+    "buyerType": "company",
+    "scenario": "self",
+    "company": {
+      "name": "ООО \"Тургэн\"",
+      "inn": "7727563778",
+      "kpp": "658923456",
+      "address": "67700, г.Якутск"
+    },
+    "customer": {
+      "name": "Ньургун",
+      "phone": "+79627354777",
+      "email": "ndanilov40@gmail.com"
+    },
+    "recipient": null,
+    "gift": null,
+    "pickupPoint": {
+      "id": "DON-1",
+      "city": "Донецк",
+      "name": "ПВЗ «Центр»",
+      "address": "ул. Артёма, 50",
+      "hours": "ежедневно 9:00–20:00"
+    },
+    "payment": {
+      "method": "invoice",
+      "label": "По счёту (безналичный расчёт)",
+      "status": "invoice"
+    },
+    "personalDataConsent": {
+      "given": true,
+      "at": "2026-10-15T03:29:27.042Z"
+    },
+    "items": [
+      {
+        "type": "product",
+        "productId": "YKT-001",
+        "name": "Торт «Медовый»",
+        "region": "Якутия",
+        "manufacturer": "ЯХК",
+        "weight_g": 700,
+        "price_rub": 1030,
+        "temp_sensitive": true,
+        "shelf_life_days": 45,
+        "qty": 1,
+        "lineTotal": 1030
+      }
+    ],
+    "thermoChosen": false,
+    "totals": {
+      "goods": 1030,
+      "weightKg": 0.7,
+      "delivery": {
+        "tariffPerKg": 500,
+        "baseCost": 350,
+        "waveWeightAfterKg": 173.31,
+        "fillPercent": 58,
+        "discount": 0.2,
+        "discountAmount": 70,
+        "thermoRequired": false,
+        "thermoApplied": false,
+        "thermoCost": 0,
+        "total": 280
+      },
+      "total": 1310
+    },
+    "status": "accepted",
+    "statusHistory": [
+      {
+        "status": "accepted",
+        "at": "2026-10-15T03:29:27.042Z"
+      }
+    ],
+    "postponements": [],
+    "userId": "u_9820e87b-76eb-4ea6-be8d-006d5470bcad"
   }
 ]

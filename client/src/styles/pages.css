@@ -1273,6 +1273,24 @@
     font-weight: 700;
 }
 
+.buyer-switch {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.buyer-switch .segmented {
+    margin-bottom: 0;
+}
+
+@media (max-width: 639px) {
+    .buyer-switch .segmented {
+        flex: 1 1 100%;
+    }
+}
+
 .account-note {
     padding: 12px 14px;
     margin-bottom: 16px;

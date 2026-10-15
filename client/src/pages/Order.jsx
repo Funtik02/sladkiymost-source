@@ -12,6 +12,7 @@ import { useToast } from '../context/ToastContext'
 import { useDocumentTitle } from '../hooks/useDocumentTitle'
 import { useFetch } from '../hooks/useFetch'
 import { formatDate, formatDateRange, formatDateTime, formatKg, formatRub } from '../utils/format'
+import { orderKindLabel, paymentStatusLabel } from '../utils/company'
 import { DIRECTIONS, ORDER_STATUS_LABELS, WAVE_STATUS_LABELS } from '../utils/regions'
 
 export default function Order() {
@@ -77,7 +78,7 @@ export default function Order() {
                 <div>
                     <h1 className="page-title">Заказ №{order.id}</h1>
                     <p className="muted">
-                        Оформлен {formatDateTime(order.createdAt)} · {order.scenario === 'gift' ? 'подарок' : 'заказ себе'}
+                        Оформлен {formatDateTime(order.createdAt)} · {orderKindLabel(order)}
                     </p>
                 </div>
                 <div className="order-head__status">
@@ -140,7 +141,18 @@ export default function Order() {
                             </dd>
                         </div>
                         <div>
-                            <dt>{order.scenario === 'gift' ? 'Получатель' : 'Покупатель'}</dt>
+                        {order.company && (
+                            <div>
+                                <dt>Организация</dt>
+                                <dd>
+                                    {order.company.name}, ИНН {order.company.inn}
+                                    {order.company.kpp && `, КПП ${order.company.kpp}`}
+                                    <br />
+                                    <span className="muted">{order.company.address}</span>
+                                </dd>
+                            </div>
+                        )}
+                            <dt>{order.scenario === 'gift' ? 'Получатель' : order.company ? 'Контактное лицо' : 'Покупатель'}</dt>
                             <dd>
                                 {order.scenario === 'gift'
                                     ? `${order.recipient.name}, ${order.recipient.phone}`
@@ -214,7 +226,7 @@ export default function Order() {
                                 <dd>{formatRub(order.totals.delivery.total)}</dd>
                             </div>
                             <div className="summary__total">
-                                <dt>Итого · {order.payment.status === 'paid' ? 'оплачено картой' : 'оплата при получении'}</dt>
+                                <dt>Итого · {paymentStatusLabel(order.payment)}</dt>
                                 <dd>{formatRub(order.totals.total)}</dd>
                             </div>
                         </dl>

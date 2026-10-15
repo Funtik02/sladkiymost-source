@@ -8,6 +8,7 @@ import { useDocumentTitle } from '../hooks/useDocumentTitle'
 import { useFetch } from '../hooks/useFetch'
 import { formatDate, formatDateRange, formatRub } from '../utils/format'
 import { DIRECTIONS } from '../utils/regions'
+import { paymentSuccessText } from '../utils/company'
 
 async function copyText(text) {
     try {
@@ -76,8 +77,10 @@ export default function OrderSuccess() {
                 <p className="success__lead">
                     {order.scenario === 'gift'
                         ? `Подарок для ${order.recipient.name} отправится волной «${direction.label}».`
-                        : `Заказ отправится волной «${direction.label}».`}{' '}
-                    {order.payment.status === 'paid' ? 'Оплата получена (имитация).' : 'Оплата — при получении.'}
+                        : order.company
+                          ? `Заказ для ${order.company.name} отправится волной «${direction.label}».`
+                          : `Заказ отправится волной «${direction.label}».`}{' '}
+                    {paymentSuccessText(order.payment)}
                 </p>
 
                 <div className="success__number">

@@ -85,6 +85,9 @@ const statusLabel = (status) => waves().ORDER_STATUS_LABELS[status] ?? status
 const directionLabel = (direction) => waves().DIRECTIONS[direction]?.label ?? direction
 const orderLink = (order) => `<a href="${escapeHtml(`${config().siteUrl}/order/${order.id}`)}">Открыть заказ на сайте</a>`
 const phone = (value) => String(value ?? '').replace(/^\+7(\d{3})(\d{3})(\d{2})(\d{2})$/, '+7 $1 $2-$3-$4')
+const role = (order) => (order.company ? 'Контактное лицо' : order.scenario === 'gift' ? 'Отправитель' : 'Покупатель')
+const companyLine = (c) =>
+    c ? `Организация: ${escapeHtml([c.name, `ИНН ${c.inn}`, c.kpp ? `КПП ${c.kpp}` : null, c.address].filter(Boolean).join(', '))}` : null
 const person = (p) => [p.name, phone(p.phone), p.email].filter(Boolean).map(escapeHtml).join(', ')
 
 function ordersCount(n) {
@@ -116,10 +119,11 @@ function newOrderMessage(order, wave) {
     const point = order.pickupPoint
 
     return [
-        `🆕 <b>Новый заказ №${order.id}</b>${order.scenario === 'gift' ? ' · подарок' : ''}`,
+        `🆕 <b>Новый заказ №${order.id}</b>${order.company ? ' · юр. лицо' : order.scenario === 'gift' ? ' · подарок' : ''}`,
         `Создан: ${dateTime(order.createdAt)}`,
         '',
-        `${order.scenario === 'gift' ? 'Отправитель' : 'Покупатель'}: ${person(order.customer)}`,
+        companyLine(order.company),
+        `${role(order)}: ${person(order.customer)}`,
         order.recipient ? `Получатель: ${person(order.recipient)}` : null,
         '',
         '<b>Состав:</b>',
@@ -129,7 +133,7 @@ function newOrderMessage(order, wave) {
         `Товары: ${rub(order.totals.goods)}`,
         `Доставка: ${rub(delivery.total)}${extras.length ? ` (${extras.join(', ')})` : ''}`,
         `<b>Итого: ${rub(order.totals.total)}</b>`,
-        `Оплата: ${escapeHtml(order.payment.label)}${order.payment.status === 'paid' ? ' — оплачен' : ''}`,
+        `Оплата: ${escapeHtml(order.payment.label)}${order.payment.status === 'paid' ? ' — оплачен' : order.payment.status === 'invoice' ? ' — выставить счёт' : ''}`,
         '',
         waveLine(order, wave),
         point ? `Пункт выдачи: ${escapeHtml(`${point.name}, ${point.address}, ${point.city}`)}` : null,
@@ -146,7 +150,8 @@ function statusMessage(order, wave, fromStatus) {
 
     return [
         `🔄 <b>Заказ №${order.id}: ${statusLabel(fromStatus)} → ${statusLabel(order.status)}</b>`,
-        `${order.scenario === 'gift' ? 'Отправитель' : 'Покупатель'}: ${person(order.customer)}`,
+        order.company ? `Организация: ${escapeHtml(order.company.name)}` : null,
+        `${role(order)}: ${person(order.customer)}`,
         waveLine(order, wave),
         `Сумма: ${rub(order.totals.total)}`,
         note ? `Комментарий: ${escapeHtml(note)}` : null,

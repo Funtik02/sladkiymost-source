@@ -24,9 +24,24 @@ const GIFT_BOX_MAX_ITEMS = 6
 const CARD_TEXT_MAX = 300
 const CARD_DESIGNS = ['north', 'south', 'bridge']
 const PAYMENT_METHODS = {
-    card: 'Картой онлайн (имитация)',
-    cash: 'При получении',
+    person: {
+        card: 'Картой онлайн (имитация)',
+        cash: 'При получении',
+    },
+    company: {
+        invoice: 'По счёту (безналичный расчёт)',
+        card: 'Корпоративной картой (имитация)',
+    },
 }
+const PAYMENT_STATUS = { card: 'paid', cash: 'on_delivery', invoice: 'invoice' }
+const INN_WEIGHTS = {
+    10: [[2, 4, 10, 3, 5, 9, 4, 6, 8]],
+    12: [
+        [7, 2, 4, 10, 3, 5, 9, 4, 6, 8],
+        [3, 7, 2, 4, 10, 3, 5, 9, 4, 6, 8],
+    ],
+}
+const KPP_RE = /^\d{4}[\dA-Z]{2}\d{3}$/
 
 const PHONE_RE = /^\+7\d{10}$/
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/
@@ -182,15 +197,53 @@ function validatePerson(person, label, { withEmail }) {
     return withEmail ? { name, phone, email } : { name, phone }
 }
 
+function isValidInn(inn) {
+    if (!/^\d{10}$|^\d{12}$/.test(inn)) return false
+
+    const digits = [...inn].map(Number)
+    return INN_WEIGHTS[inn.length].every((weights) => {
+        const sum = weights.reduce((acc, w, i) => acc + w * digits[i], 0)
+        return (sum % 11) % 10 === digits[weights.length]
+    })
+}
+
+function validateCompany(company) {
+    const str = (value) => (typeof value === 'string' ? value.trim() : '')
+    const name = str(company?.name)
+    const inn = str(company?.inn)
+    const kpp = str(company?.kpp).toUpperCase()
+    const address = str(company?.address)
+
+    if (name.length < 2 || name.length > 160) throw new HttpError(400, 'Укажите название организации (до 160 символов)')
+    if (!isValidInn(inn)) throw new HttpError(400, 'Проверьте ИНН: 10 цифр для организации или 12 для ИП')
+    if (inn.length === 10 && !KPP_RE.test(kpp)) throw new HttpError(400, 'Укажите КПП организации — 9 символов')
+    if (kpp && !KPP_RE.test(kpp)) throw new HttpError(400, 'КПП — 9 символов')
+    if (address.length < 10 || address.length > 250) throw new HttpError(400, 'Укажите юридический адрес (от 10 до 250 символов)')
+
+    return { name, inn, kpp: kpp || null, address }
+}
+
 function validateContacts(payload, direction, pickupPoints) {
+    const buyerType = payload.buyerType === undefined ? 'person' : payload.buyerType
+    if (buyerType !== 'person' && buyerType !== 'company') {
+        throw new HttpError(400, 'Выберите покупателя: физическое или юридическое лицо')
+    }
+
     const { scenario } = payload
     if (scenario !== 'self' && scenario !== 'gift') {
         throw new HttpError(400, 'Выберите сценарий: заказ себе или подарок')
     }
+    if (buyerType === 'company' && scenario !== 'self') {
+        throw new HttpError(400, 'Заказ для юридического лица оформляется на организацию')
+    }
 
-    const customer = validatePerson(payload.customer, scenario === 'gift' ? 'Отправитель' : 'Покупатель', {
-        withEmail: true,
-    })
+    const company = buyerType === 'company' ? validateCompany(payload.company) : null
+
+    const customer = validatePerson(
+        payload.customer,
+        company ? 'Контактное лицо' : scenario === 'gift' ? 'Отправитель' : 'Покупатель',
+        { withEmail: true }
+    )
 
     const city = DIRECTIONS[direction].toCity
     const pickupPoint = pickupPoints.find((p) => p.id === payload.pickupPointId)
@@ -215,7 +268,8 @@ function validateContacts(payload, direction, pickupPoints) {
         gift = { cardText, cardDesign, hidePrice: payload.gift?.hidePrice === true }
     }
 
-    if (!PAYMENT_METHODS[payload.paymentMethod]) {
+    const methods = PAYMENT_METHODS[buyerType]
+    if (!Object.hasOwn(methods, payload.paymentMethod)) {
         throw new HttpError(400, 'Выберите способ оплаты')
     }
 
@@ -224,15 +278,17 @@ function validateContacts(payload, direction, pickupPoints) {
     }
 
     return {
+        buyerType,
         scenario,
+        company,
         customer,
         recipient,
         gift,
         pickupPoint,
         payment: {
             method: payload.paymentMethod,
-            label: PAYMENT_METHODS[payload.paymentMethod],
-            status: payload.paymentMethod === 'card' ? 'paid' : 'on_delivery',
+            label: methods[payload.paymentMethod],
+            status: PAYMENT_STATUS[payload.paymentMethod],
         },
         personalDataConsent: { given: true, at: nowISO() },
     }
